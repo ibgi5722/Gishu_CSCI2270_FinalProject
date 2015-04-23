@@ -1,452 +1,452 @@
-Team, Player, Number, Positon, G, PTS, OREB, DREB, REB, AST, STL, TO, PF
-Celtics, Brandon Bass, 30, Forward-Center, 82, 10.6, 1.7, 3.2, 4.9, 1.3, 0.5, 1, 1.7
-Celtics, Avery Bradley, -1, Guard, 77, 13.9, 0.6, 2.5, 3.1, 1.8, 1.1, 1.4, 2.3
-Celtics, Jae Crowder, 99, Forward, 82, 7.7, 0.9, 2.7, 3.6, 1.1, 0.9, 0.6, 1.7
-Celtics, Gigi Datome, 70, Forward, 21, 5, 0.1, 1.2, 1.4, 0.4, 0.1, 0.4, 0.7
-Celtics, Jonas Jerebko, 8, Forward, 75, 6, 1.2, 2.5, 3.8, 0.9, 0.6, 0.6, 1.8
-Celtics, Kelly Olynyk, 41, Center-Forward, 64, 10.3, 1.4, 3.3, 4.7, 1.7, 1, 1.5, 3.3
-Celtics, Phil Pressey, 26, Guard, 50, 3.5, 0.3, 1.3, 1.6, 2.3, 0.6, 0.8, 1.1
-Celtics, Marcus Smart, 36, Guard, 67, 7.8, 0.9, 2.4, 3.3, 3.1, 1.5, 1.3, 2.6
-Celtics, Jared Sullinger, 7, Forward, 58, 13.3, 2.5, 5.1, 7.6, 2.3, 0.8, 1.3, 2.6
-Celtics, Isaiah Thomas, 4, Guard, 67, 16.4, 0.5, 1.8, 2.3, 4.2, 0.9, 2.1, 2.2
-Celtics, Evan Turner, 11, Guard-Forward, 82, 9.5, 0.5, 4.6, 5.1, 5.5, 1, 2.4, 2.2
-Celtics, Gerald Wallace, 45, Forward, 32, 1.1, 0.5, 1.3, 1.8, 0.3, 0.5, 0.6, 0.6
-Celtics, James Young, 13, Guard-Forward, 31, 3.4, 0.3, 1.1, 1.4, 0.4, 0.3, 0.2, 0.7
-Celtics, Tyler Zeller, 44, Center-Forward, 82, 10.2, 1.8, 3.9, 5.7, 1.4, 0.2, 0.9, 2.5
-Nets, Alan Anderson, 6, Guard-Forward, 74, 7.4, 0.4, 2.3, 2.8, 1.1, 0.8, 0.8, 2
-Nets, Bojan Bogdanovic, 44, Guard-Forward, 78, 9, 0.6, 2.1, 2.7, 0.9, 0.4, 1, 1.3
-Nets, Markel Brown, 22, Guard, 47, 4.6, 0.3, 1.9, 2.3, 0.8, 0.7, 0.6, 1.2
-Nets, Earl Clark, 55, Forward, 10, 2.7, 0.1, 2.2, 2.3, 0.3, 0.3, 0.6, 1.2
-Nets, Jarrett Jack, -1, Guard, 80, 12, 0.2, 2.8, 3.1, 4.7, 0.9, 2.4, 1.8
-Nets, Cory Jefferson, 21, Forward, 50, 3.7, 0.9, 2, 2.9, 0.3, 0.2, 0.4, 1.2
-Nets, Joe Johnson, 7, Forward-Guard, 80, 14.4, 0.7, 4.1, 4.8, 3.7, 0.7, 1.7, 1.5
-Nets, Jerome Jordan, 9, Center, 44, 3.1, 1.2, 1.2, 2.4, 0.3, 0.2, 0.5, 1.3
-Nets, Sergey Karasev, 10, Guard-Forward, 33, 4.6, 0.7, 1.3, 2, 1.4, 0.7, 0.7, 1.4
-Nets, Brook Lopez, 11, Center, 72, 17.2, 3, 4.5, 7.4, 0.7, 0.6, 1.4, 2.9
-Nets, Darius Morris, 14, Guard, 38, 2.2, 0.2, 0.5, 0.7, 1.3, 0.2, 0.6, 0.5
-Nets, Mason Plumlee, 1, Center-Forward, 82, 8.7, 2.1, 4.1, 6.2, 0.9, 0.8, 1.3, 2.5
-Nets, Mirza Teletovic, 33, Forward, 40, 8.5, 0.7, 4.2, 4.9, 1.2, 0.4, 1.3, 1.9
-Nets, Deron Williams, 8, Guard, 68, 13, 0.4, 3.1, 3.5, 6.6, 0.9, 2.3, 2.3
-Nets, Thaddeus Young, 30, Forward, 76, 14.1, 1.7, 3.7, 5.4, 2.3, -1, -1, -1
-Knicks, Quincy Acy, 4, Forward, 68, 5.9, 1.2, 3.3, 4.4, 1, 0.4, 0.9, 2.2
-Knicks, Cole Aldrich, 45, Center, 61, 5.5, 1.7, 3.9, 5.5, 1.2, 0.6, 1, 2
-Knicks, Lou Amundson, 21, Forward, 53, 4.9, 1.8, 3.3, 5.1, 1.3, 0.4, 1.2, 2.4
-Knicks, Carmelo Anthony, 7, Forward, 40, 24.2, 1.8, 4.8, 6.6, 3.1, 1, 2.2, 2.2
-Knicks, Andrea Bargnani, 77, Center-Forward, 29, 14.8, 1.1, 3.3, 4.4, 1.6, 0.1, 1.4, 1.8
-Knicks, Jose Calderon, 3, Guard, 42, 9.1, 0.5, 2.5, 3, 4.7, 0.7, 1.8, 1.8
-Knicks, Cleanthony Early, 17, Forward, 39, 5.4, 0.6, 1.9, 2.5, 0.9, 0.6, 1, 1.5
-Knicks, Langston Galloway, 2, Guard, 45, 11.8, 0.8, 3.4, 4.2, 3.3, 1.2, 1.4, 2.9
-Knicks, Tim Hardaway Jr., 5, Forward-Center.Guard, 70, 11.5, 0.2, 2.1, 2.2, 1.8, 0.3, 1.2, 1.7
-Knicks, Shane Larkin, -1, Guard, 76, 6.2, 0.4, 1.9, 2.3, 3, 1.2, 1.1, 2
-Knicks, Ricky Ledo, 11, Guard, 17, 5.3, 0.9, 1.2, 2.1, 1.1, 0.4, 1.5, 1.2
-Knicks, Alexey Shved, 1, Guard, 42, 10.3, 0.5, 1.8, 2.4, 2.5, 0.7, 1.1, 1.1
-Knicks, Jason Smith, 14, Forward-Center, 82, 8, 1.2, 2.8, 4, 1.7, 0.4, 1.3, 2.5
-Knicks, Lance Thomas, 42, Forward, 62, 7.1, 1, 2.1, 3.1, 1.1, 0.6, 1.2, 1.6
-Knicks, Travis Wear, 6, Forward, 51, 3.9, 0.6, 1.5, 2.1, 0.8, 0.3, 0.7, 1.1
-76ers, Furkan Aldemir, 19, Forward-Center, 41, 2.3, 1.9, 2.4, 4.3, 0.7, 0.4, 0.4, 2.3
-76ers, Isaiah Canaan, -1, Guard, 47, 9.2, 0.4, 1.5, 1.9, 2.1, 0.6, 1.3, 1.8
-76ers, Robert Covington, 33, Forward, 70, 13.5, 0.9, 3.6, 4.5, 1.5, 1.4, 1.8, 2.7
-76ers, Jerami Grant, 39, Forward, 65, 6.3, 0.8, 2.3, 3, 1.2, 0.6, 1.3, 2.2
-76ers, Luc Mbah A Moute, 12, Forward, 67, 9.9, 1.2, 3.7, 4.9, 1.6, 1.2, 1.5, 1.6
-76ers, Nerlens Noel, 4, Center-Forward, 75, 9.9, 2.5, 5.7, 8.1, 1.7, 1.8, 1.9, 2.8
-76ers, Jason Richardson, 23, Guard, 19, 9.1, 0.7, 2.8, 3.5, 2, 0.7, 0.8, 1.5
-76ers, Thomas Robinson, 41, Forward, 54, 5.7, 1.8, 3.9, 5.6, 0.6, 0.6, 1.1, 1.9
-76ers, Glenn Robinson, 1, Guard-Forward, 35, 2.1, 0.4, 0.7, 1.1, 0.3, 0.2, 0.3, 0.4
-76ers, JaKarr Sampson, 9, Guard-Forward, 74, 5.2, 0.5, 1.7, 2.2, 1, 0.5, 1, 1.8
-76ers, Henry Sims, 35, Center, 73, 8, 1.7, 3.3, 4.9, 1.1, 0.5, 1.4, 1.8
-76ers, Ish Smith, 5, Guard, 55, 6.1, 0.3, 1.5, 1.8, 3.3, 0.7, 1.4, 0.9
-76ers, Hollis Thompson, 31, Guard-Forward, 71, 8.8, 0.7, 2, 2.8, 1.2, 0.8, 0.9, 2
-76ers, Tony Wroten, 8, Guard, 30, 16.9, 0.7, 2.1, 2.9, 5.2, 1.6, 3.8, 2.4
-Raptors, Bruno Caboclo, 5, Forward, 8, 1.3, 0.1, 0.1, 0.3, -1, -1, 0.5, 0.4
-Raptors, DeMar DeRozan, 10, Guard, 60, 20.1, 0.7, 3.9, 4.6, 3.5, 1.2, 2.3, 2
-Raptors, Landry Fields, 2, Guard-Forward, 26, 1.8, 0.4, 0.6, 1, 0.6, 0.4, 0.3, 0.3
-Raptors, Tyler Hansbrough, 50, Forward-Center, 74, 3.6, 1.4, 2.1, 3.6, 0.3, 0.4, 0.3, 1.9
-Raptors, Charles Hayes, 44, Center-Forward, 29, 1.7, 0.6, 1.1, 1.8, 0.7, 0.3, 0.3, 1.3
-Raptors, Amir Johnson, 15, Forward, 75, 9.3, 2.1, 4, 6.1, 1.6, 0.6, 1.5, 3
-Raptors, James Johnson, 3, Forward, 70, 7.9, 0.9, 2.8, 3.7, 1.4, 0.8, 1.1, 2.2
-Raptors, Kyle Lowry, 7, Guard, 70, 17.8, 0.8, 3.9, 4.7, 6.8, 1.6, 2.5, 3
-Raptors, Lucas Nogueira, 92, Center, 6, 1, 0.3, 1.5, 1.8, 0.2, 0.3, 0.3, 1
-Raptors, Patrick Patterson, 54, Forward, 81, 8, 1.6, 3.8, 5.3, 1.9, 0.7, 0.7, 1.8
-Raptors, Terrence Ross, 31, Forward-Guard, 82, 9.8, 0.4, 2.4, 2.8, 1, 0.6, 0.8, 1.7
-Raptors, Greg Stiemsma, 34, Center, 17, 0.8, 0.5, 0.4, 0.9, 0.2, 0.1, 0.4, 0.9
-Raptors, Jonas Valanciunas, 17, Center, 80, 12, 2.7, 6, 8.7, 0.5, 0.4, 1.4, 2.8
-Raptors, Greivis Vasquez, 21, Guard, 82, 9.5, 0.3, 2.4, 2.6, 3.7, 0.6, 1.5, 2.2
-Raptors, Lou Williams, 23, Guard, 80, 15.5, 0.3, 1.6, 1.9, 2.1, 1.1, 1.3, 1.3
-Bulls, Cameron Bairstow, 41, Forward-Center, 18, 0.6, 0.3, 0.1, 0.4, 0.1, 0.1, 0.2, 0.4
-Bulls, Aaron Brooks, -1, Guard, 82, 11.6, 0.4, 1.6, 2, 3.2, 0.7, 1.9, 2.3
-Bulls, Jimmy Butler, 21, Guard-Forward, 65, 20, 1.8, 4.1, 5.8, 3.3, 1.8, 1.4, 1.7
-Bulls, Mike Dunleavy, 34, Forward, 63, 9.4, 0.4, 3.5, 3.9, 1.8, 0.6, 1, 2
-Bulls, Pau Gasol, 16, Forward-Center, 78, 18.5, 2.8, 9, 11.8, 2.7, 0.3, 2, 1.9
-Bulls, Taj Gibson, 22, Forward, 62, 10.3, 2.6, 3.8, 6.4, 1.1, 0.6, 1.2, 2.6
-Bulls, Kirk Hinrich, 12, Guard, 66, 5.7, 0.3, 1.5, 1.8, 2.2, 0.7, 1.1, 2.2
-Bulls, Doug McDermott, 3, Forward, 36, 3, 0.2, 1, 1.2, 0.2, 0.1, 0.5, 0.8
-Bulls, Nikola Mirotic, 44, Forward, 82, 10.2, 0.8, 4.2, 4.9, 1.2, 0.7, 1.1, 2.1
-Bulls, Nazr Mohammed, 48, Center, 23, 1.2, 0.5, 1.2, 1.7, 0.1, 0.2, 0.3, 0.7
-Bulls, E'Twaun Moore, 55, Guard, 56, 2.7, 0.2, 0.6, 0.8, 0.6, 0.4, 0.3, 0.8
-Bulls, Joakim Noah, 13, Center, 67, 7.2, 3.3, 6.4, 9.6, 4.7, 0.7, 1.8, 3
-Bulls, Derrick Rose, 1, Guard, 51, 17.7, 0.7, 2.5, 3.2, 4.9, 0.7, 3.2, 1.2
-Bulls, Tony Snell, 20, Forward, 72, 6, 0.4, 2, 2.4, 0.9, 0.4, 0.7, 1.2
-Cavaliers, Matthew Dellavedova, 8, Guard, 67, 4.8, 0.6, 1.3, 1.9, 3, 0.4, 0.9, 2.3
-Cavaliers, Joe Harris, 12, Guard, 51, 2.7, 0.1, 0.7, 0.8, 0.5, 0.1, 0.5, 1.2
-Cavaliers, Brendan Haywood, 33, Center, 22, 1.6, 0.3, 1, 1.3, 0.1, 0.1, 0.5, 0.8
-Cavaliers, Kyrie Irving, 2, Guard, 75, 21.7, 0.7, 2.4, 3.2, 5.2, 1.5, 2.5, 1.9
-Cavaliers, LeBron James, 23, Forward, 69, 25.3, 0.7, 5.3, 6, 7.4, 1.6, 3.9, 2
-Cavaliers, James Jones, 1, Forward, 57, 4.4, 0.2, 0.9, 1.1, 0.4, 0.2, 0.2, 1.2
-Cavaliers, Kevin Love, -1, Forward, 75, 16.4, 1.9, 7.9, 9.7, 2.2, 0.7, 1.6, 1.9
-Cavaliers, Shawn Marion, 31, Guard-Forward, 57, 4.8, 1.1, 2.4, 3.5, 0.9, 0.5, 0.6, 1
-Cavaliers, Mike Miller, 18, Guard-Forward, 52, 2.1, 0.1, 1.7, 1.8, 0.9, 0.3, 0.4, 1.4
-Cavaliers, Timofey Mozgov, 20, Center, 81, 9.7, 2.5, 4.8, 7.3, 0.7, 0.4, 1.4, 2.8
-Cavaliers, Kendrick Perkins, 3, Center, 68, 3.6, 1.3, 3.4, 4.7, 0.8, 0.2, 1.4, 2.4
-Cavaliers, Iman Shumpert, 4, Guard, 62, 8, 0.9, 2.7, 3.6, 2.2, 1.3, 1.5, 2.2
-Cavaliers, J.R. Smith, 5, ..Guard-Forward, 70, 12.1, 0.4, 2.7, 3.1, 2.8, 1.2, 1.4, 2.3
-Cavaliers, Tristan Thompson, 13, Center-Forward, 82, 8.5, 3.3, 4.7, 8, 0.5, 0.4, 1, 2.3
-Cavaliers, Anderson Varejao, 17, Center, 26, 9.8, 2.2, 4.3, 6.5, 1.3, 0.7, 1.3, 2.2
-Pistons, Joel Anthony, 50, Center, 49, 1.8, 0.7, 1.2, 1.9, 0.1, 0.2, 0.2, 1.1
-Pistons, Caron Butler, 31, Forward, 78, 5.9, 0.3, 2.2, 2.5, 1, 0.6, 0.6, 1.5
-Pistons, Kentavious CaldwellPope, 5, -Guard, 82, 12.7, 0.6, 2.5, 3.1, 1.3, 1.1, 1.1, 2
-Pistons, Spencer Dinwiddie, 8, Guard, 34, 4.3, 0.1, 1.3, 1.4, 3.1, 0.6, 1, 1.6
-Pistons, Andre Drummond, -1, Center, 82, 13.8, 5.3, 8.1, 13.5, 0.7, 0.9, 1.5, 3.5
-Pistons, John Lucas III, 9, Guard, 21, 4.7, 0.2, 0.6, 0.8, 2.9, 0.4, 0.8, 0.9
-Pistons, Reggie Jackson, 1, Guard, 77, 14.5, 0.7, 3.5, 4.2, 6, 0.8, 2.4, 2.2
-Pistons, Brandon Jennings, 7, Guard, 41, 15.4, 0.5, 2, 2.5, 6.6, 1.1, 2.2, 1.6
-Pistons, Cartier Martin, 35, Forward, 23, 1.6, -1, 0.9, 0.9, 0.5, 0.1, 0.2, 0.9
-Pistons, Jodie Meeks, 20, Guard, 60, 11.1, 0.2, 1.5, 1.7, 1.3, 1, 1, 1.3
-Pistons, Quincy Miller, 34, Forward, 10, 2.9, 0.4, 1.6, 2, 0.8, 0.7, 0.5, 0.9
-Pistons, Greg Monroe, 10, Forward-Center, 69, 15.9, 3.3, 6.9, 10.2, 2.1, 1.1, 2.2, 2.1
-Pistons, Tayshaun Prince, 22, Forward, 58, 7.5, 0.9, 2.7, 3.6, 1.6, 0.5, 0.6, 0.9
-Pistons, Anthony Tolliver, 43, Forward, 76, 6.3, 0.7, 2.4, 3.1, 0.8, 0.3, 0.7, 1.8
-Pistons, Shawne Williams, 3, Forward, 63, 5.4, 0.6, 2.1, 2.6, 0.7, 0.4, 0.5, 2.1
-Pacers, Lavoy Allen, 5, Forward-Center, 63, 5, 2, 3.2, 5.1, 1.2, 0.2, 0.6, 1.6
-Pacers, Chris Copeland, 22, Forward, 50, 6.2, 0.5, 1.8, 2.2, 1, 0.2, 1.2, 1.6
-Pacers, Paul George, 13, Forward-Guard, 6, 8.8, 0.7, 3, 3.7, 1, 0.8, 2, 1.8
-Pacers, Roy Hibbert, 55, Center, 76, 10.6, 2.1, 5.1, 7.1, 1.1, 0.2, 1.4, 2.8
-Pacers, Solomon Hill, 44, Forward, 82, 8.9, 0.9, 3, 3.8, 2.2, 0.8, 1.4, 2.2
-Pacers, George Hill, 3, Guard, 43, 16.1, 0.6, 3.6, 4.2, 5.1, 1, 1.6, 2.6
-Pacers, Ian Mahinmi, 28, Center, 61, 4.3, 1.7, 4.1, 5.8, 0.5, 0.5, 1, 2.8
-Pacers, CJ Miles, -1, Guard, 70, 13.5, 0.3, 2.8, 3.1, 1.1, 0.9, 1, 1.9
-Pacers, Damjan Rudez, 9, Forward, 68, 4.8, 0.1, 0.6, 0.7, 0.8, 0.2, 0.7, 1.2
-Pacers, Luis Scola, 4, Forward, 81, 9.4, 1.7, 4.8, 6.5, 1.3, 0.6, 1.2, 2.4
-Pacers, Donald Sloan, 15, Guard, 53, 7.4, 0.2, 2.5, 2.7, 3.6, 0.4, 1.2, 0.9
-Pacers, Rodney Stuckey, 2, Guard, 71, 12.6, 0.5, 3, 3.5, 3.1, 0.8, 1.7, 1.8
-Pacers, CJ Watson, 32, Guard, 57, 10, 0.3, 2.5, 2.9, 3.6, 1, 1.8, 1.9
-Pacers, David West, 21, Forward, 66, 11.7, 1.6, 5.2, 6.8, 3.4, 0.7, 1.8, 2.4
-Pacers, Shayne Whittington, 42, Forward-Center, 20, 2.9, 0.5, 1, 1.5, 0.3, 0.3, 0.3, 0.9
-Bucks, Giannis Antetokounmpo, 34, Forward, 81, 12.7, 1.2, 5.5, 6.7, 2.6, 0.9, 2.1, 3.1
-Bucks, Jerryd Bayless, 19, Guard, 77, 7.8, 0.3, 2.5, 2.7, 3, 0.8, 1.7, 2.1
-Bucks, Michael CarterWilliams, 5, -Guard, 66, 14.6, 1, 4.4, 5.3, 6.7, 1.7, 3.8, 2.5
-Bucks, Jared Dudley, 9, Forward-Guard, 72, 7.2, 0.6, 2.4, 3.1, 1.8, 1, 0.9, 1.6
-Bucks, Tyler Ennis, 11, Guard, 33, 3.7, 0.2, 0.8, 1.1, 2.2, 0.5, 1.3, 1.1
-Bucks, Jorge Gutierrez, 13, Guard, 20, 2.7, 0.3, 1, 1.3, 1.1, 0.3, 0.6, 1.3
-Bucks, John Henson, 31, Center-Forward, 67, 7, 1.9, 2.8, 4.7, 0.9, 0.4, 1.3, 2.3
-Bucks, Ersan Ilyasova, 7, Forward, 58, 11.5, 1.4, 3.4, 4.8, 1, 0.6, 0.8, 2.6
-Bucks, O.J. Mayo, 0, ..Guard, 71, 11.4, 0.4, 2.2, 2.6, 2.8, 0.8, 1.8, 2.3
-Bucks, Khris Middleton, 22, Guard-Forward, 79, 13.4, 0.6, 3.8, 4.4, 2.3, 1.5, 1.4, 2.3
-Bucks, Johnny O'Bryant, 3, Forward, 34, 2.9, 0.8, 1.1, 1.9, 0.5, 0.1, 0.7, 1.3
-Bucks, Zaza Pachulia, 27, Center, 73, 8.3, 2.7, 4.2, 6.8, 2.4, 1.1, 1.8, 2.3
-Bucks, Jabari Parker, 12, Forward, 25, 12.3, 2, 3.5, 5.5, 1.7, 1.2, 1.9, 1.7
-Bucks, Miles Plumlee, 21, Center-Forward, 73, 4, 1.5, 2.8, 4.4, 0.5, 0.6, 0.7, 1.5
-Hawks, Pero Antic, 6, Forward-Center, 63, 5.7, 0.9, 2.1, 3, 0.8, 0.3, 0.8, 2.1
-Hawks, Kent Bazemore, 24, Guard, 75, 5.2, 0.3, 2.7, 3, 1, 0.7, 1, 1.7
-Hawks, Elton Brand, 7, Forward-Center, 36, 2.7, 0.8, 2, 2.8, 0.6, 0.5, 0.5, 1.5
-Hawks, DeMarre Carroll, 5, Forward, 70, 12.6, 1.4, 3.9, 5.3, 1.7, 1.3, 1.1, 2.2
-Hawks, Austin Daye, 3, Forward, 34, 3.8, 0.3, 1.9, 2.2, 0.5, 0.4, 0.7, 1.1
-Hawks, Al Horford, 15, Center-Forward, 76, 15.2, 1.7, 5.4, 7.2, 3.2, 0.9, 1.3, 1.6
-Hawks, John Jenkins, 12, Guard, 24, 5.6, 0.1, 1.5, 1.6, 0.5, 0.4, 0.3, 0.6
-Hawks, Kyle Korver, 26, Guard, 75, 12.1, 0.2, 3.9, 4.1, 2.6, 0.7, 1.4, 1.9
-Hawks, Shelvin Mack, 8, Guard, 55, 5.4, 0.1, 1.3, 1.4, 2.8, 0.5, 0.9, 0.6
-Hawks, Paul Millsap, 4, Forward, 73, 16.7, 1.9, 5.9, 7.8, 3.1, 1.8, 2.3, 2.8
-Hawks, Mike Muscala, 31, Forward-Center, 40, 4.9, 1.3, 1.7, 3, 0.6, 0.4, 0.5, 1.3
-Hawks, Dennis Schroder, 17, Guard, 77, 10, 0.4, 1.8, 2.1, 4.1, 0.6, 1.9, 1.6
-Hawks, Mike Scott, 32, Forward, 68, 7.8, 0.7, 2.3, 2.9, 1.1, 0.4, 0.6, 1.2
-Hawks, Thabo Sefolosha, 25, Forward-Guard, 52, 5.3, 1, 3.3, 4.3, 1.4, 1, 0.7, 1.3
-Hawks, Jeff Teague, , Guard, 73, 15.9, 0.4, 2.1, 2.5, 7, 1.7, 2.8, 1.9
-Hornets, Bismack Biyombo, 8, Center-Forward, 64, 4.8, 2.5, 3.9, 6.4, 0.3, 0.3, 0.8, 2.2
-Hornets, Troy Daniels, 30, Guard, 47, 3.7, 0.2, 0.5, 0.7, 0.5, 0.1, 0.4, 0.9
-Hornets, PJ Hairston, 19, Guard-Forward, 45, 5.6, 0.5, 1.6, 2, 0.5, 0.5, 0.5, 1.4
-Hornets, Gerald Henderson, 9, Guard-Forward, 80, 12.1, 0.5, 3, 3.4, 2.6, 0.6, 1.4, 1.7
-Hornets, Al Jefferson, 25, Center, 65, 16.6, 1.5, 6.9, 8.4, 1.7, 0.7, 1, 2.1
-Hornets, Michael KiddGilchrist, 14, -Forward, 55, 10.9, 2, 5.6, 7.6, 1.4, 0.5, 1.1, 2.1
-Hornets, Jason Maxiell, 54, Forward, 61, 3.3, 1.4, 1.9, 3.3, 0.3, 0.3, 0.5, 1.6
-Hornets, Brian Roberts, 22, Guard, 72, 6.7, 0.2, 1.3, 1.5, 2.3, 0.5, 0.8, 1
-Hornets, Lance Stephenson, 1, Guard, 61, 8.2, 0.6, 3.9, 4.5, 3.9, 0.6, 2.1, 2.2
-Hornets, Jeff Taylor, 44, Forward, 29, 4.4, 0.5, 1.3, 1.8, 0.8, 0.4, 0.7, 1.2
-Hornets, Noah Vonleh, 11, Forward, 25, 3.3, 1.1, 2.3, 3.4, 0.2, 0.2, 0.4, 0.8
-Hornets, Kemba Walker, 15, Guard, 62, 17.3, 0.6, 3, 3.5, 5.1, 1.4, 1.6, 1.5
-Hornets, Mo Williams, 7, Guard, 68, 14.2, 0.3, 2.2, 2.6, 6.2, 0.7, 2.5, 2.4
-Hornets, Marvin Williams, 2, Forward, 78, 7.4, 0.7, 4.2, 4.9, 1.3, 0.9, 0.8, 1.9
-Hornets, Cody Zeller, 40, Forward-Center, 62, 7.6, 1.6, 4.3, 5.8, 1.6, 0.5, 1, 2.5
-Heat, Chris Andersen, 11, Forward-Center, 60, 5.3, 1.3, 3.7, 5, 0.7, 0.4, 0.7, 1.5
-Heat, Michael Beasley, 30, Forward, 24, 8.8, 0.5, 3.2, 3.7, 1.3, 0.6, 1.5, 2.8
-Heat, Chris Bosh, 1, Center, 44, 21.1, 1, 6, 7, 2.2, 0.9, 2.2, 1.6
-Heat, Mario Chalmers, 15, Guard, 80, 10.2, 0.3, 2.3, 2.6, 3.8, 1.5, 2.2, 3.1
-Heat, Luol Deng, 9, Forward, 72, 14, 1.4, 3.8, 5.2, 1.9, 0.9, 1.5, 1.5
-Heat, Goran Dragic, 7, Guard, 78, 16.3, 1, 2.5, 3.5, 4.5, 1, 2.2, 2.5
-Heat, Zoran Dragic, 12, Guard-Forward, 16, 1.8, 0.3, 0.2, 0.5, 0.3, 0.1, 0.3, 0.4
-Heat, James Ennis, 32, Forward, 62, 5, 0.8, 2, 2.8, 0.8, 0.4, 0.6, 1.4
-Heat, Udonis Haslem, 40, Forward, 62, 4.2, 1.1, 3, 4.2, 0.7, 0.3, 0.7, 1.8
-Heat, Tyler Johnson, 8, Guard, 32, 5.9, 0.4, 2.1, 2.5, 1.3, 1, 0.9, 1.3
-Heat, Josh McRoberts, 4, Forward, 17, 4.2, 0.4, 2.2, 2.6, 1.9, 0.7, 1.3, 2.4
-Heat, Shabazz Napier, 13, Guard, 51, 5.1, 0.3, 1.9, 2.2, 2.5, 0.8, 1.6, 1.5
-Heat, Dwyane Wade, 3, Guard, 62, 21.5, 0.9, 2.6, 3.5, 4.8, 1.2, 3.4, 1.7
-Heat, Henry Walker, 5, Forward, 24, 7.3, 0.3, 3.1, 3.4, 1.2, 1, 1, 3.2
-Heat, Hassan Whiteside, 21, Center, 48, 11.8, 3, 7, 10, 0.1, 0.6, 1.2, 2.7
-Magic, Dewayne Dedmon, 3, Center, 59, 3.7, 2, 3, 5, 0.2, 0.3, 0.9, 2.4
-Magic, Evan Fournier, 10, Guard, 58, 12, 0.5, 2.2, 2.6, 2.1, 0.7, 1.4, 2
-Magic, Channing Frye, 8, Forward, 75, 7.3, 0.4, 3.5, 3.9, 1.3, 0.6, 1, 2.5
-Magic, Aaron Gordon, 0, Forward, 47, 5.2, 1, 2.6, 3.6, 0.7, 0.4, 0.8, 1.8
-Magic, Ben Gordon, 7, Guard, 56, 6.2, 0.1, 1, 1.1, 0.9, 0.3, 1, 1.1
-Magic, Willie Green, 34, Guard, 52, 5.9, 0.3, 1.3, 1.5, 1.3, 0.5, 0.9, 1.6
-Magic, Maurice Harkless, 21, Forward, 45, 3.5, 0.8, 1.5, 2.4, 0.6, 0.7, 0.6, 1.5
-Magic, Tobias Harris, 12, Forward, 68, 17.1, 1.1, 5.3, 6.3, 1.8, 1, 1.7, 2
-Magic, Devyn Marble, 11, Forward, 16, 2.3, 0.3, 1.6, 1.9, 1.1, 0.6, 0.6, 0.9
-Magic, Andrew Nicholson, 44, Forward, 40, 4.9, 0.4, 1.6, 2.1, 0.6, 0.2, 0.6, 1.3
-Magic, Kyle O'Quinn, 2, Forward-Center, 51, 5.8, 0.9, 3, 3.9, 1.2, 0.6, 1.1, 2.2
-Magic, Victor Oladipo, 5, Guard, 72, 17.9, 0.7, 3.5, 4.2, 4.1, 1.7, 2.8, 2.6
-Magic, Elfrid Payton, 4, Guard, 82, 8.9, 1.3, 3, 4.3, 6.5, 1.7, 2.5, 2.4
-Magic, Luke Ridnour, 13, Guard, 47, 4, 0.2, 1.3, 1.4, 2, 0.4, 0.8, 1.4
-Magic, Nikola Vucevic, 9, Center, 74, 19.3, 3.2, 7.7, 10.9, 2, 0.7, 2, 3
-Wizards, Bradley Beal, 3, Guard, 63, 15.3, 0.9, 2.9, 3.8, 3.1, 1.2, 2, 2.2
-Wizards, DeJuan Blair, 45, Center-Forward, 29, 1.9, 0.6, 1.4, 1.9, 0.1, 0.2, 0.4, 1.4
-Wizards, Rasual Butler, 8, Forward, 75, 7.7, 0.4, 2.3, 2.6, 0.8, 0.4, 0.6, 1.3
-Wizards, Will Bynum, 1, Guard, 7, 3.1, 0.3, 0.6, 0.9, 2.6, 0.1, 1.1, 1.3
-Wizards, Drew Gooden, 90, Forward, 51, 5.4, 1.4, 3, 4.4, 1, 0.4, 0.5, 1.8
-Wizards, Marcin Gortat, 4, Center, 82, 12.2, 2.2, 6.5, 8.7, 1.2, 0.6, 1.2, 2.3
-Wizards, Kris Humphries, 43, Forward, 64, 8, 1.8, 4.7, 6.5, 0.9, 0.5, 0.7, 2
-Wizards, Nene, 42, Forward-Center, 67, 11, 1.3, 3.9, 5.1, 1.8, 1, 1.9, 2.7
-Wizards, Paul Pierce, 34, Forward, 73, 11.9, 0.6, 3.4, 4, 2, 0.6, 1.3, 2.2
-Wizards, Otto Porter, 22, Forward, 74, 6, 0.9, 2, 3, 0.9, 0.6, 0.7, 1.3
-Wizards, Kevin Seraphin, 13, Center, 79, 6.6, 1.1, 2.5, 3.6, 0.7, 0.1, 1.2, 2.5
-Wizards, Ramon Sessions, 7, Guard, 64, 6.3, 0.4, 1.9, 2.3, 2.8, 0.5, 1.3, 1.1
-Wizards, Garrett Temple, 17, Guard, 52, 3.9, 0.5, 1.3, 1.7, 1.1, 0.8, 0.7, 1.5
-Wizards, John Wall, 2, Guard, 79, 17.6, 0.5, 4.2, 4.6, 10, 1.7, 3.8, 2.3
-Wizards, Martell Webster, 9, Forward-Guard, 32, 3.3, 0.3, 1.1, 1.4, 0.5, 0.2, 0.7, 0.8
-Rockets, Trevor Ariza, 1, Forward, 82, 12.8, 0.9, 4.7, 5.6, 2.5, 1.9, 1.7, 2.3
-Rockets, Patrick Beverley, 2, Guard, 56, 10.1, 1.2, 3, 4.2, 3.4, 1.1, 1.5, 3.3
-Rockets, Corey Brewer, 33, Guard-Forward, 80, 11.5, 1, 2.7, 3.7, 2.2, 1.4, 1.6, 2.2
-Rockets, Clint Capela, 15, Center, 12, 2.7, 0.8, 2.2, 3, 0.2, 0.1, 0.4, 1.2
-Rockets, Joey Dorsey, 8, Center-Forward, 69, 2.7, 1.5, 2.6, 4, 0.4, 0.6, 0.6, 2.3
-Rockets, James Harden, 13, Guard, 81, 27.4, 0.9, 4.7, 5.7, 7, 1.9, 4, 2.6
-Rockets, Dwight Howard, 12, Center, 41, 15.8, 2.7, 7.8, 10.5, 1.2, 0.7, 2.8, 3.3
-Rockets, Nick Johnson, 3, Guard, 28, 2.6, 0.5, 0.9, 1.4, 0.4, 0.3, 0.7, 1.2
-Rockets, Terrence Jones, 6, Forward, 33, 11.7, 2.4, 4.3, 6.7, 1.1, 0.5, 1.1, 2.4
-Rockets, KJ McDaniels, 32, Guard-Forward, 62, 7.9, 1, 2.2, 3.2, 1.2, 0.7, 1.7, 2
-Rockets, Donatas Motiejunas, 20, Forward-Center, 71, 12, 1.9, 4, 5.9, 1.8, 0.8, 1.7, 2.9
-Rockets, Kostas Papanikolaou, 16, Forward, 43, 4.2, 0.9, 1.8, 2.7, 2, 0.7, 1.3, 1.7
-Rockets, Pablo Prigioni, 9, Guard, 67, 4.1, 0.4, 1.3, 1.8, 2.6, 1.2, 0.9, 1.3
-Rockets, Josh Smith, 5, Forward, 83, 12.4, 1.8, 4.6, 6.4, 3.3, 1, 2.5, 2.7
-Rockets, Jason Terry, 31, Guard, 77, 7, 0.2, 1.4, 1.6, 1.9, 0.9, 1, 1.5
-Grizzlies, Jordan Adams, 3, Guard, 30, 3.1, 0.3, 0.6, 0.9, 0.5, 0.5, 0.5, 0.8
-Grizzlies, Tony Allen, 9, Forward-Guard, 63, 8.6, 1.6, 2.8, 4.4, 1.4, 2, 1.4, 2.6
-Grizzlies, Nick Calathes, 12, Guard, 58, 4.2, 0.3, 1.5, 1.8, 2.5, 1.1, 1.1, 1.7
-Grizzlies, Vince Carter, 15, Guard-Forward, 66, 5.8, 0.4, 1.6, 2, 1.2, 0.7, 0.7, 1.5
-Grizzlies, Mike Conley, 11, Guard, 70, 15.8, 0.4, 2.6, 3, 5.4, 1.3, 2.2, 2
-Grizzlies, Marc Gasol, 33, Center, 81, 17.4, 1.4, 6.4, 7.8, 3.8, 0.9, 2.2, 2.6
-Grizzlies, Jeff Green, 32, Forward, 78, 15, 0.8, 3.4, 4.2, 1.7, 0.7, 1.4, 1.9
-Grizzlies, JaMychal Green, -1, Forward, 24, 2.6, 0.8, 1.1, 1.9, 0.2, 0.2, 0.6, 1
-Grizzlies, Kosta Koufos, 41, Center, 81, 5.2, 1.5, 3.8, 5.3, 0.5, 0.4, 0.9, 1.8
-Grizzlies, Courtney Lee, 5, Guard, 77, 10.1, 0.3, 2, 2.3, 2, 1, 1, 1.7
-Grizzlies, Jon Leuer, 30, Forward, 63, 4.5, 0.8, 2.5, 3.3, 0.7, 0.3, 0.6, 1.4
-Grizzlies, Zach Randolph, 50, Forward, 71, 16.1, 3.2, 7.4, 10.5, 2.2, 1, 2.2, 2.5
-Grizzlies, Russ Smith, 2, Guard, 12, 2.5, 0.1, 0.4, 0.5, 0.7, 0.3, 1, 1.1
-Grizzlies, Jarnell Stokes, 1, Forward-Center, 19, 3, 0.8, 0.9, 1.8, 0.2, 0.3, 0.4, 1.3
-Grizzlies, Beno Udrih, 19, Guard, 79, 7.7, 0.3, 1.6, 1.8, 2.8, 0.6, 1.1, 1.1
-Pelicans, Alexis Ajinca, 42, Center, 68, 6.5, 1.5, 3.1, 4.6, 0.7, 0.3, 1, 2.2
-Pelicans, Ryan Anderson, 33, Forward, 61, 13.7, 1.8, 3.1, 4.8, 0.9, 0.5, 1, 1.9
-Pelicans, Omer Asik, 3, Center, 76, 7.3, 3.2, 6.6, 9.8, 0.9, 0.4, 1.3, 1.9
-Pelicans, Luke Babbitt, 8, Forward, 63, 4.1, 0.2, 1.6, 1.8, 0.4, 0.3, 0.4, 1
-Pelicans, Norris Cole, 30, Guard, 75, 7.6, 0.2, 1.9, 2.1, 3.4, 0.8, 1.3, 1.7
-Pelicans, Dante Cunningham, 44, Forward, 66, 5.2, 1.1, 2.8, 3.9, 0.8, 0.7, 0.5, 1.5
-Pelicans, Anthony Davis, 23, Forward-Center, 68, 24.4, 2.5, 7.7, 10.2, 2.2, 1.5, 1.4, 2.1
-Pelicans, Toney Douglas, 16, Guard, 12, 4.3, 0.2, 1.7, 1.8, 2, 0.9, 0.8, 1.7
-Pelicans, Tyreke Evans, 1, Guard-Forward, 79, 16.6, 1, 4.2, 5.3, 6.6, 1.3, 3.1, 2.5
-Pelicans, Jimmer Fredette, 32, Guard, 50, 3.6, 0.2, 0.6, 0.8, 1.2, 0.3, 0.7, 0.9
-Pelicans, Eric Gordon, 10, Guard, 61, 13.4, 0.5, 2.1, 2.6, 3.8, 0.8, 2, 2.4
-Pelicans, Jrue Holiday, 11, Guard, 40, 14.8, 0.8, 2.6, 3.4, 6.9, 1.6, 2.3, 2.8
-Pelicans, Quincy Pondexter, 20, Forward-Guard, 75, 7.2, 0.7, 1.9, 2.6, 1.3, 0.3, 0.7, 2
-Pelicans, Jeff Withey, 5, Center, 37, 2.6, 0.6, 1.1, 1.7, 0.3, 0.1, 0.3, 0.7
-Spurs, Kyle Anderson, 1, Forward, 33, 2.2, 0.2, 2, 2.2, 0.8, 0.5, 0.3, 0.8
-Spurs, Jeff Ayres, 11, Forward-Center, 51, 2.7, 0.7, 1.6, 2.3, 0.3, 0.2, 0.5, 1.2
-Spurs, Aron Baynes, 16, Center-Forward, 70, 6.6, 1.6, 3, 4.5, 0.5, 0.2, 0.9, 2.3
-Spurs, Marco Belinelli, 3, Forward-Guard, 62, 9.2, 0.4, 2.1, 2.5, 1.5, 0.5, 1, 1.4
-Spurs, Matt Bonner, 15, Center-Forward, 72, 3.7, 0.4, 1.2, 1.6, 0.7, 0.1, 0.2, 0.9
-Spurs, Boris Diaw, 33, Center-Forward, 81, 8.7, 1, 3.3, 4.3, 2.9, 0.4, 1.6, 1.8
-Spurs, Tim Duncan, 21, Forward, 77, 13.9, 2.2, 6.9, 9.1, 3, 0.8, 1.7, 2.1
-Spurs, Manu Ginobili, 20, Guard, 70, 10.5, 0.4, 2.6, 3, 4.2, 1, 2.2, 2
-Spurs, Danny Green, 14, Guard-Forward, 81, 11.7, 0.7, 3.6, 4.2, 2, 1.2, 1.1, 2
-Spurs, Cory Joseph, 5, Guard, 79, 6.8, 0.6, 1.9, 2.4, 2.4, 0.6, 0.8, 1.3
-Spurs, Kawhi Leonard, 2, Forward, 64, 16.5, 1.3, 5.9, 7.2, 2.5, 2.3, 1.5, 2
-Spurs, Patty Mills, 8, Guard, 51, 6.9, 0.4, 1.1, 1.5, 1.7, 0.5, 0.7, 1.1
-Spurs, Tony Parker, 9, Guard, 68, 14.4, 0.2, 1.7, 1.9, 4.9, 0.6, 2.1, 1.6
-Spurs, Tiago Splitter, 22, Center, 52, 8.2, 1.8, 3.1, 4.8, 1.5, 0.7, 1.2, 2
-Spurs, Reggie Williams, 55, Forward, 20, 1.9, 0.3, 0.6, 0.9, 0.5, 0.1, 0.1, 0.6
-Nuggets, Darrell Arthur, 0, Forward, 58, 6.6, 0.9, 2, 2.9, 1, 0.8, 0.8, 2.5
-Nuggets, Will Barton, 5, Guard, 58, 6.8, 0.4, 2.3, 2.8, 1.4, 0.8, 1.1, 1.2
-Nuggets, Wilson Chandler, 21, Forward, 78, 13.9, 1.2, 4.9, 6.1, 1.7, 0.7, 1.4, 3
-Nuggets, Ian Clark, 20, Guard, 30, 1.9, 0.1, 0.4, 0.5, 0.4, 0.3, 0.3, 0.7
-Nuggets, Kenneth Faried, 35, Forward, 75, 12.6, 3.2, 5.7, 8.9, 1.2, 0.8, 1.6, 2.8
-Nuggets, Randy Foye, 4, Guard, 50, 8.7, 0.2, 1.5, 1.7, 2.4, 0.7, 1.2, 1.9
-Nuggets, Jamaal Franklin, 22, Guard, 3, 1, 0.3, 0.3, 0.7, 1, -1, 1, 1.3
-Nuggets, Danilo Gallinari, 8, Forward, 59, 12.4, 0.5, 3.2, 3.7, 1.4, 0.8, 1, 1.6
-Nuggets, Erick Green, 11, Guard, 43, 3.4, 0.2, 0.6, 0.7, 0.9, 0.3, 0.3, 0.6
-Nuggets, Gary Harris, 14, Guard, 55, 3.4, 0.4, 0.8, 1.2, 0.5, 0.7, 0.7, 1.3
-Nuggets, JJ Hickson, 7, Forward-Center, 73, 7.6, 2.1, 4.1, 6.2, 0.8, 0.5, 1.3, 1.9
-Nuggets, Joffrey Lauvergne, 77, Forward-Center, 24, 3.9, 1.1, 2.1, 3.2, 0.5, 0.3, 0.9, 1.8
-Nuggets, Ty Lawson, 3, Guard, 75, 15.2, 0.6, 2.6, 3.1, 9.6, 1.2, 2.5, 1.7
-Nuggets, Jameer Nelson, 28, Guard, 63, 8.3, 0.5, 1.8, 2.3, 4, 0.7, 1.7, 2.2
-Nuggets, Jusuf Nurkic, 23, Center, 62, 6.9, 2, 4.1, 6.2, 0.8, 0.8, 1.4, 3.3
-Timberwolves, Anthony Bennett, 24, Forward, 57, 5.2, 0.9, 2.9, 3.8, 0.8, 0.5, 0.6, 1.5
-Timberwolves, Lorenzo Brown, 7, Guard, 29, 4.2, 0.5, 1.9, 2.4, 3.1, 1, 1, 1.7
-Timberwolves, Chase Budinger, 10, Forward, 67, 6.8, 0.5, 2.5, 3, 1, 0.7, 0.7, 1.1
-Timberwolves, Gorgui Dieng, 5, Center, 73, 9.7, 3.1, 5.3, 8.3, 2, 1, 1.7, 2.6
-Timberwolves, Kevin Garnett, 21, Forward-Center, 47, 6.9, 1, 5.6, 6.6, 1.6, 1, 1, 2.3
-Timberwolves, Justin Hamilton, 41, Center, 41, 5.3, 1.4, 1.9, 3.3, 0.9, 0.7, 0.6, 1.7
-Timberwolves, Robbie Hummel, 4, Forward, 45, 4.4, 0.7, 2.3, 3, 0.6, 0.4, 0.4, 1.9
-Timberwolves, Zach LaVine, 8, Guard, 77, 10.1, 0.4, 2.4, 2.8, 3.6, 0.7, 2.5, 2.1
-Timberwolves, Kevin Martin, 23, Guard, 39, 20, 0.5, 3.2, 3.6, 2.3, 0.8, 1.9, 1.9
-Timberwolves, Shabazz Muhammad, 15, Forward, 38, 13.5, 1.7, 2.4, 4.1, 1.2, 0.5, 0.9, 1.3
-Timberwolves, Gary Neal, 12, Guard, 54, 10.1, 0.3, 2.1, 2.4, 1.9, 0.4, 1.2, 1.6
-Timberwolves, Arinze Onuaku, 50, Forward-Center, 6, 4.5, 1.2, 2.3, 3.5, 0.7, 0.2, 0.3, 1
-Timberwolves, Adreian Payne, 3, Forward-Center, 32, 6.7, 1.5, 3.6, 5.1, 0.9, 0.6, 1.4, 2.8
-Timberwolves, Nikola Pekovic, 14, Center, 31, 12.5, 2.9, 4.7, 7.5, 0.9, 0.6, 1.4, 1.9
-Timberwolves, Ricky Rubio, 9, Guard, 22, 10.3, 0.9, 4.8, 5.7, 8.8, 1.7, 2.9, 2.7
-Timberwolves, Andrew Wiggins, 22, Forward-Guard, 82, 16.9, 1.6, 2.9, 4.6, 2.1, 1, 2.2, 2.3
-Thunder, Steven Adams, 12, Center, 70, 7.7, 2.8, 4.6, 7.5, 0.9, 0.5, 1.4, 3.2
-Thunder, D.J. Augustin, 14, ..Guard, 82, 9.5, 0.2, 1.7, 2, 4.3, 0.6, 1.8, 1.1
-Thunder, Nick Collison, 4, Forward, 66, 4.1, 1.4, 2.4, 3.8, 1.4, 0.5, 0.7, 2.4
-Thunder, Kevin Durant, 35, Forward, 27, 25.4, 0.6, 6, 6.6, 4.1, 0.9, 2.7, 1.5
-Thunder, Serge Ibaka, 9, Forward, 64, 14.3, 2.1, 5.7, 7.8, 0.9, 0.5, 1.5, 3
-Thunder, Perry Jones, 3, Forward, 43, 4.3, 0.1, 1.6, 1.8, 0.4, 0.4, 0.6, 1.2
-Thunder, Enes Kanter, 34, Center, 75, 15.5, 3.7, 5.3, 8.9, 0.7, 0.5, 1.9, 2.5
-Thunder, Jeremy Lamb, 11, Guard, 47, 6.3, 0.2, 2.1, 2.3, 0.9, 0.4, 0.6, 1.1
-Thunder, Mitch McGary, 33, Forward, 32, 6.3, 1.7, 3.5, 5.2, 0.4, 0.5, 1, 2.3
-Thunder, Anthony Morrow, 2, Guard, 74, 10.7, 0.5, 2.1, 2.6, 0.8, 0.7, 0.5, 1.8
-Thunder, Steve Novak, 6, Forward, 35, 1.8, 0.1, 0.6, 0.6, 0.3, -1, 0.1, 0.7
-Thunder, Andre Roberson, 21, Guard, 67, 3.4, 0.9, 2.9, 3.8, 1, 0.8, 0.7, 2.1
-Thunder, Kyle Singler, 5, Forward, 80, 6, 0.4, 2, 2.4, 1.1, 0.6, 0.7, 1.9
-Thunder, Dion Waiters, 23, Guard, 80, 11.8, 0.5, 1.9, 2.4, 2, 1.1, 1.4, 1.9
-Thunder, Russell Westbrook, -1, Guard, 67, 28.1, 1.9, 5.4, 7.3, 8.6, 2.1, 4.4, 2.7
-Trail Blazers, Arron Afflalo, 4, Guard, 78, 13.3, 0.3, 2.8, 3.2, 1.7, 0.5, 1.5, 2.1
-Trail Blazers, LaMarcus Aldridge, 12, Forward, 71, 23.4, 2.5, 7.7, 10.2, 1.7, 0.7, 1.7, 1.8
-Trail Blazers, Nicolas Batum, 88, Forward, 71, 9.4, 0.9, 5, 5.9, 4.8, 1.1, 1.9, 1.5
-Trail Blazers, Steve Blake, 5, Guard, 81, 4.3, 0.2, 1.5, 1.7, 3.6, 0.5, 1.3, 1.5
-Trail Blazers, Allen Crabbe, 23, Forward, 51, 3.3, 0.1, 1.3, 1.4, 0.8, 0.4, 0.3, 1.5
-Trail Blazers, Tim Frazier, 10, Guard, 11, 5.2, 0.5, 2, 2.5, 5.5, 0.7, 2.3, 2.4
-Trail Blazers, Joel Freeland, 19, Center-Forward, 48, 3.5, 1.3, 2.7, 4, 0.3, 0.2, 0.5, 1.9
-Trail Blazers, Alonzo Gee, 33, Forward, 54, 4.5, 0.7, 1.1, 1.7, 0.5, 0.6, 0.6, 1.1
-Trail Blazers, Chris Kaman, 35, Center, 74, 8.6, 2, 4.5, 6.5, 0.9, 0.2, 1.5, 1.9
-Trail Blazers, Meyers Leonard, 11, Center, 55, 5.9, 0.8, 3.7, 4.5, 0.6, 0.2, 0.7, 2.1
-Trail Blazers, Damian Lillard, -1, Guard, 82, 21, 0.6, 4, 4.6, 6.2, 1.2, 2.7, 2
-Trail Blazers, Robin Lopez, 42, Center, 59, 9.6, 3.2, 3.5, 6.7, 0.9, 0.3, 1.2, 2.1
-Trail Blazers, Wesley Matthews, 2, Guard, 60, 15.9, 0.6, 3.1, 3.7, 2.3, 1.3, 1.4, 2.2
-Trail Blazers, CJ McCollum, 3, Guard, 62, 6.8, 0.2, 1.2, 1.5, 1, 0.7, 0.8, 1.3
-Trail Blazers, Dorell Wright, 1, Forward, 48, 4.6, 0.3, 2, 2.3, 0.9, 0.4, 0.4, 1.1
-Jazz, Trevor Booker, 33, Forward, 79, 7.2, 1.8, 3.3, 5, 1.1, 0.5, 1.1, 1.8
-Jazz, Trey Burke, 3, Guard, 76, 12.8, 0.4, 2.3, 2.7, 4.3, 0.9, 1.6, 1.6
-Jazz, Alec Burks, 10, Guard, 27, 13.9, 0.7, 3.5, 4.2, 3, 0.6, 1.9, 2.4
-Jazz, Jack Cooley, 45, Forward, 16, 1.7, 0.6, 0.9, 1.6, 0.1, 0.4, 0.2, 1.4
-Jazz, Bryce Cotton, 8, Guard, 15, 5.3, 0.2, 1, 1.2, 1, 0.3, 0.8, 0.4
-Jazz, Jeremy Evans, 40, Forward, 38, 2.4, 0.7, 1.2, 1.9, 0.3, 0.3, 0.1, 0.8
-Jazz, Dante Exum, 11, Guard, 82, 4.8, 0.3, 1.3, 1.6, 2.4, 0.5, 1.4, 1.8
-Jazz, Derrick Favors, 15, Forward, 74, 16, 2.6, 5.6, 8.2, 1.5, 0.8, 1.6, 2.8
-Jazz, Rudy Gobert, 27, Center, 82, 8.4, 3.2, 6.2, 9.5, 1.3, 0.8, 1.4, 2.1
-Jazz, Gordon Hayward, 20, Forward, 76, 19.3, 0.7, 4.2, 4.9, 4.1, 1.4, 2.7, 1.7
-Jazz, Rodney Hood, 5, Guard-Forward, 50, 8.7, 0.2, 2.2, 2.3, 1.7, 0.6, 0.9, 2.4
-Jazz, Joe Ingles, 2, Guard-Forward, 79, 5, 0.3, 1.9, 2.2, 2.3, 0.9, 1.2, 1.6
-Jazz, Grant Jerrett, 17, Forward, 8, 2, 0.3, 0.9, 1.1, 0.4, 0.3, 0.4, 1.4
-Jazz, Chris Johnson, 23, Forward, 29, 5.7, 0.3, 1.6, 1.9, 0.5, 0.9, 0.5, 1.5
-Jazz, Elijah Millsap, 13, Guard, 47, 5.3, 0.6, 2.6, 3.2, 1.2, 1.2, 1.4, 2.6
-Warriors, Leandro Barbosa, 19, Guard, 66, 7.1, 0.3, 1, 1.4, 1.5, 0.6, 0.7, 1.3
-Warriors, Harrison Barnes, 40, Forward, 82, 10.1, 1.4, 4.1, 5.5, 1.4, 0.7, 0.9, 1.8
-Warriors, Andrew Bogut, 12, Center, 67, 6.3, 2.1, 6, 8.1, 2.7, 0.6, 1.6, 2.8
-Warriors, Stephen Curry, 30, Guard, 80, 23.8, 0.7, 3.6, 4.3, 7.7, 2, 3.1, 2
-Warriors, Festus Ezeli, 31, Center, 46, 4.4, 1.3, 2.1, 3.4, 0.2, 0.2, 0.7, 1.7
-Warriors, Draymond Green, 23, Forward, 79, 11.7, 1.4, 6.7, 8.2, 3.7, 1.6, 1.7, 3.2
-Warriors, Justin Holiday, 7, Guard, 59, 4.3, 0.2, 1, 1.2, 0.8, 0.7, 0.5, 0.9
-Warriors, Andre Iguodala, 9, Guard-Forward, 77, 7.8, 0.6, 2.8, 3.3, 3, 1.2, 1.1, 1.3
-Warriors, Ognjen Kuzmic, 1, Center, 16, 1.3, 0.4, 0.6, 1.1, 0.4, 0.1, 0.3, 0.8
-Warriors, David Lee, 10, Forward-Center, 49, 7.9, 1.7, 3.6, 5.2, 1.7, 0.6, 1, 1.7
-Warriors, Shaun Livingston, 34, Guard, 78, 5.9, 0.6, 1.8, 2.3, 3.3, 0.6, 1.3, 1.4
-Warriors, James Michael McAdoo, 20, Forward, 15, 4.1, 1, 1.5, 2.5, 0.1, 0.3, 0.4, 1.4
-Warriors, Brandon Rush, 4, Guard-Forward, 33, 0.9, 0.1, 1.1, 1.2, 0.4, 0.2, 0.3, 0.8
-Warriors, Marreese Speights, 5, Center-Forward, 76, 10.4, 1.4, 2.8, 4.3, 0.9, 0.3, 1.1, 2.5
-Warriors, Klay Thompson, 11, Guard, 77, 21.7, 0.4, 2.9, 3.2, 2.9, 1.1, 1.9, 1.6
-Clippers, Matt Barnes, 22, Forward, 76, 10.1, 0.7, 3.3, 4, 1.5, 0.9, 1.1, 3.2
-Clippers, Jamal Crawford, 11, Guard, 64, 15.8, 0.3, 1.7, 1.9, 2.5, 0.9, 1.4, 1.7
-Clippers, Glen Davis, -1, Forward-Center, 74, 4, 0.6, 1.7, 2.3, 0.5, 0.6, 0.5, 1.8
-Clippers, Blake Griffin, 32, Forward, 67, 21.9, 1.9, 5.7, 7.6, 5.3, 0.9, 2.3, 2.9
-Clippers, Jordan Hamilton, 1, Guard-Forward, 14, 2.7, 0.1, 1, 1.1, 0.5, 0.1, 0.3, 1
-Clippers, Spencer Hawes, 10, Forward-Center, 73, 5.8, 0.4, 3.1, 3.5, 1.2, 0.3, 0.8, 2.4
-Clippers, Lester Hudson, 14, Guard, 5, 3.6, 0.2, 1.4, 1.6, 1, 1.2, 0.6, 0.8
-Clippers, Dahntay Jones, 31, Guard-Forward, 33, 0.6, -1, 0.3, 0.3, 0.1, 0.1, -1, 0.7
-Clippers, DeAndre Jordan, 6, Center, 82, 11.5, 4.8, 10.1, 15, 0.7, 1, 1.3, 3
-Clippers, Chris Paul, 3, Guard, 82, 19.1, 0.6, 4, 4.6, 10.2, 1.9, 2.3, 2.5
-Clippers, JJ Redick, 4, Guard, 78, 16.4, 0.3, 1.9, 2.1, 1.8, 0.5, 1.2, 1.7
-Clippers, Austin Rivers, 25, Guard, 76, 7, 0.4, 1.6, 2, 2, 0.6, 0.9, 1.9
-Clippers, Hedo Turkoglu, 15, Forward, 62, 3.7, 0.1, 1.5, 1.6, 0.6, 0.3, 0.5, 1.1
-Clippers, Ekpe Udoh, 13, Forward, 33, 0.9, 0.2, 0.6, 0.8, 0.2, 0.2, 0.2, 0.6
-Clippers, CJ Wilcox, 30, Guard, 21, 2, -1, 0.3, 0.3, 0.4, 0.1, 0.5, 0.3
-Lakers, Tarik Black, 28, Center-Forward, 63, 6, 2.3, 3.6, 5.8, 0.7, 0.3, 0.8, 2.5
-Lakers, Vander Blue, 12, Guard, 2, 11, 1, 3.5, 4.5, 4, 1.5, 3, 2
-Lakers, Carlos Boozer, 5, Forward, 71, 11.8, 1.6, 5.2, 6.8, 1.3, 0.6, 1.3, 2.6
-Lakers, Jabari Brown, 15, Guard, 19, 11.9, 0.2, 1.7, 1.9, 2.1, 0.6, 1.7, 1.7
-Lakers, Kobe Bryant, 24, Guard, 35, 22.3, 0.7, 4.9, 5.7, 5.6, 1.3, 3.7, 1.9
-Lakers, Jordan Clarkson, 6, Guard, 59, 11.9, 0.9, 2.3, 3.2, 3.5, 0.9, 1.6, 1.8
-Lakers, Ed Davis, 21, Forward, 79, 8.3, 2.9, 4.7, 7.6, 1.2, 0.6, 0.7, 2.6
-Lakers, Wayne Ellington, 2, Guard, 65, 10, 0.5, 2.8, 3.2, 1.6, 0.5, 0.8, 1.2
-Lakers, Jordan Hill, 27, Center, 70, 12, 2.5, 5.5, 7.9, 1.5, 0.5, 1.5, 2.3
-Lakers, Wesley Johnson, 11, Forward, 76, 9.9, 0.9, 3.3, 4.2, 1.6, 0.8, 1.1, 2.1
-Lakers, Ryan Kelly, 4, Forward, 52, 6.4, 0.3, 2.6, 2.8, 1.8, 0.6, 0.7, 2.3
-Lakers, Jeremy Lin, 17, Guard, 74, 11.2, 0.4, 2.3, 2.6, 4.6, 1.1, 2.2, 2.6
-Lakers, Ronnie Price, 9, Guard, 43, 5.1, 0.4, 1.2, 1.6, 3.8, 1.6, 1.2, 2.7
-Lakers, Julius Randle, 30, Forward, 1, 2, -1, -1, -1, -1, -1, 1, 1
-Lakers, Robert Sacre, 50, Center, 67, 4.6, 1.3, 2.1, 3.5, 0.8, 0.4, 0.5, 1.8
-Lakers, Nick Young, , Forward-Guard, 42, 13.4, 0.4, 1.9, 2.3, 1, 0.5, 1, 2
-Suns, Earl Barron, 30, Forward-Center, 16, 2, 0.9, 0.9, 1.8, 0.3, 0.3, 0.3, 1.6
-Suns, Eric Bledsoe, 2, Guard, 81, 17, 0.9, 4.3, 5.2, 6.1, 1.6, 3.4, 2.3
-Suns, Reggie Bullock, 25, Guard, 36, 1.9, -1, 1.4, 1.4, 0.2, 0.3, 0.2, 0.5
-Suns, Archie Goodwin, 20, Guard, 41, 5.6, 0.7, 1.1, 1.8, 1.1, 0.4, 1.2, 1.3
-Suns, Gerald Green, 14, Guard-Forward, 74, 11.9, 0.4, 2.1, 2.5, 1.2, 0.6, 1.4, 2
-Suns, Brandon Knight, 3, Guard, 63, 17, 0.4, 3.4, 3.9, 5.2, 1.4, 3, 1.8
-Suns, Alex Len, 21, Center, 69, 6.3, 2.1, 4.5, 6.6, 0.5, 0.5, 1.1, 3.1
-Suns, Jerel McNeal, 8, Guard, 6, 1.5, -1, 0.5, 0.5, 0.3, 0.5, 0.8, 0.8
-Suns, Markieff Morris, 11, Forward, 82, 15.3, 1.3, 4.8, 6.2, 2.3, 1.2, 2.1, 3
-Suns, Marcus Morris, 15, Forward, 81, 10.4, 0.9, 3.9, 4.8, 1.6, 0.8, 0.9, 2.3
-Suns, Marcus Thornton, 23, Guard, 48, 7.9, 0.5, 1.3, 1.8, 0.8, 0.6, 0.6, 0.8
-Suns, PJ Tucker, 17, Forward-Guard, 78, 9.1, 1.5, 5, 6.4, 1.6, 1.4, 1.2, 2.3
-Suns, TJ Warren, 12, Forward, 40, 6.1, 1, 1.1, 2.1, 0.6, 0.5, 0.7, 1.3
-Suns, Brandan Wright, 32, Forward, 75, 7.3, 1.7, 2.6, 4.3, 0.5, 0.7, 0.5, 1.4
-Kings, Omri Casspi, 18, Forward, 67, 8.9, 0.8, 3.1, 3.9, 1.5, 0.5, 1.3, 1.6
-Kings, Darren Collison, 7, Guard, 45, 16.1, 0.4, 2.8, 3.2, 5.6, 1.5, 2.5, 2.1
-Kings, DeMarcus Cousins, 15, Center, 59, 24.1, 3.1, 9.5, 12.7, 3.6, 1.5, 4.3, 4.1
-Kings, Reggie Evans, 30, Center-Forward, 47, 3.7, 2.1, 4.3, 6.4, 0.7, 0.5, 1, 1.9
-Kings, Rudy Gay, 8, Forward, 68, 21.1, 1.4, 4.4, 5.9, 3.7, 1, 2.7, 2.3
-Kings, Ryan Hollins, 5, Center, 46, 3, 0.8, 1.5, 2.2, 0.3, 0.1, 0.5, 1.4
-Kings, Carl Landry, 24, Forward, 70, 7.2, 1.4, 2.4, 3.8, 0.4, 0.2, 0.8, 1.9
-Kings, Ray McCallum, 3, Guard, 68, 7.4, 0.8, 1.9, 2.6, 2.8, 0.7, 1.3, 1.4
-Kings, Ben McLemore, 23, Guard, 82, 12.1, 0.4, 2.6, 2.9, 1.7, 0.9, 1.7, 2.7
-Kings, Andre Miller, 22, Guard, 81, 4.4, 0.5, 1.4, 1.9, 3.5, 0.4, 1.3, 1.3
-Kings, Eric Moreland, 25, Forward, 3, 0.7, -1, 0.3, 0.3, -1, -1, -1, 0.3
-Kings, Nik Stauskas, 10, Guard, 73, 4.4, 0.2, 1.1, 1.2, 0.9, 0.3, 0.5, 1.3
-Kings, David Stockton, 9, Guard, 3, 2.7, -1, 0.7, 0.7, 3, 0.7, 1.3, 0.3
-Kings, Jason Thompson, 34, Forward, 81, 6.1, 1.7, 4.8, 6.5, 1, 0.4, 1, 3
-Kings, Derrick Williams, 13, Forward, 74, 8.3, 0.6, 2.2, 2.7, 0.7, 0.5, 0.8, 0.9
-Mavericks, Monta Ellis, 11, Guard, 80, 18.9, 0.4, 2, 2.4, 4.1, 1.85, 2.5, 2.5
-Mavericks, Dirk Nowitzki, 41, Forward, 77, 17.3, 0.6, 5.4, 5.9, 1.9, 0.51, 1.1, 2.1
-Mavericks, Chandler Parsons, 25, Forward-Guard, 66, 15.7, 1, 3.9, 4.9, 2.4, 1.05, 1.5, 2.1
-Mavericks, Amar'e Stoudemire, 1, Center, 23, 10.8, 1.2, 2.5, 3.7, 0.3, 0.39, 0.7, 2.2
-Mavericks, Tyson Chandler, 6, Center, 75, 10.3, 3.9, 7.6, 11.5, 1.1, 0.56, 1.4, 2.3
-Mavericks, Rajon Rondo, 9, Guard, 46, 9.3, 1, 3.5, 4.5, 6.5, 1.17, 2.9, 2.4
-Mavericks, Brandan Wright, -1, Forward, 27, 8.8, 1.9, 2.2, 4.1, 0.4, 0.63, 0.5, 1.6
-Mavericks, Devin Harris, 20, Guard, 76, 8.8, 0.2, 1.6, 1.8, 3.1, 1.03, 1.1, 1.9
-Mavericks, J.J. Barea, 5, Guard, 77, 7.5, 0.3, 1.4, 1.7, 3.4, 0.43, 0.9, 1.4
-Mavericks, Jameer Nelson, -1, Guard, 23, 7.3, 0.6, 2.1, 2.7, 4.1, 0.65, 1.7, 2.3
-Mavericks, Charlie Villanueva, 3, Forward, 64, 6.3, 0.5, 1.9, 2.3, 0.3, 0.23, 0.4, 1
-Mavericks, Richard Jefferson, 24, Forward-Guard, 74, 5.8, 0.3, 2.1, 2.5, 0.8, 0.43, 0.7, 1.6
-Mavericks, Al-Farouq Aminu, 7, Forward-Guard, 74, 5.6, 1.5, 3.1, 4.6, 0.8, 0.95, 0.7, 1.9
-Mavericks, Raymond Felton, 2, Guard, 29, 3.7, 0.1, 0.8, 0.9, 1.4, 0.38, 0.6, 0.6
-Mavericks, Jae Crowder, -1, Forward-Guard, 25, 3.6, 0.5, 0.7, 1.2, 0.5, 0.6, 0.4, 1
-Mavericks, Dwight Powell, 8, Forward, 24, 3.4, 0.8, 1.3, 2, 0.4, 0.29, 0.4, 1.6
-Mavericks, Bernard James, 55, Center, 16, 2.8, 1.1, 1.3, 2.4, 0.3, 0.13, 0.4, 1.1
-Mavericks, Greg Smith, 4, Forward, 42, 1.9, 0.6, 1.3, 1.9, 0.2, 0.17, 0.3, 1.3
-Mavericks, Ricky Ledo, -1, Guard-Forward, 5, 0.2, 0.2, 0.2, 0.4, 0.2, 0, 0.4, 0.2
+Team, Player, Number, Positon, G, PTS, REB, AST, STL, TO, PF
+Celtics, Brandon Bass, 30, Forward-Center, 82, 10.6, 4.9, 1.3, 0.5, 1, 1.7
+Celtics, Avery Bradley, -1, Guard, 77, 13.9, 3.1, 1.8, 1.1, 1.4, 2.3
+Celtics, Jae Crowder, 99, Forward, 82, 7.7, 3.6, 1.1, 0.9, 0.6, 1.7
+Celtics, Gigi Datome, 70, Forward, 21, 5, 1.4, 0.4, 0.1, 0.4, 0.7
+Celtics, Jonas Jerebko, 8, Forward, 75, 6, 3.8, 0.9, 0.6, 0.6, 1.8
+Celtics, Kelly Olynyk, 41, Center-Forward, 64, 10.3, 4.7, 1.7, 1, 1.5, 3.3
+Celtics, Phil Pressey, 26, Guard, 50, 3.5, 1.6, 2.3, 0.6, 0.8, 1.1
+Celtics, Marcus Smart, 36, Guard, 67, 7.8, 3.3, 3.1, 1.5, 1.3, 2.6
+Celtics, Jared Sullinger, 7, Forward, 58, 13.3, 7.6, 2.3, 0.8, 1.3, 2.6
+Celtics, Isaiah Thomas, 4, Guard, 67, 16.4, 2.3, 4.2, 0.9, 2.1, 2.2
+Celtics, Evan Turner, 11, Guard-Forward, 82, 9.5, 5.1, 5.5, 1, 2.4, 2.2
+Celtics, Gerald Wallace, 45, Forward, 32, 1.1, 1.8, 0.3, 0.5, 0.6, 0.6
+Celtics, James Young, 13, Guard-Forward, 31, 3.4, 1.4, 0.4, 0.3, 0.2, 0.7
+Celtics, Tyler Zeller, 44, Center-Forward, 82, 10.2, 5.7, 1.4, 0.2, 0.9, 2.5
+Nets, Alan Anderson, 6, Guard-Forward, 74, 7.4, 2.8, 1.1, 0.8, 0.8, 2
+Nets, Bojan Bogdanovic, 44, Guard-Forward, 78, 9, 2.7, 0.9, 0.4, 1, 1.3
+Nets, Markel Brown, 22, Guard, 47, 4.6, 2.3, 0.8, 0.7, 0.6, 1.2
+Nets, Earl Clark, 55, Forward, 10, 2.7, 2.3, 0.3, 0.3, 0.6, 1.2
+Nets, Jarrett Jack, -1, Guard, 80, 12, 3.1, 4.7, 0.9, 2.4, 1.8
+Nets, Cory Jefferson, 21, Forward, 50, 3.7, 2.9, 0.3, 0.2, 0.4, 1.2
+Nets, Joe Johnson, 7, Forward-Guard, 80, 14.4, 4.8, 3.7, 0.7, 1.7, 1.5
+Nets, Jerome Jordan, 9, Center, 44, 3.1, 2.4, 0.3, 0.2, 0.5, 1.3
+Nets, Sergey Karasev, 10, Guard-Forward, 33, 4.6, 2, 1.4, 0.7, 0.7, 1.4
+Nets, Brook Lopez, 11, Center, 72, 17.2, 7.4, 0.7, 0.6, 1.4, 2.9
+Nets, Darius Morris, 14, Guard, 38, 2.2, 0.7, 1.3, 0.2, 0.6, 0.5
+Nets, Mason Plumlee, 1, Center-Forward, 82, 8.7, 6.2, 0.9, 0.8, 1.3, 2.5
+Nets, Mirza Teletovic, 33, Forward, 40, 8.5, 4.9, 1.2, 0.4, 1.3, 1.9
+Nets, Deron Williams, 8, Guard, 68, 13, 3.5, 6.6, 0.9, 2.3, 2.3
+Nets, Thaddeus Young, 30, Forward, 76, 14.1, 5.4, 2.3, -1, -1, -1
+Knicks, Quincy Acy, 4, Forward, 68, 5.9, 4.4, 1, 0.4, 0.9, 2.2
+Knicks, Cole Aldrich, 45, Center, 61, 5.5, 5.5, 1.2, 0.6, 1, 2
+Knicks, Lou Amundson, 21, Forward, 53, 4.9, 5.1, 1.3, 0.4, 1.2, 2.4
+Knicks, Carmelo Anthony, 7, Forward, 40, 24.2, 6.6, 3.1, 1, 2.2, 2.2
+Knicks, Andrea Bargnani, 77, Center-Forward, 29, 14.8, 4.4, 1.6, 0.1, 1.4, 1.8
+Knicks, Jose Calderon, 3, Guard, 42, 9.1, 3, 4.7, 0.7, 1.8, 1.8
+Knicks, Cleanthony Early, 17, Forward, 39, 5.4, 2.5, 0.9, 0.6, 1, 1.5
+Knicks, Langston Galloway, 2, Guard, 45, 11.8, 4.2, 3.3, 1.2, 1.4, 2.9
+Knicks, Tim Hardaway Jr., 5, Forward-Center.Guard, 70, 11.5, 2.2, 1.8, 0.3, 1.2, 1.7
+Knicks, Shane Larkin, -1, Guard, 76, 6.2, 2.3, 3, 1.2, 1.1, 2
+Knicks, Ricky Ledo, 11, Guard, 17, 5.3, 2.1, 1.1, 0.4, 1.5, 1.2
+Knicks, Alexey Shved, 1, Guard, 42, 10.3, 2.4, 2.5, 0.7, 1.1, 1.1
+Knicks, Jason Smith, 14, Forward-Center, 82, 8, 4, 1.7, 0.4, 1.3, 2.5
+Knicks, Lance Thomas, 42, Forward, 62, 7.1, 3.1, 1.1, 0.6, 1.2, 1.6
+Knicks, Travis Wear, 6, Forward, 51, 3.9, 2.1, 0.8, 0.3, 0.7, 1.1
+76ers, Furkan Aldemir, 19, Forward-Center, 41, 2.3, 4.3, 0.7, 0.4, 0.4, 2.3
+76ers, Isaiah Canaan, -1, Guard, 47, 9.2, 1.9, 2.1, 0.6, 1.3, 1.8
+76ers, Robert Covington, 33, Forward, 70, 13.5, 4.5, 1.5, 1.4, 1.8, 2.7
+76ers, Jerami Grant, 39, Forward, 65, 6.3, 3, 1.2, 0.6, 1.3, 2.2
+76ers, Luc Mbah A Moute, 12, Forward, 67, 9.9, 4.9, 1.6, 1.2, 1.5, 1.6
+76ers, Nerlens Noel, 4, Center-Forward, 75, 9.9, 8.1, 1.7, 1.8, 1.9, 2.8
+76ers, Jason Richardson, 23, Guard, 19, 9.1, 3.5, 2, 0.7, 0.8, 1.5
+76ers, Thomas Robinson, 41, Forward, 54, 5.7, 5.6, 0.6, 0.6, 1.1, 1.9
+76ers, Glenn Robinson, 1, Guard-Forward, 35, 2.1, 1.1, 0.3, 0.2, 0.3, 0.4
+76ers, JaKarr Sampson, 9, Guard-Forward, 74, 5.2, 2.2, 1, 0.5, 1, 1.8
+76ers, Henry Sims, 35, Center, 73, 8, 4.9, 1.1, 0.5, 1.4, 1.8
+76ers, Ish Smith, 5, Guard, 55, 6.1, 1.8, 3.3, 0.7, 1.4, 0.9
+76ers, Hollis Thompson, 31, Guard-Forward, 71, 8.8, 2.8, 1.2, 0.8, 0.9, 2
+76ers, Tony Wroten, 8, Guard, 30, 16.9, 2.9, 5.2, 1.6, 3.8, 2.4
+Raptors, Bruno Caboclo, 5, Forward, 8, 1.3, 0.3, -1, -1, 0.5, 0.4
+Raptors, DeMar DeRozan, 10, Guard, 60, 20.1, 4.6, 3.5, 1.2, 2.3, 2
+Raptors, Landry Fields, 2, Guard-Forward, 26, 1.8, 1, 0.6, 0.4, 0.3, 0.3
+Raptors, Tyler Hansbrough, 50, Forward-Center, 74, 3.6, 3.6, 0.3, 0.4, 0.3, 1.9
+Raptors, Charles Hayes, 44, Center-Forward, 29, 1.7, 1.8, 0.7, 0.3, 0.3, 1.3
+Raptors, Amir Johnson, 15, Forward, 75, 9.3, 6.1, 1.6, 0.6, 1.5, 3
+Raptors, James Johnson, 3, Forward, 70, 7.9, 3.7, 1.4, 0.8, 1.1, 2.2
+Raptors, Kyle Lowry, 7, Guard, 70, 17.8, 4.7, 6.8, 1.6, 2.5, 3
+Raptors, Lucas Nogueira, 92, Center, 6, 1, 1.8, 0.2, 0.3, 0.3, 1
+Raptors, Patrick Patterson, 54, Forward, 81, 8, 5.3, 1.9, 0.7, 0.7, 1.8
+Raptors, Terrence Ross, 31, Forward-Guard, 82, 9.8, 2.8, 1, 0.6, 0.8, 1.7
+Raptors, Greg Stiemsma, 34, Center, 17, 0.8, 0.9, 0.2, 0.1, 0.4, 0.9
+Raptors, Jonas Valanciunas, 17, Center, 80, 12, 8.7, 0.5, 0.4, 1.4, 2.8
+Raptors, Greivis Vasquez, 21, Guard, 82, 9.5, 2.6, 3.7, 0.6, 1.5, 2.2
+Raptors, Lou Williams, 23, Guard, 80, 15.5, 1.9, 2.1, 1.1, 1.3, 1.3
+Bulls, Cameron Bairstow, 41, Forward-Center, 18, 0.6, 0.4, 0.1, 0.1, 0.2, 0.4
+Bulls, Aaron Brooks, -1, Guard, 82, 11.6, 2, 3.2, 0.7, 1.9, 2.3
+Bulls, Jimmy Butler, 21, Guard-Forward, 65, 20, 5.8, 3.3, 1.8, 1.4, 1.7
+Bulls, Mike Dunleavy, 34, Forward, 63, 9.4, 3.9, 1.8, 0.6, 1, 2
+Bulls, Pau Gasol, 16, Forward-Center, 78, 18.5, 11.8, 2.7, 0.3, 2, 1.9
+Bulls, Taj Gibson, 22, Forward, 62, 10.3, 6.4, 1.1, 0.6, 1.2, 2.6
+Bulls, Kirk Hinrich, 12, Guard, 66, 5.7, 1.8, 2.2, 0.7, 1.1, 2.2
+Bulls, Doug McDermott, 3, Forward, 36, 3, 1.2, 0.2, 0.1, 0.5, 0.8
+Bulls, Nikola Mirotic, 44, Forward, 82, 10.2, 4.9, 1.2, 0.7, 1.1, 2.1
+Bulls, Nazr Mohammed, 48, Center, 23, 1.2, 1.7, 0.1, 0.2, 0.3, 0.7
+Bulls, E'Twaun Moore, 55, Guard, 56, 2.7, 0.8, 0.6, 0.4, 0.3, 0.8
+Bulls, Joakim Noah, 13, Center, 67, 7.2, 9.6, 4.7, 0.7, 1.8, 3
+Bulls, Derrick Rose, 1, Guard, 51, 17.7, 3.2, 4.9, 0.7, 3.2, 1.2
+Bulls, Tony Snell, 20, Forward, 72, 6, 2.4, 0.9, 0.4, 0.7, 1.2
+Cavaliers, Matthew Dellavedova, 8, Guard, 67, 4.8, 1.9, 3, 0.4, 0.9, 2.3
+Cavaliers, Joe Harris, 12, Guard, 51, 2.7, 0.8, 0.5, 0.1, 0.5, 1.2
+Cavaliers, Brendan Haywood, 33, Center, 22, 1.6, 1.3, 0.1, 0.1, 0.5, 0.8
+Cavaliers, Kyrie Irving, 2, Guard, 75, 21.7, 3.2, 5.2, 1.5, 2.5, 1.9
+Cavaliers, LeBron James, 23, Forward, 69, 25.3, 6, 7.4, 1.6, 3.9, 2
+Cavaliers, James Jones, 1, Forward, 57, 4.4, 1.1, 0.4, 0.2, 0.2, 1.2
+Cavaliers, Kevin Love, -1, Forward, 75, 16.4, 9.7, 2.2, 0.7, 1.6, 1.9
+Cavaliers, Shawn Marion, 31, Guard-Forward, 57, 4.8, 3.5, 0.9, 0.5, 0.6, 1
+Cavaliers, Mike Miller, 18, Guard-Forward, 52, 2.1, 1.8, 0.9, 0.3, 0.4, 1.4
+Cavaliers, Timofey Mozgov, 20, Center, 81, 9.7, 7.3, 0.7, 0.4, 1.4, 2.8
+Cavaliers, Kendrick Perkins, 3, Center, 68, 3.6, 4.7, 0.8, 0.2, 1.4, 2.4
+Cavaliers, Iman Shumpert, 4, Guard, 62, 8, 3.6, 2.2, 1.3, 1.5, 2.2
+Cavaliers, J.R. Smith, 5, ..Guard-Forward, 70, 12.1, 3.1, 2.8, 1.2, 1.4, 2.3
+Cavaliers, Tristan Thompson, 13, Center-Forward, 82, 8.5, 8, 0.5, 0.4, 1, 2.3
+Cavaliers, Anderson Varejao, 17, Center, 26, 9.8, 6.5, 1.3, 0.7, 1.3, 2.2
+Pistons, Joel Anthony, 50, Center, 49, 1.8, 1.9, 0.1, 0.2, 0.2, 1.1
+Pistons, Caron Butler, 31, Forward, 78, 5.9, 2.5, 1, 0.6, 0.6, 1.5
+Pistons, Kentavious CaldwellPope, 5, -Guard, 82, 12.7, 3.1, 1.3, 1.1, 1.1, 2
+Pistons, Spencer Dinwiddie, 8, Guard, 34, 4.3, 1.4, 3.1, 0.6, 1, 1.6
+Pistons, Andre Drummond, -1, Center, 82, 13.8, 13.5, 0.7, 0.9, 1.5, 3.5
+Pistons, John Lucas III, 9, Guard, 21, 4.7, 0.8, 2.9, 0.4, 0.8, 0.9
+Pistons, Reggie Jackson, 1, Guard, 77, 14.5, 4.2, 6, 0.8, 2.4, 2.2
+Pistons, Brandon Jennings, 7, Guard, 41, 15.4, 2.5, 6.6, 1.1, 2.2, 1.6
+Pistons, Cartier Martin, 35, Forward, 23, 1.6, 0.9, 0.5, 0.1, 0.2, 0.9
+Pistons, Jodie Meeks, 20, Guard, 60, 11.1, 1.7, 1.3, 1, 1, 1.3
+Pistons, Quincy Miller, 34, Forward, 10, 2.9, 2, 0.8, 0.7, 0.5, 0.9
+Pistons, Greg Monroe, 10, Forward-Center, 69, 15.9, 10.2, 2.1, 1.1, 2.2, 2.1
+Pistons, Tayshaun Prince, 22, Forward, 58, 7.5, 3.6, 1.6, 0.5, 0.6, 0.9
+Pistons, Anthony Tolliver, 43, Forward, 76, 6.3, 3.1, 0.8, 0.3, 0.7, 1.8
+Pistons, Shawne Williams, 3, Forward, 63, 5.4, 2.6, 0.7, 0.4, 0.5, 2.1
+Pacers, Lavoy Allen, 5, Forward-Center, 63, 5, 5.1, 1.2, 0.2, 0.6, 1.6
+Pacers, Chris Copeland, 22, Forward, 50, 6.2, 2.2, 1, 0.2, 1.2, 1.6
+Pacers, Paul George, 13, Forward-Guard, 6, 8.8, 3.7, 1, 0.8, 2, 1.8
+Pacers, Roy Hibbert, 55, Center, 76, 10.6, 7.1, 1.1, 0.2, 1.4, 2.8
+Pacers, Solomon Hill, 44, Forward, 82, 8.9, 3.8, 2.2, 0.8, 1.4, 2.2
+Pacers, George Hill, 3, Guard, 43, 16.1, 4.2, 5.1, 1, 1.6, 2.6
+Pacers, Ian Mahinmi, 28, Center, 61, 4.3, 5.8, 0.5, 0.5, 1, 2.8
+Pacers, CJ Miles, -1, Guard, 70, 13.5, 3.1, 1.1, 0.9, 1, 1.9
+Pacers, Damjan Rudez, 9, Forward, 68, 4.8, 0.7, 0.8, 0.2, 0.7, 1.2
+Pacers, Luis Scola, 4, Forward, 81, 9.4, 6.5, 1.3, 0.6, 1.2, 2.4
+Pacers, Donald Sloan, 15, Guard, 53, 7.4, 2.7, 3.6, 0.4, 1.2, 0.9
+Pacers, Rodney Stuckey, 2, Guard, 71, 12.6, 3.5, 3.1, 0.8, 1.7, 1.8
+Pacers, CJ Watson, 32, Guard, 57, 10, 2.9, 3.6, 1, 1.8, 1.9
+Pacers, David West, 21, Forward, 66, 11.7, 6.8, 3.4, 0.7, 1.8, 2.4
+Pacers, Shayne Whittington, 42, Forward-Center, 20, 2.9, 1.5, 0.3, 0.3, 0.3, 0.9
+Bucks, Giannis Antetokounmpo, 34, Forward, 81, 12.7, 6.7, 2.6, 0.9, 2.1, 3.1
+Bucks, Jerryd Bayless, 19, Guard, 77, 7.8, 2.7, 3, 0.8, 1.7, 2.1
+Bucks, Michael CarterWilliams, 5, -Guard, 66, 14.6, 5.3, 6.7, 1.7, 3.8, 2.5
+Bucks, Jared Dudley, 9, Forward-Guard, 72, 7.2, 3.1, 1.8, 1, 0.9, 1.6
+Bucks, Tyler Ennis, 11, Guard, 33, 3.7, 1.1, 2.2, 0.5, 1.3, 1.1
+Bucks, Jorge Gutierrez, 13, Guard, 20, 2.7, 1.3, 1.1, 0.3, 0.6, 1.3
+Bucks, John Henson, 31, Center-Forward, 67, 7, 4.7, 0.9, 0.4, 1.3, 2.3
+Bucks, Ersan Ilyasova, 7, Forward, 58, 11.5, 4.8, 1, 0.6, 0.8, 2.6
+Bucks, O.J. Mayo, 0, ..Guard, 71, 11.4, 2.6, 2.8, 0.8, 1.8, 2.3
+Bucks, Khris Middleton, 22, Guard-Forward, 79, 13.4, 4.4, 2.3, 1.5, 1.4, 2.3
+Bucks, Johnny O'Bryant, 3, Forward, 34, 2.9, 1.9, 0.5, 0.1, 0.7, 1.3
+Bucks, Zaza Pachulia, 27, Center, 73, 8.3, 6.8, 2.4, 1.1, 1.8, 2.3
+Bucks, Jabari Parker, 12, Forward, 25, 12.3, 5.5, 1.7, 1.2, 1.9, 1.7
+Bucks, Miles Plumlee, 21, Center-Forward, 73, 4, 4.4, 0.5, 0.6, 0.7, 1.5
+Hawks, Pero Antic, 6, Forward-Center, 63, 5.7, 3, 0.8, 0.3, 0.8, 2.1
+Hawks, Kent Bazemore, 24, Guard, 75, 5.2, 3, 1, 0.7, 1, 1.7
+Hawks, Elton Brand, 7, Forward-Center, 36, 2.7, 2.8, 0.6, 0.5, 0.5, 1.5
+Hawks, DeMarre Carroll, 5, Forward, 70, 12.6, 5.3, 1.7, 1.3, 1.1, 2.2
+Hawks, Austin Daye, 3, Forward, 34, 3.8, 2.2, 0.5, 0.4, 0.7, 1.1
+Hawks, Al Horford, 15, Center-Forward, 76, 15.2, 7.2, 3.2, 0.9, 1.3, 1.6
+Hawks, John Jenkins, 12, Guard, 24, 5.6, 1.6, 0.5, 0.4, 0.3, 0.6
+Hawks, Kyle Korver, 26, Guard, 75, 12.1, 4.1, 2.6, 0.7, 1.4, 1.9
+Hawks, Shelvin Mack, 8, Guard, 55, 5.4, 1.4, 2.8, 0.5, 0.9, 0.6
+Hawks, Paul Millsap, 4, Forward, 73, 16.7, 7.8, 3.1, 1.8, 2.3, 2.8
+Hawks, Mike Muscala, 31, Forward-Center, 40, 4.9, 3, 0.6, 0.4, 0.5, 1.3
+Hawks, Dennis Schroder, 17, Guard, 77, 10, 2.1, 4.1, 0.6, 1.9, 1.6
+Hawks, Mike Scott, 32, Forward, 68, 7.8, 2.9, 1.1, 0.4, 0.6, 1.2
+Hawks, Thabo Sefolosha, 25, Forward-Guard, 52, 5.3, 4.3, 1.4, 1, 0.7, 1.3
+Hawks, Jeff Teague,-1, Guard, 73, 15.9, 2.5, 7, 1.7, 2.8, 1.9
+Hornets, Bismack Biyombo, 8, Center-Forward, 64, 4.8, 6.4, 0.3, 0.3, 0.8, 2.2
+Hornets, Troy Daniels, 30, Guard, 47, 3.7, 0.7, 0.5, 0.1, 0.4, 0.9
+Hornets, PJ Hairston, 19, Guard-Forward, 45, 5.6, 2, 0.5, 0.5, 0.5, 1.4
+Hornets, Gerald Henderson, 9, Guard-Forward, 80, 12.1, 3.4, 2.6, 0.6, 1.4, 1.7
+Hornets, Al Jefferson, 25, Center, 65, 16.6, 8.4, 1.7, 0.7, 1, 2.1
+Hornets, Michael KiddGilchrist, 14, -Forward, 55, 10.9, 7.6, 1.4, 0.5, 1.1, 2.1
+Hornets, Jason Maxiell, 54, Forward, 61, 3.3, 3.3, 0.3, 0.3, 0.5, 1.6
+Hornets, Brian Roberts, 22, Guard, 72, 6.7, 1.5, 2.3, 0.5, 0.8, 1
+Hornets, Lance Stephenson, 1, Guard, 61, 8.2, 4.5, 3.9, 0.6, 2.1, 2.2
+Hornets, Jeff Taylor, 44, Forward, 29, 4.4, 1.8, 0.8, 0.4, 0.7, 1.2
+Hornets, Noah Vonleh, 11, Forward, 25, 3.3, 3.4, 0.2, 0.2, 0.4, 0.8
+Hornets, Kemba Walker, 15, Guard, 62, 17.3, 3.5, 5.1, 1.4, 1.6, 1.5
+Hornets, Mo Williams, 7, Guard, 68, 14.2, 2.6, 6.2, 0.7, 2.5, 2.4
+Hornets, Marvin Williams, 2, Forward, 78, 7.4, 4.9, 1.3, 0.9, 0.8, 1.9
+Hornets, Cody Zeller, 40, Forward-Center, 62, 7.6, 5.8, 1.6, 0.5, 1, 2.5
+Heat, Chris Andersen, 11, Forward-Center, 60, 5.3, 5, 0.7, 0.4, 0.7, 1.5
+Heat, Michael Beasley, 30, Forward, 24, 8.8, 3.7, 1.3, 0.6, 1.5, 2.8
+Heat, Chris Bosh, 1, Center, 44, 21.1, 7, 2.2, 0.9, 2.2, 1.6
+Heat, Mario Chalmers, 15, Guard, 80, 10.2, 2.6, 3.8, 1.5, 2.2, 3.1
+Heat, Luol Deng, 9, Forward, 72, 14, 5.2, 1.9, 0.9, 1.5, 1.5
+Heat, Goran Dragic, 7, Guard, 78, 16.3, 3.5, 4.5, 1, 2.2, 2.5
+Heat, Zoran Dragic, 12, Guard-Forward, 16, 1.8, 0.5, 0.3, 0.1, 0.3, 0.4
+Heat, James Ennis, 32, Forward, 62, 5, 2.8, 0.8, 0.4, 0.6, 1.4
+Heat, Udonis Haslem, 40, Forward, 62, 4.2, 4.2, 0.7, 0.3, 0.7, 1.8
+Heat, Tyler Johnson, 8, Guard, 32, 5.9, 2.5, 1.3, 1, 0.9, 1.3
+Heat, Josh McRoberts, 4, Forward, 17, 4.2, 2.6, 1.9, 0.7, 1.3, 2.4
+Heat, Shabazz Napier, 13, Guard, 51, 5.1, 2.2, 2.5, 0.8, 1.6, 1.5
+Heat, Dwyane Wade, 3, Guard, 62, 21.5, 3.5, 4.8, 1.2, 3.4, 1.7
+Heat, Henry Walker, 5, Forward, 24, 7.3, 3.4, 1.2, 1, 1, 3.2
+Heat, Hassan Whiteside, 21, Center, 48, 11.8, 10, 0.1, 0.6, 1.2, 2.7
+Magic, Dewayne Dedmon, 3, Center, 59, 3.7, 5, 0.2, 0.3, 0.9, 2.4
+Magic, Evan Fournier, 10, Guard, 58, 12, 2.6, 2.1, 0.7, 1.4, 2
+Magic, Channing Frye, 8, Forward, 75, 7.3, 3.9, 1.3, 0.6, 1, 2.5
+Magic, Aaron Gordon, 0, Forward, 47, 5.2, 3.6, 0.7, 0.4, 0.8, 1.8
+Magic, Ben Gordon, 7, Guard, 56, 6.2, 1.1, 0.9, 0.3, 1, 1.1
+Magic, Willie Green, 34, Guard, 52, 5.9, 1.5, 1.3, 0.5, 0.9, 1.6
+Magic, Maurice Harkless, 21, Forward, 45, 3.5, 2.4, 0.6, 0.7, 0.6, 1.5
+Magic, Tobias Harris, 12, Forward, 68, 17.1, 6.3, 1.8, 1, 1.7, 2
+Magic, Devyn Marble, 11, Forward, 16, 2.3, 1.9, 1.1, 0.6, 0.6, 0.9
+Magic, Andrew Nicholson, 44, Forward, 40, 4.9, 2.1, 0.6, 0.2, 0.6, 1.3
+Magic, Kyle O'Quinn, 2, Forward-Center, 51, 5.8, 3.9, 1.2, 0.6, 1.1, 2.2
+Magic, Victor Oladipo, 5, Guard, 72, 17.9, 4.2, 4.1, 1.7, 2.8, 2.6
+Magic, Elfrid Payton, 4, Guard, 82, 8.9, 4.3, 6.5, 1.7, 2.5, 2.4
+Magic, Luke Ridnour, 13, Guard, 47, 4, 1.4, 2, 0.4, 0.8, 1.4
+Magic, Nikola Vucevic, 9, Center, 74, 19.3, 10.9, 2, 0.7, 2, 3
+Wizards, Bradley Beal, 3, Guard, 63, 15.3, 3.8, 3.1, 1.2, 2, 2.2
+Wizards, DeJuan Blair, 45, Center-Forward, 29, 1.9, 1.9, 0.1, 0.2, 0.4, 1.4
+Wizards, Rasual Butler, 8, Forward, 75, 7.7, 2.6, 0.8, 0.4, 0.6, 1.3
+Wizards, Will Bynum, 1, Guard, 7, 3.1, 0.9, 2.6, 0.1, 1.1, 1.3
+Wizards, Drew Gooden, 90, Forward, 51, 5.4, 4.4, 1, 0.4, 0.5, 1.8
+Wizards, Marcin Gortat, 4, Center, 82, 12.2, 8.7, 1.2, 0.6, 1.2, 2.3
+Wizards, Kris Humphries, 43, Forward, 64, 8, 6.5, 0.9, 0.5, 0.7, 2
+Wizards, Nene, 42, Forward-Center, 67, 11, 5.1, 1.8, 1, 1.9, 2.7
+Wizards, Paul Pierce, 34, Forward, 73, 11.9, 4, 2, 0.6, 1.3, 2.2
+Wizards, Otto Porter, 22, Forward, 74, 6, 3, 0.9, 0.6, 0.7, 1.3
+Wizards, Kevin Seraphin, 13, Center, 79, 6.6, 3.6, 0.7, 0.1, 1.2, 2.5
+Wizards, Ramon Sessions, 7, Guard, 64, 6.3, 2.3, 2.8, 0.5, 1.3, 1.1
+Wizards, Garrett Temple, 17, Guard, 52, 3.9, 1.7, 1.1, 0.8, 0.7, 1.5
+Wizards, John Wall, 2, Guard, 79, 17.6, 4.6, 10, 1.7, 3.8, 2.3
+Wizards, Martell Webster, 9, Forward-Guard, 32, 3.3, 1.4, 0.5, 0.2, 0.7, 0.8
+Rockets, Trevor Ariza, 1, Forward, 82, 12.8, 5.6, 2.5, 1.9, 1.7, 2.3
+Rockets, Patrick Beverley, 2, Guard, 56, 10.1, 4.2, 3.4, 1.1, 1.5, 3.3
+Rockets, Corey Brewer, 33, Guard-Forward, 80, 11.5, 3.7, 2.2, 1.4, 1.6, 2.2
+Rockets, Clint Capela, 15, Center, 12, 2.7, 3, 0.2, 0.1, 0.4, 1.2
+Rockets, Joey Dorsey, 8, Center-Forward, 69, 2.7, 4, 0.4, 0.6, 0.6, 2.3
+Rockets, James Harden, 13, Guard, 81, 27.4, 5.7, 7, 1.9, 4, 2.6
+Rockets, Dwight Howard, 12, Center, 41, 15.8, 10.5, 1.2, 0.7, 2.8, 3.3
+Rockets, Nick Johnson, 3, Guard, 28, 2.6, 1.4, 0.4, 0.3, 0.7, 1.2
+Rockets, Terrence Jones, 6, Forward, 33, 11.7, 6.7, 1.1, 0.5, 1.1, 2.4
+Rockets, KJ McDaniels, 32, Guard-Forward, 62, 7.9, 3.2, 1.2, 0.7, 1.7, 2
+Rockets, Donatas Motiejunas, 20, Forward-Center, 71, 12, 5.9, 1.8, 0.8, 1.7, 2.9
+Rockets, Kostas Papanikolaou, 16, Forward, 43, 4.2, 2.7, 2, 0.7, 1.3, 1.7
+Rockets, Pablo Prigioni, 9, Guard, 67, 4.1, 1.8, 2.6, 1.2, 0.9, 1.3
+Rockets, Josh Smith, 5, Forward, 83, 12.4, 6.4, 3.3, 1, 2.5, 2.7
+Rockets, Jason Terry, 31, Guard, 77, 7, 1.6, 1.9, 0.9, 1, 1.5
+Grizzlies, Jordan Adams, 3, Guard, 30, 3.1, 0.9, 0.5, 0.5, 0.5, 0.8
+Grizzlies, Tony Allen, 9, Forward-Guard, 63, 8.6, 4.4, 1.4, 2, 1.4, 2.6
+Grizzlies, Nick Calathes, 12, Guard, 58, 4.2, 1.8, 2.5, 1.1, 1.1, 1.7
+Grizzlies, Vince Carter, 15, Guard-Forward, 66, 5.8, 2, 1.2, 0.7, 0.7, 1.5
+Grizzlies, Mike Conley, 11, Guard, 70, 15.8, 3, 5.4, 1.3, 2.2, 2
+Grizzlies, Marc Gasol, 33, Center, 81, 17.4, 7.8, 3.8, 0.9, 2.2, 2.6
+Grizzlies, Jeff Green, 32, Forward, 78, 15, 4.2, 1.7, 0.7, 1.4, 1.9
+Grizzlies, JaMychal Green, -1, Forward, 24, 2.6, 1.9, 0.2, 0.2, 0.6, 1
+Grizzlies, Kosta Koufos, 41, Center, 81, 5.2, 5.3, 0.5, 0.4, 0.9, 1.8
+Grizzlies, Courtney Lee, 5, Guard, 77, 10.1, 2.3, 2, 1, 1, 1.7
+Grizzlies, Jon Leuer, 30, Forward, 63, 4.5, 3.3, 0.7, 0.3, 0.6, 1.4
+Grizzlies, Zach Randolph, 50, Forward, 71, 16.1, 10.5, 2.2, 1, 2.2, 2.5
+Grizzlies, Russ Smith, 2, Guard, 12, 2.5, 0.5, 0.7, 0.3, 1, 1.1
+Grizzlies, Jarnell Stokes, 1, Forward-Center, 19, 3, 1.8, 0.2, 0.3, 0.4, 1.3
+Grizzlies, Beno Udrih, 19, Guard, 79, 7.7, 1.8, 2.8, 0.6, 1.1, 1.1
+Pelicans, Alexis Ajinca, 42, Center, 68, 6.5, 4.6, 0.7, 0.3, 1, 2.2
+Pelicans, Ryan Anderson, 33, Forward, 61, 13.7, 4.8, 0.9, 0.5, 1, 1.9
+Pelicans, Omer Asik, 3, Center, 76, 7.3, 9.8, 0.9, 0.4, 1.3, 1.9
+Pelicans, Luke Babbitt, 8, Forward, 63, 4.1, 1.8, 0.4, 0.3, 0.4, 1
+Pelicans, Norris Cole, 30, Guard, 75, 7.6, 2.1, 3.4, 0.8, 1.3, 1.7
+Pelicans, Dante Cunningham, 44, Forward, 66, 5.2, 3.9, 0.8, 0.7, 0.5, 1.5
+Pelicans, Anthony Davis, 23, Forward-Center, 68, 24.4, 10.2, 2.2, 1.5, 1.4, 2.1
+Pelicans, Toney Douglas, 16, Guard, 12, 4.3, 1.8, 2, 0.9, 0.8, 1.7
+Pelicans, Tyreke Evans, 1, Guard-Forward, 79, 16.6, 5.3, 6.6, 1.3, 3.1, 2.5
+Pelicans, Jimmer Fredette, 32, Guard, 50, 3.6, 0.8, 1.2, 0.3, 0.7, 0.9
+Pelicans, Eric Gordon, 10, Guard, 61, 13.4, 2.6, 3.8, 0.8, 2, 2.4
+Pelicans, Jrue Holiday, 11, Guard, 40, 14.8, 3.4, 6.9, 1.6, 2.3, 2.8
+Pelicans, Quincy Pondexter, 20, Forward-Guard, 75, 7.2, 2.6, 1.3, 0.3, 0.7, 2
+Pelicans, Jeff Withey, 5, Center, 37, 2.6, 1.7, 0.3, 0.1, 0.3, 0.7
+Spurs, Kyle Anderson, 1, Forward, 33, 2.2, 2.2, 0.8, 0.5, 0.3, 0.8
+Spurs, Jeff Ayres, 11, Forward-Center, 51, 2.7, 2.3, 0.3, 0.2, 0.5, 1.2
+Spurs, Aron Baynes, 16, Center-Forward, 70, 6.6, 4.5, 0.5, 0.2, 0.9, 2.3
+Spurs, Marco Belinelli, 3, Forward-Guard, 62, 9.2, 2.5, 1.5, 0.5, 1, 1.4
+Spurs, Matt Bonner, 15, Center-Forward, 72, 3.7, 1.6, 0.7, 0.1, 0.2, 0.9
+Spurs, Boris Diaw, 33, Center-Forward, 81, 8.7, 4.3, 2.9, 0.4, 1.6, 1.8
+Spurs, Tim Duncan, 21, Forward, 77, 13.9, 9.1, 3, 0.8, 1.7, 2.1
+Spurs, Manu Ginobili, 20, Guard, 70, 10.5, 3, 4.2, 1, 2.2, 2
+Spurs, Danny Green, 14, Guard-Forward, 81, 11.7, 4.2, 2, 1.2, 1.1, 2
+Spurs, Cory Joseph, 5, Guard, 79, 6.8, 2.4, 2.4, 0.6, 0.8, 1.3
+Spurs, Kawhi Leonard, 2, Forward, 64, 16.5, 7.2, 2.5, 2.3, 1.5, 2
+Spurs, Patty Mills, 8, Guard, 51, 6.9, 1.5, 1.7, 0.5, 0.7, 1.1
+Spurs, Tony Parker, 9, Guard, 68, 14.4, 1.9, 4.9, 0.6, 2.1, 1.6
+Spurs, Tiago Splitter, 22, Center, 52, 8.2, 4.8, 1.5, 0.7, 1.2, 2
+Spurs, Reggie Williams, 55, Forward, 20, 1.9, 0.9, 0.5, 0.1, 0.1, 0.6
+Nuggets, Darrell Arthur, 0, Forward, 58, 6.6, 2.9, 1, 0.8, 0.8, 2.5
+Nuggets, Will Barton, 5, Guard, 58, 6.8, 2.8, 1.4, 0.8, 1.1, 1.2
+Nuggets, Wilson Chandler, 21, Forward, 78, 13.9, 6.1, 1.7, 0.7, 1.4, 3
+Nuggets, Ian Clark, 20, Guard, 30, 1.9, 0.5, 0.4, 0.3, 0.3, 0.7
+Nuggets, Kenneth Faried, 35, Forward, 75, 12.6, 8.9, 1.2, 0.8, 1.6, 2.8
+Nuggets, Randy Foye, 4, Guard, 50, 8.7, 1.7, 2.4, 0.7, 1.2, 1.9
+Nuggets, Jamaal Franklin, 22, Guard, 3, 1, 0.7, 1, -1, 1, 1.3
+Nuggets, Danilo Gallinari, 8, Forward, 59, 12.4, 3.7, 1.4, 0.8, 1, 1.6
+Nuggets, Erick Green, 11, Guard, 43, 3.4, 0.7, 0.9, 0.3, 0.3, 0.6
+Nuggets, Gary Harris, 14, Guard, 55, 3.4, 1.2, 0.5, 0.7, 0.7, 1.3
+Nuggets, JJ Hickson, 7, Forward-Center, 73, 7.6, 6.2, 0.8, 0.5, 1.3, 1.9
+Nuggets, Joffrey Lauvergne, 77, Forward-Center, 24, 3.9, 3.2, 0.5, 0.3, 0.9, 1.8
+Nuggets, Ty Lawson, 3, Guard, 75, 15.2, 3.1, 9.6, 1.2, 2.5, 1.7
+Nuggets, Jameer Nelson, 28, Guard, 63, 8.3, 2.3, 4, 0.7, 1.7, 2.2
+Nuggets, Jusuf Nurkic, 23, Center, 62, 6.9, 6.2, 0.8, 0.8, 1.4, 3.3
+Timberwolves, Anthony Bennett, 24, Forward, 57, 5.2, 3.8, 0.8, 0.5, 0.6, 1.5
+Timberwolves, Lorenzo Brown, 7, Guard, 29, 4.2, 2.4, 3.1, 1, 1, 1.7
+Timberwolves, Chase Budinger, 10, Forward, 67, 6.8, 3, 1, 0.7, 0.7, 1.1
+Timberwolves, Gorgui Dieng, 5, Center, 73, 9.7, 8.3, 2, 1, 1.7, 2.6
+Timberwolves, Kevin Garnett, 21, Forward-Center, 47, 6.9, 6.6, 1.6, 1, 1, 2.3
+Timberwolves, Justin Hamilton, 41, Center, 41, 5.3, 3.3, 0.9, 0.7, 0.6, 1.7
+Timberwolves, Robbie Hummel, 4, Forward, 45, 4.4, 3, 0.6, 0.4, 0.4, 1.9
+Timberwolves, Zach LaVine, 8, Guard, 77, 10.1, 2.8, 3.6, 0.7, 2.5, 2.1
+Timberwolves, Kevin Martin, 23, Guard, 39, 20, 3.6, 2.3, 0.8, 1.9, 1.9
+Timberwolves, Shabazz Muhammad, 15, Forward, 38, 13.5, 4.1, 1.2, 0.5, 0.9, 1.3
+Timberwolves, Gary Neal, 12, Guard, 54, 10.1, 2.4, 1.9, 0.4, 1.2, 1.6
+Timberwolves, Arinze Onuaku, 50, Forward-Center, 6, 4.5, 3.5, 0.7, 0.2, 0.3, 1
+Timberwolves, Adreian Payne, 3, Forward-Center, 32, 6.7, 5.1, 0.9, 0.6, 1.4, 2.8
+Timberwolves, Nikola Pekovic, 14, Center, 31, 12.5, 7.5, 0.9, 0.6, 1.4, 1.9
+Timberwolves, Ricky Rubio, 9, Guard, 22, 10.3, 5.7, 8.8, 1.7, 2.9, 2.7
+Timberwolves, Andrew Wiggins, 22, Forward-Guard, 82, 16.9, 4.6, 2.1, 1, 2.2, 2.3
+Thunder, Steven Adams, 12, Center, 70, 7.7, 7.5, 0.9, 0.5, 1.4, 3.2
+Thunder, D.J. Augustin, 14, ..Guard, 82, 9.5, 2, 4.3, 0.6, 1.8, 1.1
+Thunder, Nick Collison, 4, Forward, 66, 4.1, 3.8, 1.4, 0.5, 0.7, 2.4
+Thunder, Kevin Durant, 35, Forward, 27, 25.4, 6.6, 4.1, 0.9, 2.7, 1.5
+Thunder, Serge Ibaka, 9, Forward, 64, 14.3, 7.8, 0.9, 0.5, 1.5, 3
+Thunder, Perry Jones, 3, Forward, 43, 4.3, 1.8, 0.4, 0.4, 0.6, 1.2
+Thunder, Enes Kanter, 34, Center, 75, 15.5, 8.9, 0.7, 0.5, 1.9, 2.5
+Thunder, Jeremy Lamb, 11, Guard, 47, 6.3, 2.3, 0.9, 0.4, 0.6, 1.1
+Thunder, Mitch McGary, 33, Forward, 32, 6.3, 5.2, 0.4, 0.5, 1, 2.3
+Thunder, Anthony Morrow, 2, Guard, 74, 10.7, 2.6, 0.8, 0.7, 0.5, 1.8
+Thunder, Steve Novak, 6, Forward, 35, 1.8, 0.6, 0.3, -1, 0.1, 0.7
+Thunder, Andre Roberson, 21, Guard, 67, 3.4, 3.8, 1, 0.8, 0.7, 2.1
+Thunder, Kyle Singler, 5, Forward, 80, 6, 2.4, 1.1, 0.6, 0.7, 1.9
+Thunder, Dion Waiters, 23, Guard, 80, 11.8, 2.4, 2, 1.1, 1.4, 1.9
+Thunder, Russell Westbrook, -1, Guard, 67, 28.1, 7.3, 8.6, 2.1, 4.4, 2.7
+Trail Blazers, Arron Afflalo, 4, Guard, 78, 13.3, 3.2, 1.7, 0.5, 1.5, 2.1
+Trail Blazers, LaMarcus Aldridge, 12, Forward, 71, 23.4, 10.2, 1.7, 0.7, 1.7, 1.8
+Trail Blazers, Nicolas Batum, 88, Forward, 71, 9.4, 5.9, 4.8, 1.1, 1.9, 1.5
+Trail Blazers, Steve Blake, 5, Guard, 81, 4.3, 1.7, 3.6, 0.5, 1.3, 1.5
+Trail Blazers, Allen Crabbe, 23, Forward, 51, 3.3, 1.4, 0.8, 0.4, 0.3, 1.5
+Trail Blazers, Tim Frazier, 10, Guard, 11, 5.2, 2.5, 5.5, 0.7, 2.3, 2.4
+Trail Blazers, Joel Freeland, 19, Center-Forward, 48, 3.5, 4, 0.3, 0.2, 0.5, 1.9
+Trail Blazers, Alonzo Gee, 33, Forward, 54, 4.5, 1.7, 0.5, 0.6, 0.6, 1.1
+Trail Blazers, Chris Kaman, 35, Center, 74, 8.6, 6.5, 0.9, 0.2, 1.5, 1.9
+Trail Blazers, Meyers Leonard, 11, Center, 55, 5.9, 4.5, 0.6, 0.2, 0.7, 2.1
+Trail Blazers, Damian Lillard, -1, Guard, 82, 21, 4.6, 6.2, 1.2, 2.7, 2
+Trail Blazers, Robin Lopez, 42, Center, 59, 9.6, 6.7, 0.9, 0.3, 1.2, 2.1
+Trail Blazers, Wesley Matthews, 2, Guard, 60, 15.9, 3.7, 2.3, 1.3, 1.4, 2.2
+Trail Blazers, CJ McCollum, 3, Guard, 62, 6.8, 1.5, 1, 0.7, 0.8, 1.3
+Trail Blazers, Dorell Wright, 1, Forward, 48, 4.6, 2.3, 0.9, 0.4, 0.4, 1.1
+Jazz, Trevor Booker, 33, Forward, 79, 7.2, 5, 1.1, 0.5, 1.1, 1.8
+Jazz, Trey Burke, 3, Guard, 76, 12.8, 2.7, 4.3, 0.9, 1.6, 1.6
+Jazz, Alec Burks, 10, Guard, 27, 13.9, 4.2, 3, 0.6, 1.9, 2.4
+Jazz, Jack Cooley, 45, Forward, 16, 1.7, 1.6, 0.1, 0.4, 0.2, 1.4
+Jazz, Bryce Cotton, 8, Guard, 15, 5.3, 1.2, 1, 0.3, 0.8, 0.4
+Jazz, Jeremy Evans, 40, Forward, 38, 2.4, 1.9, 0.3, 0.3, 0.1, 0.8
+Jazz, Dante Exum, 11, Guard, 82, 4.8, 1.6, 2.4, 0.5, 1.4, 1.8
+Jazz, Derrick Favors, 15, Forward, 74, 16, 8.2, 1.5, 0.8, 1.6, 2.8
+Jazz, Rudy Gobert, 27, Center, 82, 8.4, 9.5, 1.3, 0.8, 1.4, 2.1
+Jazz, Gordon Hayward, 20, Forward, 76, 19.3, 4.9, 4.1, 1.4, 2.7, 1.7
+Jazz, Rodney Hood, 5, Guard-Forward, 50, 8.7, 2.3, 1.7, 0.6, 0.9, 2.4
+Jazz, Joe Ingles, 2, Guard-Forward, 79, 5, 2.2, 2.3, 0.9, 1.2, 1.6
+Jazz, Grant Jerrett, 17, Forward, 8, 2, 1.1, 0.4, 0.3, 0.4, 1.4
+Jazz, Chris Johnson, 23, Forward, 29, 5.7, 1.9, 0.5, 0.9, 0.5, 1.5
+Jazz, Elijah Millsap, 13, Guard, 47, 5.3, 3.2, 1.2, 1.2, 1.4, 2.6
+Warriors, Leandro Barbosa, 19, Guard, 66, 7.1, 1.4, 1.5, 0.6, 0.7, 1.3
+Warriors, Harrison Barnes, 40, Forward, 82, 10.1, 5.5, 1.4, 0.7, 0.9, 1.8
+Warriors, Andrew Bogut, 12, Center, 67, 6.3, 8.1, 2.7, 0.6, 1.6, 2.8
+Warriors, Stephen Curry, 30, Guard, 80, 23.8, 4.3, 7.7, 2, 3.1, 2
+Warriors, Festus Ezeli, 31, Center, 46, 4.4, 3.4, 0.2, 0.2, 0.7, 1.7
+Warriors, Draymond Green, 23, Forward, 79, 11.7, 8.2, 3.7, 1.6, 1.7, 3.2
+Warriors, Justin Holiday, 7, Guard, 59, 4.3, 1.2, 0.8, 0.7, 0.5, 0.9
+Warriors, Andre Iguodala, 9, Guard-Forward, 77, 7.8, 3.3, 3, 1.2, 1.1, 1.3
+Warriors, Ognjen Kuzmic, 1, Center, 16, 1.3, 1.1, 0.4, 0.1, 0.3, 0.8
+Warriors, David Lee, 10, Forward-Center, 49, 7.9, 5.2, 1.7, 0.6, 1, 1.7
+Warriors, Shaun Livingston, 34, Guard, 78, 5.9, 2.3, 3.3, 0.6, 1.3, 1.4
+Warriors, James Michael McAdoo, 20, Forward, 15, 4.1, 2.5, 0.1, 0.3, 0.4, 1.4
+Warriors, Brandon Rush, 4, Guard-Forward, 33, 0.9, 1.2, 0.4, 0.2, 0.3, 0.8
+Warriors, Marreese Speights, 5, Center-Forward, 76, 10.4, 4.3, 0.9, 0.3, 1.1, 2.5
+Warriors, Klay Thompson, 11, Guard, 77, 21.7, 3.2, 2.9, 1.1, 1.9, 1.6
+Clippers, Matt Barnes, 22, Forward, 76, 10.1, 4, 1.5, 0.9, 1.1, 3.2
+Clippers, Jamal Crawford, 11, Guard, 64, 15.8, 1.9, 2.5, 0.9, 1.4, 1.7
+Clippers, Glen Davis, -1, Forward-Center, 74, 4, 2.3, 0.5, 0.6, 0.5, 1.8
+Clippers, Blake Griffin, 32, Forward, 67, 21.9, 7.6, 5.3, 0.9, 2.3, 2.9
+Clippers, Jordan Hamilton, 1, Guard-Forward, 14, 2.7, 1.1, 0.5, 0.1, 0.3, 1
+Clippers, Spencer Hawes, 10, Forward-Center, 73, 5.8, 3.5, 1.2, 0.3, 0.8, 2.4
+Clippers, Lester Hudson, 14, Guard, 5, 3.6, 1.6, 1, 1.2, 0.6, 0.8
+Clippers, Dahntay Jones, 31, Guard-Forward, 33, 0.6, 0.3, 0.1, 0.1, -1, 0.7
+Clippers, DeAndre Jordan, 6, Center, 82, 11.5, 15, 0.7, 1, 1.3, 3
+Clippers, Chris Paul, 3, Guard, 82, 19.1, 4.6, 10.2, 1.9, 2.3, 2.5
+Clippers, JJ Redick, 4, Guard, 78, 16.4, 2.1, 1.8, 0.5, 1.2, 1.7
+Clippers, Austin Rivers, 25, Guard, 76, 7, 2, 2, 0.6, 0.9, 1.9
+Clippers, Hedo Turkoglu, 15, Forward, 62, 3.7, 1.6, 0.6, 0.3, 0.5, 1.1
+Clippers, Ekpe Udoh, 13, Forward, 33, 0.9, 0.8, 0.2, 0.2, 0.2, 0.6
+Clippers, CJ Wilcox, 30, Guard, 21, 2, 0.3, 0.4, 0.1, 0.5, 0.3
+Lakers, Tarik Black, 28, Center-Forward, 63, 6, 5.8, 0.7, 0.3, 0.8, 2.5
+Lakers, Vander Blue, 12, Guard, 2, 11, 4.5, 4, 1.5, 3, 2
+Lakers, Carlos Boozer, 5, Forward, 71, 11.8, 6.8, 1.3, 0.6, 1.3, 2.6
+Lakers, Jabari Brown, 15, Guard, 19, 11.9, 1.9, 2.1, 0.6, 1.7, 1.7
+Lakers, Kobe Bryant, 24, Guard, 35, 22.3, 5.7, 5.6, 1.3, 3.7, 1.9
+Lakers, Jordan Clarkson, 6, Guard, 59, 11.9, 3.2, 3.5, 0.9, 1.6, 1.8
+Lakers, Ed Davis, 21, Forward, 79, 8.3, 7.6, 1.2, 0.6, 0.7, 2.6
+Lakers, Wayne Ellington, 2, Guard, 65, 10, 3.2, 1.6, 0.5, 0.8, 1.2
+Lakers, Jordan Hill, 27, Center, 70, 12, 7.9, 1.5, 0.5, 1.5, 2.3
+Lakers, Wesley Johnson, 11, Forward, 76, 9.9, 4.2, 1.6, 0.8, 1.1, 2.1
+Lakers, Ryan Kelly, 4, Forward, 52, 6.4, 2.8, 1.8, 0.6, 0.7, 2.3
+Lakers, Jeremy Lin, 17, Guard, 74, 11.2, 2.6, 4.6, 1.1, 2.2, 2.6
+Lakers, Ronnie Price, 9, Guard, 43, 5.1, 1.6, 3.8, 1.6, 1.2, 2.7
+Lakers, Julius Randle, 30, Forward, 1, 2, -1, -1, -1, 1, 1
+Lakers, Robert Sacre, 50, Center, 67, 4.6, 3.5, 0.8, 0.4, 0.5, 1.8
+Lakers, Nick Young,-1 , Forward-Guard, 42, 13.4, 2.3, 1, 0.5, 1, 2
+Suns, Earl Barron, 30, Forward-Center, 16, 2, 1.8, 0.3, 0.3, 0.3, 1.6
+Suns, Eric Bledsoe, 2, Guard, 81, 17, 5.2, 6.1, 1.6, 3.4, 2.3
+Suns, Reggie Bullock, 25, Guard, 36, 1.9, 1.4, 0.2, 0.3, 0.2, 0.5
+Suns, Archie Goodwin, 20, Guard, 41, 5.6, 1.8, 1.1, 0.4, 1.2, 1.3
+Suns, Gerald Green, 14, Guard-Forward, 74, 11.9, 2.5, 1.2, 0.6, 1.4, 2
+Suns, Brandon Knight, 3, Guard, 63, 17, 3.9, 5.2, 1.4, 3, 1.8
+Suns, Alex Len, 21, Center, 69, 6.3, 6.6, 0.5, 0.5, 1.1, 3.1
+Suns, Jerel McNeal, 8, Guard, 6, 1.5, 0.5, 0.3, 0.5, 0.8, 0.8
+Suns, Markieff Morris, 11, Forward, 82, 15.3, 6.2, 2.3, 1.2, 2.1, 3
+Suns, Marcus Morris, 15, Forward, 81, 10.4, 4.8, 1.6, 0.8, 0.9, 2.3
+Suns, Marcus Thornton, 23, Guard, 48, 7.9, 1.8, 0.8, 0.6, 0.6, 0.8
+Suns, PJ Tucker, 17, Forward-Guard, 78, 9.1, 6.4, 1.6, 1.4, 1.2, 2.3
+Suns, TJ Warren, 12, Forward, 40, 6.1, 2.1, 0.6, 0.5, 0.7, 1.3
+Suns, Brandan Wright, 32, Forward, 75, 7.3, 4.3, 0.5, 0.7, 0.5, 1.4
+Kings, Omri Casspi, 18, Forward, 67, 8.9, 3.9, 1.5, 0.5, 1.3, 1.6
+Kings, Darren Collison, 7, Guard, 45, 16.1, 3.2, 5.6, 1.5, 2.5, 2.1
+Kings, DeMarcus Cousins, 15, Center, 59, 24.1, 12.7, 3.6, 1.5, 4.3, 4.1
+Kings, Reggie Evans, 30, Center-Forward, 47, 3.7, 6.4, 0.7, 0.5, 1, 1.9
+Kings, Rudy Gay, 8, Forward, 68, 21.1, 5.9, 3.7, 1, 2.7, 2.3
+Kings, Ryan Hollins, 5, Center, 46, 3, 2.2, 0.3, 0.1, 0.5, 1.4
+Kings, Carl Landry, 24, Forward, 70, 7.2, 3.8, 0.4, 0.2, 0.8, 1.9
+Kings, Ray McCallum, 3, Guard, 68, 7.4, 2.6, 2.8, 0.7, 1.3, 1.4
+Kings, Ben McLemore, 23, Guard, 82, 12.1, 2.9, 1.7, 0.9, 1.7, 2.7
+Kings, Andre Miller, 22, Guard, 81, 4.4, 1.9, 3.5, 0.4, 1.3, 1.3
+Kings, Eric Moreland, 25, Forward, 3, 0.7, 0.3, -1, -1, -1, 0.3
+Kings, Nik Stauskas, 10, Guard, 73, 4.4, 1.2, 0.9, 0.3, 0.5, 1.3
+Kings, David Stockton, 9, Guard, 3, 2.7, 0.7, 3, 0.7, 1.3, 0.3
+Kings, Jason Thompson, 34, Forward, 81, 6.1, 6.5, 1, 0.4, 1, 3
+Kings, Derrick Williams, 13, Forward, 74, 8.3, 2.7, 0.7, 0.5, 0.8, 0.9
+Mavericks, Monta Ellis, 11, Guard, 80, 18.9, 2.4, 4.1, 1.85, 2.5, 2.5
+Mavericks, Dirk Nowitzki, 41, Forward, 77, 17.3, 5.9, 1.9, 0.51, 1.1, 2.1
+Mavericks, Chandler Parsons, 25, Forward-Guard, 66, 15.7, 4.9, 2.4, 1.05, 1.5, 2.1
+Mavericks, Amar'e Stoudemire, 1, Center, 23, 10.8, 3.7, 0.3, 0.39, 0.7, 2.2
+Mavericks, Tyson Chandler, 6, Center, 75, 10.3, 11.5, 1.1, 0.56, 1.4, 2.3
+Mavericks, Rajon Rondo, 9, Guard, 46, 9.3, 4.5, 6.5, 1.17, 2.9, 2.4
+Mavericks, Brandan Wright, -1, Forward, 27, 8.8, 4.1, 0.4, 0.63, 0.5, 1.6
+Mavericks, Devin Harris, 20, Guard, 76, 8.8, 1.8, 3.1, 1.03, 1.1, 1.9
+Mavericks, J.J. Barea, 5, Guard, 77, 7.5, 1.7, 3.4, 0.43, 0.9, 1.4
+Mavericks, Jameer Nelson, -1, Guard, 23, 7.3, 2.7, 4.1, 0.65, 1.7, 2.3
+Mavericks, Charlie Villanueva, 3, Forward, 64, 6.3, 2.3, 0.3, 0.23, 0.4, 1
+Mavericks, Richard Jefferson, 24, Forward-Guard, 74, 5.8, 2.5, 0.8, 0.43, 0.7, 1.6
+Mavericks, Al-Farouq Aminu, 7, Forward-Guard, 74, 5.6, 4.6, 0.8, 0.95, 0.7, 1.9
+Mavericks, Raymond Felton, 2, Guard, 29, 3.7, 0.9, 1.4, 0.38, 0.6, 0.6
+Mavericks, Jae Crowder, -1, Forward-Guard, 25, 3.6, 1.2, 0.5, 0.6, 0.4, 1
+Mavericks, Dwight Powell, 8, Forward, 24, 3.4, 2, 0.4, 0.29, 0.4, 1.6
+Mavericks, Bernard James, 55, Center, 16, 2.8, 2.4, 0.3, 0.13, 0.4, 1.1
+Mavericks, Greg Smith, 4, Forward, 42, 1.9, 1.9, 0.2, 0.17, 0.3, 1.3
+Mavericks, Ricky Ledo, -1, Guard-Forward, 5, 0.2, 0.4, 0.2, 0, 0.4, 0.2
 
