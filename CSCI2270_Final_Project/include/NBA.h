@@ -1,8 +1,32 @@
 #ifndef NBA_H
 #define NBA_H
-struct Player
-{
+#include <iostream>
+#include <vector>
 
+struct BasketballPlayer
+{
+    std::string strName;
+    int intPlayerNumber;
+    std::string strPosition;
+    int intGamesPlayed;
+    int intPoints;
+    int intRebounds;
+    int intSteals;
+    int intAssists;
+    int intTurnOvers;
+    int intFouls;
+};
+
+struct BasketballTeams
+{
+    std::string strName;
+    int intPoints;
+    int intRebounds;
+    int intSteals;
+    int intAssists;
+    int intTurnOvers;
+    int intFouls;
+    std::vector<BasketballPlayer> vecPlayers;
 };
 
 
