@@ -111,6 +111,7 @@ int main(int argc, char *argv[])
     getline(MLSinFile, firstLine);
     string strDataLine;
     //Soccer
+        MLS *mls = new MLS();
         string strLeague;
         int intPlayerAge;
         int intMinutes;
@@ -194,6 +195,7 @@ int main(int argc, char *argv[])
                 }
                 //cout<<parts<<endl;
             }
+            mls->insertTeam(strTeamName, strPlayerName, intPlayerAge, intPlayerNumber, strPosition, intMinutes, intGoals, intAssists, intSavePercentage, intYellowCards, intRedCards);
             //cout<<strDataLine<<endl;
         }
     }
