@@ -14,11 +14,11 @@ NBA::~NBA()
 
 void NBA::addTeam(std::string tName, std::string pName, int number, std::string position, int played, int points, int rebounds, int steals, int assists, int turnovers, int fouls)
 {
-    /*for(int i = 0; i<teamNameVector.size(); i++)
+    for(int i = 0; i<teamNameVector.size(); i++)
     {
         std::cout<<teamNameVector[i];
     }
-    std::cout<<std::endl;*/
+    std::cout<<std::endl;
     BasketballPlayer *player = new BasketballPlayer(pName, number, position, played, points, rebounds, steals, assists, turnovers, fouls);
     bool added = false;
     BasketballTeams *rootTemp = root;
