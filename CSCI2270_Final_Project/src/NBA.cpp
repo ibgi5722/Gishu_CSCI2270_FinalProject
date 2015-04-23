@@ -22,12 +22,16 @@ void NBA::addTeam(std::string tName, std::string pName, int number, std::string 
     BasketballPlayer *player = new BasketballPlayer(pName, number, position, played, points, rebounds, steals, assists, turnovers, fouls);
     bool added = false;
     BasketballTeams *rootTemp = root;
+    BasketballTeams *team;
     if(!(searchVector(tName)))
     {
         teamNameVector.push_back(tName);
-        BasketballTeams *team = new BasketballTeams(tName);
-        if(rootTemp == nil)
+        team = new BasketballTeams(tName);
+        team->left = nil;
+        team->right = nil;
+        if(root == nil)
         {
+            team->parent = nil;
             root = team;
         }
         else
@@ -62,6 +66,8 @@ void NBA::addTeam(std::string tName, std::string pName, int number, std::string 
                 }
             }
         }
+        team = searchTree(tName);
+        team->vecPlayers.push_back(player);
     }
 }
 
