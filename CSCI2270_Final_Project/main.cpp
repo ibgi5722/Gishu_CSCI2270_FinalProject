@@ -99,7 +99,7 @@ int main(int argc, char *argv[])
                 }
                 //cout<<parts<<endl;
             }
-            nba->addTeam(strTeamName, strPlayerName, intPlayerNumber, strPosition, intGamesPlayed, intPoints, intRebounds, intSteals, intAssists, intTurnovers, intFouls);
+            //nba->addTeam(strTeamName, strPlayerName, intPlayerNumber, strPosition, intGamesPlayed, intPoints, intRebounds, intSteals, intAssists, intTurnovers, intFouls);
             //cout<<strLine<<endl;
         }
     }

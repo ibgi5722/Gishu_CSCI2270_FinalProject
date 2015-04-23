@@ -43,6 +43,7 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
         SoccerTeam *newTeam = new SoccerTeam(tName);
         if(root == nil)
         {
+            newTeam->parent = nil;
             root = newTeam;
         }
         else
