@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
     string strLine;
     string parts;
     //Basketball
+        NBA *nba = new NBA();
         string strTeamName;
         string strPlayerName;
         int intPlayerNumber;
@@ -98,6 +99,7 @@ int main(int argc, char *argv[])
                 }
                 //cout<<parts<<endl;
             }
+            nba->addTeam(strTeamName, strPlayerName, intPlayerNumber, strPosition, intGamesPlayed, intPoints, intRebounds, intSteals, intAssists, intTurnovers, intFouls);
             //cout<<strLine<<endl;
         }
     }
