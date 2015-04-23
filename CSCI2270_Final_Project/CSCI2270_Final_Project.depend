@@ -27,7 +27,7 @@
 1429564826 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/src/NHL.cpp
 	"NHL.h"
 
-1429832432 source:/home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/main.cpp
+1429833210 source:/home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/main.cpp
 	"NHL.h"
 	"NBA.h"
 	"MLS.h"
@@ -35,23 +35,23 @@
 	<fstream>
 	<sstream>
 
-1429815325 /home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/include/NHL.h
+1429833210 /home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/include/NHL.h
 
-1429832432 /home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/include/NBA.h
+1429833210 /home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/include/NBA.h
 	<iostream>
 	<vector>
 
-1429830941 /home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/include/MLS.h
+1429833210 /home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/include/MLS.h
 	<iostream>
 	<vector>
 
-1429832184 source:/home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/src/MLS.cpp
+1429833210 source:/home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/src/MLS.cpp
 	"MLS.h"
 	<iostream>
 
-1429832608 source:/home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/src/NBA.cpp
+1429833210 source:/home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/src/NBA.cpp
 	"NBA.h"
 
-1429815325 source:/home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/src/NHL.cpp
+1429833210 source:/home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/src/NHL.cpp
 	"NHL.h"
 

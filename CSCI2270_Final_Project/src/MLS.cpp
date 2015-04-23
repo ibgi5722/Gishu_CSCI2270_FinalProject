@@ -29,10 +29,6 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
 {
     bool addedToTree = false;
     SoccerTeam *newTeam;
-    if(searchVector(tName) == false)
-    {
-        teamVector.push_back(tName);
-    }
     /*for(int i = 0; i < teamVector.size(); i++)
     {
         std::cout << teamVector[i] << std::endl;
@@ -41,6 +37,7 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
     SoccerTeam *tempRoot = root;
     if(!(searchVector(tName)))
     {
+        teamVector.push_back(tName);
         newTeam = new SoccerTeam(tName);
         newTeam->leftChild = nil;
         newTeam->rightChild = nil;
@@ -118,7 +115,7 @@ void MLS::printTeams()
 }
 void MLS::printTeams(SoccerTeam *tempRoot)
 {
-    std::cout << "x" << std::endl;
+    //std::cout << "x" << std::endl;
     if(tempRoot->leftChild != nil) //won't enter until left child is NULL
     {
         printTeams(tempRoot->leftChild);
