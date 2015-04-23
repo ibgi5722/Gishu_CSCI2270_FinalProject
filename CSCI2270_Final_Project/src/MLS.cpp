@@ -32,10 +32,10 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
     {
         teamVector.push_back(tName);
     }
-    for(int i = 0; i < teamVector.size(); i++)
+    /*for(int i = 0; i < teamVector.size(); i++)
     {
         std::cout << teamVector[i] << std::endl;
-    }
+    }*/
     SoccerPlayer *newPlayer = new SoccerPlayer(pName, pAge, pNumber, pPosition, minutes, goals, assists, savePercent, yellowCards, redCards);
     if(!(searchVector(tName)))
     {

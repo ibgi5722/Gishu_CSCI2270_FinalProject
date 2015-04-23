@@ -272,6 +272,7 @@ int main(int argc, char *argv[])
 					switch(menuSelection)
 					{
 						case 1:
+						    nba->printTeams();
 							break;
 						case 2:
 							while(menuSelection2 != 4)
