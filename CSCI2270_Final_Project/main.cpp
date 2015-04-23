@@ -101,5 +101,139 @@ int main(int argc, char *argv[])
             cout<<strLine<<endl;
         }
     }
+    while(userInput != )
+	{
+		cout << "Select League (NHL, NBA, MLS) Or Type 'q' To Close The Program: " << endl;
+		getline(cin, userInput);//reads in the command that the user wants to do
+		switch(userInput)
+		{
+			case "NHL":
+			    while(menuSelection != 3)
+			    {
+					cout << "======Main Menu======" << endl;
+					cout << "1. List Teams" << endl;
+					cout << "2. Select Team" << endl;
+					cout << "3. Select New League" << endl;
+					getline(cin, menuSelectionstr);
+					menuSelection = stoi(menuSelectionstr);
+					switch(menuSelection)
+					{
+						case 1:
+							break;
+						case 2:
+							while(menuSelection2 != 4)
+							{
+								cout << "======Main Menu======" << endl;
+								cout << "1. Print Roster" << endl;
+								cout << "2. Rank Players" << endl;
+								cout << "3. Print Team Stats" << endl;
+								cout << "4. Choose New Team" << endl;
+								getline(cin, menuSelectionstr);
+								menuSelection = stoi(menuSelectionstr);
+								switch(menuSelection)
+								{
+									case 1:
+										break;
+									case 2:
+										break;
+									case 3:
+										break;
+									case 4:
+										break;
+								}
+							}
+							break;
+						case 3:
+							break;
+					}
+				}
+				break;
+            case "NBA":
+                while(menuSelection != 3)
+			    {
+					cout << "======Main Menu======" << endl;
+					cout << "1. List Teams" << endl;
+					cout << "2. Select Team" << endl;
+					cout << "3. Select New League" << endl;
+					getline(cin, menuSelectionstr);
+					menuSelection = stoi(menuSelectionstr);
+					switch(menuSelection)
+					{
+						case 1:
+							break;
+						case 2:
+							while(menuSelection2 != 4)
+							{
+								cout << "======Main Menu======" << endl;
+								cout << "1. Print Roster" << endl;
+								cout << "2. Rank Players" << endl;
+								cout << "3. Print Team Stats" << endl;
+								cout << "4. Choose New Team" << endl;
+								getline(cin, menuSelectionstr);
+								menuSelection = stoi(menuSelectionstr);
+								switch(menuSelection)
+								{
+									case 1:
+										break;
+									case 2:
+										break;
+									case 3:
+										break;
+									case 4:
+										break;
+								}
+							}
+							break;
+						case 3:
+							break;
+					}
+				}
+				break;
+			case "MLS":
+			    while(menuSelection != 3)
+			    {
+					cout << "======Main Menu======" << endl;
+					cout << "1. List Teams" << endl;
+					cout << "2. Select Team" << endl;
+					cout << "3. Select New League" << endl;
+					getline(cin, menuSelectionstr);
+					menuSelection = stoi(menuSelectionstr);
+					switch(menuSelection)
+					{
+						case 1:
+							break;
+						case 2:
+							while(menuSelection2 != 4)
+							{
+								cout << "======Main Menu======" << endl;
+								cout << "1. Print Roster" << endl;
+								cout << "2. Rank Players" << endl;
+								cout << "3. Print Team Stats" << endl;
+								cout << "4. Choose New Team" << endl;
+								getline(cin, menuSelectionstr);
+								menuSelection = stoi(menuSelectionstr);
+								switch(menuSelection)
+								{
+									case 1:
+										break;
+									case 2:
+										break;
+									case 3:
+										break;
+									case 4:
+										break;
+								}
+							}
+							break;
+						case 3:
+							break;
+					}
+				}
+				break;
+			case "q":
+			    cout << "Goodbye!" << endl;
+				break;
+		}
+	}
     return 0;
 }
