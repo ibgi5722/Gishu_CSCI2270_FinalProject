@@ -1,5 +1,9 @@
 #ifndef NBA_H
 #define NBA_H
+struct Player
+{
+
+};
 
 
 class NBA
@@ -7,8 +11,8 @@ class NBA
     public:
         NBA();
         ~NBA();
-    protected:
     private:
+
 };
 
 #endif // NBA_H
