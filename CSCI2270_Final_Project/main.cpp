@@ -96,18 +96,28 @@ int main(int argc, char *argv[])
                     intFouls = std::stoi(parts);
                     i++;
                 }
-                cout<<parts<<endl;
+                //cout<<parts<<endl;
             }
-            cout<<strLine<<endl;
+            //cout<<strLine<<endl;
         }
     }
-    while(userInput != )
+    string userInput;
+    int intUserInput;
+    string menuSelectionstr;
+    string menuSelection2Str;
+    int menuSelection;
+    int menuSelection2;
+    while(intUserInput != 4)
 	{
-		cout << "Select League (NHL, NBA, MLS) Or Type 'q' To Close The Program: " << endl;
+		cout << "1. NHL" << endl;
+		cout << "2. NBA" << endl;
+		cout << "3. MLS" << endl;
+		cout << "4. Quit" << endl;
 		getline(cin, userInput);//reads in the command that the user wants to do
-		switch(userInput)
+		intUserInput = stoi(userInput);
+		switch(intUserInput)
 		{
-			case "NHL":
+			case 1:
 			    while(menuSelection != 3)
 			    {
 					cout << "======Main Menu======" << endl;
@@ -129,7 +139,7 @@ int main(int argc, char *argv[])
 								cout << "3. Print Team Stats" << endl;
 								cout << "4. Choose New Team" << endl;
 								getline(cin, menuSelectionstr);
-								menuSelection = stoi(menuSelectionstr);
+								menuSelection2 = stoi(menuSelectionstr);
 								switch(menuSelection)
 								{
 									case 1:
@@ -139,16 +149,19 @@ int main(int argc, char *argv[])
 									case 3:
 										break;
 									case 4:
+									    cout<<"hello"<<endl;
 										break;
 								}
 							}
+							menuSelection2 = 0;
 							break;
 						case 3:
 							break;
 					}
 				}
+				menuSelection = 0;
 				break;
-            case "NBA":
+            case 2:
                 while(menuSelection != 3)
 			    {
 					cout << "======Main Menu======" << endl;
@@ -170,7 +183,7 @@ int main(int argc, char *argv[])
 								cout << "3. Print Team Stats" << endl;
 								cout << "4. Choose New Team" << endl;
 								getline(cin, menuSelectionstr);
-								menuSelection = stoi(menuSelectionstr);
+								menuSelection2 = stoi(menuSelectionstr);
 								switch(menuSelection)
 								{
 									case 1:
@@ -183,13 +196,15 @@ int main(int argc, char *argv[])
 										break;
 								}
 							}
+							menuSelection2 = 0;
 							break;
 						case 3:
 							break;
 					}
 				}
+				menuSelection = 0;
 				break;
-			case "MLS":
+			case 3:
 			    while(menuSelection != 3)
 			    {
 					cout << "======Main Menu======" << endl;
@@ -211,7 +226,7 @@ int main(int argc, char *argv[])
 								cout << "3. Print Team Stats" << endl;
 								cout << "4. Choose New Team" << endl;
 								getline(cin, menuSelectionstr);
-								menuSelection = stoi(menuSelectionstr);
+								menuSelection2 = stoi(menuSelectionstr);
 								switch(menuSelection)
 								{
 									case 1:
@@ -224,13 +239,15 @@ int main(int argc, char *argv[])
 										break;
 								}
 							}
+							menuSelection2 = 0;
 							break;
 						case 3:
 							break;
 					}
 				}
+				menuSelection = 0;
 				break;
-			case "q":
+			case 4:
 			    cout << "Goodbye!" << endl;
 				break;
 		}
