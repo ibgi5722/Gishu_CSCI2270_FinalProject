@@ -65,6 +65,9 @@ class MLS
         bool searchVector(std::string tName);
         SoccerTeam* searchTree(std::string tName);
         void printTeams();
+        void rbAddFixup(SoccerTeam * x);
+        void leftRotate(SoccerTeam * x);
+        void rightRotate(SoccerTeam * y);
     protected:
     private:
         void printTeams(SoccerTeam *temp);
