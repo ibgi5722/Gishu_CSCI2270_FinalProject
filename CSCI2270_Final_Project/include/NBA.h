@@ -67,7 +67,12 @@ class NBA
         void addTeam(std::string tName, std::string pName, int number, std::string position, int played, int points, int rebounds, int steals, int assists, int turnovers, int fouls);
         bool searchVector(std::string tName);
         BasketballTeams* searchTree(std::string tName);
+        void printTeams();
     private:
+        void printTeams(BasketballTeams *rootTemp);
+        void rbAddFixup(BasketballTeams *x);
+        void rightRotate(BasketballTeams *x);
+        void leftRotate(BasketballTeams *x);
         BasketballTeams *root;
         std::vector<std::string> teamNameVector;
         BasketballTeams *nil;
