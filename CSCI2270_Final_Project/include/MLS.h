@@ -38,7 +38,7 @@ struct SoccerTeam
     int assistsInt;
     int yellowCardsInt;
     int redCardsInt;
-    std::vector<SoccerPlayer> vecPlayers;
+    std::vector<SoccerPlayer*> vecPlayers;
     SoccerTeam *parent;
     SoccerTeam *leftChild;
     SoccerTeam *rightChild;
@@ -64,8 +64,10 @@ class MLS
         void insertTeam(std::string tName, std::string pName, int pAge, int pNumber, std::string pPosition, int minutes, int goals, int assists, int savePercent, int yellowCards, int redCards);
         bool searchVector(std::string tName);
         SoccerTeam* searchTree(std::string tName);
+        void printTeams();
     protected:
     private:
+        void printTeams(SoccerTeam *temp);
         SoccerTeam *root;
         SoccerTeam *nil;
         std::vector<std::string> teamVector;
