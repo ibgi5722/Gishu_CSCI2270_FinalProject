@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
                 }
                 else if(i == 2)
                 {
-                    intPlayerNumber = std::stoi(parts);
+                    intPlayerNumber = stoi(parts);
                     i++;
                 }
                 else if(i == 3)
@@ -63,37 +63,37 @@ int main(int argc, char *argv[])
                 }
                 else if(i == 4)
                 {
-                    intGamesPlayed = std::stoi(parts);
+                    intGamesPlayed = stoi(parts);
                     i++;
                 }
                 else if(i == 5)
                 {
-                    intPoints = std::stoi(parts);
+                    intPoints = stoi(parts);
                     i++;
                 }
                 else if(i == 6)
                 {
-                    intRebounds = std::stoi(parts);
+                    intRebounds = stoi(parts);
                     i++;
                 }
                 else if(i == 7)
                 {
-                    intSteals = std::stoi(parts);
+                    intSteals = stoi(parts);
                     i++;
                 }
                 else if(i == 8)
                 {
-                    intAssists = std::stoi(parts);
+                    intAssists = stoi(parts);
                     i++;
                 }
                 else if(i == 9)
                 {
-                    intTurnovers = std::stoi(parts);
+                    intTurnovers = stoi(parts);
                     i++;
                 }
                 else if(i == 10)
                 {
-                    intFouls = std::stoi(parts);
+                    intFouls = stoi(parts);
                     i++;
                 }
                 //cout<<parts<<endl;
@@ -101,8 +101,103 @@ int main(int argc, char *argv[])
             //cout<<strLine<<endl;
         }
     }
+    inFile.close();
+    string strMLSFile = argv[2];
+    ifstream MLSinFile;
+    MLSinFile.open(strMLSFile);
+    string firstLine;
+    getline(MLSinFile, firstLine);
+    string strDataLine;
+    //Soccer
+        string strLeague;
+        int intPlayerAge;
+        int intMinutes;
+        int intGoals;
+        int intSavePercentage;
+        int intYellowCards;
+        int intRedCards;
+    //
+    if(MLSinFile.fail())
+    {
+        cout << "The file failed to open." << endl;
+    }
+    else
+    {
+        int j = 0;
+        while(getline(MLSinFile, strDataLine))
+        {
+            j = 0;
+            istringstream ss(strDataLine);
+            while(getline(ss, parts, ','))
+            {
+                if(j == 0)
+                {
+                    strLeague = parts;
+                    j++;
+                }
+                else if(j == 1)
+                {
+                    strTeamName = parts;
+                    j++;
+                }
+                else if(j == 2)
+                {
+                    strPlayerName = parts;
+                    j++;
+                }
+                else if(j == 3)
+                {
+                    intPlayerAge = stoi(parts);
+                    j++;
+                }
+                else if(j == 4)
+                {
+                    intPlayerNumber = stoi(parts);
+                    j++;
+                }
+                else if(j == 5)
+                {
+                    strPosition = parts;
+                    j++;
+                }
+                else if(j == 6)
+                {
+                    intMinutes = stoi(parts);
+                    j++;
+                }
+                else if(j == 7)
+                {
+                    intGoals = stoi(parts);
+                    j++;
+                }
+                else if(j == 8)
+                {
+                    intAssists = stoi(parts);
+                    j++;
+                }
+                else if(j == 9)
+                {
+                    intSavePercentage = stoi(parts);
+                    j++;
+                }
+                else if(j == 10)
+                {
+                    intYellowCards = stoi(parts);
+                    j++;
+                }
+                else if(j == 11)
+                {
+                    intRedCards = stoi(parts);
+                    j++;
+                }
+                //cout<<parts<<endl;
+            }
+            //cout<<strDataLine<<endl;
+        }
+    }
+    MLSinFile.close();
     string userInput;
-    int intUserInput;
+    int intUserInput = 0;
     string menuSelectionstr;
     string menuSelection2Str;
     int menuSelection;
