@@ -13,8 +13,22 @@ struct BasketballPlayer
     int intRebounds;
     int intSteals;
     int intAssists;
-    int intTurnOvers;
+    int intTurnovers;
     int intFouls;
+
+    BasketballPlayer(std::string pName, int number, std::string position, int played, int points, int rebounds, int steals, int assists, int turnovers, int fouls)
+    {
+        strName = pName;
+        intPlayerNumber = number;
+        strPosition = position;
+        intGamesPlayed = played;
+        intPoints = points;
+        intRebounds = rebounds;
+        intSteals = steals;
+        intAssists = assists;
+        intTurnovers = turnovers;
+        intFouls = fouls;
+    }
 };
 
 struct BasketballTeams
@@ -24,7 +38,7 @@ struct BasketballTeams
     int intRebounds;
     int intSteals;
     int intAssists;
-    int intTurnOvers;
+    int intTurnovers;
     int intFouls;
     std::vector<BasketballPlayer> vecPlayers;
 };
@@ -35,6 +49,7 @@ class NBA
     public:
         NBA();
         ~NBA();
+        void addTeam(std::string tName, std::string pName, int number, std::string position, int played, int points, int rebounds, int steals, int assists, int turnovers, int fouls);
     private:
 
 };
