@@ -1,5 +1,8 @@
 #include "NBA.h"
 
+using std::cout;
+using std::endl;
+
 NBA::NBA()
 {
     nil = new BasketballTeams();
@@ -19,6 +22,7 @@ void NBA::addTeam(std::string tName, std::string pName, int number, std::string 
         std::cout<<teamNameVector[i];
     }
     std::cout<<std::endl;*/
+    //cout<<"x"<<endl;
     BasketballPlayer *player = new BasketballPlayer(pName, number, position, played, points, rebounds, steals, assists, turnovers, fouls);
     bool added = false;
     BasketballTeams *rootTemp = root;
@@ -66,21 +70,147 @@ void NBA::addTeam(std::string tName, std::string pName, int number, std::string 
                 }
             }
         }
-        team = searchTree(tName);
-        team->vecPlayers.push_back(player);
+        rbAddFixup(team);
     }
+    //cout<<"x"<<endl;
+    team = searchTree(tName);
+    team->vecPlayers.push_back(player);
+    //cout<<"x"<<endl;
+}
+
+void NBA::rbAddFixup(BasketballTeams *x)
+{
+    cout<<"x"<<endl;
+    x->left = nil;
+    x->right = nil;
+    x->isRed = true;
+    while ( (x != root) && (x->parent->isRed == true) )
+    {
+        if (x->parent == x->parent->parent->left)
+        {
+            cout<<"x"<<endl;
+            /* If x's parent is a left, y is x's right 'uncle' */
+            BasketballTeams *y = x->parent->parent->right;
+            if (y->isRed == true)
+            {
+                /* case 1 - change the colors */
+                x->parent->isRed = false;
+                y->isRed = false;
+                x->parent->parent->isRed = true;
+                /* Move x up the tree */
+                x = x->parent->parent;
+            }
+            else
+            {
+                /* y is a black node */
+                if (x == x->parent->right)
+                {
+                    /* and x is to the right */
+                    /* case 2 - move x up and rotate */
+                    x = x->parent;
+                    leftRotate(x);
+                }
+                /* case 3 */
+                x->parent->isRed = false;
+                x->parent->parent->isRed = true;
+                rightRotate(x->parent->parent);
+            }
+        }
+        else
+        {
+            cout<<"y"<<endl;
+            /* If x's parent is a left, y is x's right 'uncle' */
+            BasketballTeams *y = x->parent->parent->left;
+            if ( y->isRed == true)
+            {
+                cout<<"x"<<endl;
+                /* case 1 - change the colors */
+                x->parent->isRed = false;
+                y->isRed = false;
+                x->parent->parent->isRed = true;
+                /* Move x up the tree */
+                x = x->parent->parent;
+            }
+            else
+            {
+                cout<<"y"<<endl;
+                /* y is a black node */
+                if ( x == x->parent->left)
+                {
+                    /* and x is to the right */
+                    /* case 2 - move x up and rotate */
+                    x = x->parent;
+                    rightRotate(x);
+                }
+                /* case 3 */
+                x->parent->isRed = false;
+                x->parent->parent->isRed = true;
+                leftRotate(x->parent->parent);
+            }
+        }
+    }
+    /* Color the root black */
+    root->isRed = false;
+}
+
+void NBA::leftRotate(BasketballTeams *x)
+{
+    BasketballTeams *w = x->right;
+    x->right = w->left;
+    if(w->left != nil)
+    {
+        w->left->parent = x;
+    }
+    w->parent = x->parent;
+    if(x->parent == nil)
+    {
+        root = w;
+    }
+    else if(x == x->parent->left)
+    {
+        x->parent->left = w;
+    }
+    else
+    {
+        x->parent->right = w;
+    }
+    w->left = x;
+    x->parent = w;
+}
+
+void NBA::rightRotate(BasketballTeams *x)
+{
+    BasketballTeams *w = x->left;
+    x->left = w->right;
+    if(w->right != nil)
+    {
+        w->right->parent = x;
+    }
+    w->parent = x->parent;
+    if(x->parent == nil)
+    {
+        root = w;
+    }
+    else if(x == x->parent->left)
+    {
+        x->parent->left = w;
+    }
+    else
+    {
+        x->parent->right = w;
+    }
+    w->right = x;
+    x->parent = w;
 }
 
 BasketballTeams* NBA::searchTree(std::string tName)
 {
-    bool found = false;
     BasketballTeams *rootTemp = root;
     while(rootTemp != nil)
     {
         if(rootTemp->strName == tName)
         {
             return rootTemp;
-            found = true;
         }
         else
         {

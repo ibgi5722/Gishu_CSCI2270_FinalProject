@@ -70,6 +70,9 @@ class NBA
         void printTeams();
     private:
         void printTeams(BasketballTeams *rootTemp);
+        void rbAddFixup(BasketballTeams *x);
+        void rightRotate(BasketballTeams *x);
+        void leftRotate(BasketballTeams *x);
         BasketballTeams *root;
         std::vector<std::string> teamNameVector;
         BasketballTeams *nil;
