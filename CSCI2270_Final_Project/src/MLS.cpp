@@ -28,19 +28,22 @@ bool MLS::searchVector(std::string tName)
 void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber, std::string pPosition, int minutes, int goals, int assists, int savePercent, int yellowCards, int redCards)
 {
     bool addedToTree = false;
+    SoccerTeam *newTeam;
     if(searchVector(tName) == false)
     {
         teamVector.push_back(tName);
     }
-    for(int i = 0; i < teamVector.size(); i++)
+    /*for(int i = 0; i < teamVector.size(); i++)
     {
         std::cout << teamVector[i] << std::endl;
-    }
+    }*/
     SoccerPlayer *newPlayer = new SoccerPlayer(pName, pAge, pNumber, pPosition, minutes, goals, assists, savePercent, yellowCards, redCards);
     if(!(searchVector(tName)))
     {
         SoccerTeam *tempRoot = root;
-        SoccerTeam *newTeam = new SoccerTeam(tName);
+        newTeam = new SoccerTeam(tName);
+        newTeam->leftChild = nil;
+        newTeam->rightChild = nil;
         if(root == nil)
         {
             newTeam->parent = nil;
@@ -79,7 +82,8 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
                 }
             }
         }
-
+        newTeam = searchTree(tName);
+        newTeam->vecPlayers.push_back(newPlayer);
     }
 }
 
@@ -105,4 +109,21 @@ SoccerTeam* MLS::searchTree(std::string tName)
         }
     }
     return tempRoot;
+}
+
+void MLS::printTeams()
+{
+    printTeams(root);
+}
+void MLS::printTeams(SoccerTeam *tempRoot)
+{
+    if(tempRoot->leftChild != nil) //won't enter until left child is NULL
+    {
+        printTeams(tempRoot->leftChild);
+    }
+    std::cout <<  tempRoot->nameStr << std::endl; //starts when left child is null , which would be the first movie alphabetically
+    if(tempRoot->rightChild != nil)
+    {
+        printTeams(tempRoot->rightChild);
+    }
 }
