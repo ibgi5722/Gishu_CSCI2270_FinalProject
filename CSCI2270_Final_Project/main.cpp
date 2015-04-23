@@ -316,7 +316,7 @@ int main(int argc, char *argv[])
 					switch(menuSelection)
 					{
 						case 1:
-						    //mls->printTeams();
+						    mls->printTeams();
 							break;
 						case 2:
 							while(menuSelection2 != 4)
