@@ -80,7 +80,7 @@ void NBA::addTeam(std::string tName, std::string pName, int number, std::string 
 
 void NBA::rbAddFixup(BasketballTeams *x)
 {
-    cout<<"x"<<endl;
+    //cout<<"x"<<endl;
     x->left = nil;
     x->right = nil;
     x->isRed = true;
@@ -88,7 +88,7 @@ void NBA::rbAddFixup(BasketballTeams *x)
     {
         if (x->parent == x->parent->parent->left)
         {
-            cout<<"x"<<endl;
+            //cout<<"x"<<endl;
             /* If x's parent is a left, y is x's right 'uncle' */
             BasketballTeams *y = x->parent->parent->right;
             if (y->isRed == true)
@@ -118,12 +118,12 @@ void NBA::rbAddFixup(BasketballTeams *x)
         }
         else
         {
-            cout<<"y"<<endl;
+            //cout<<"y"<<endl;
             /* If x's parent is a left, y is x's right 'uncle' */
             BasketballTeams *y = x->parent->parent->left;
             if ( y->isRed == true)
             {
-                cout<<"x"<<endl;
+                //cout<<"x"<<endl;
                 /* case 1 - change the colors */
                 x->parent->isRed = false;
                 y->isRed = false;
@@ -133,7 +133,7 @@ void NBA::rbAddFixup(BasketballTeams *x)
             }
             else
             {
-                cout<<"y"<<endl;
+                //cout<<"y"<<endl;
                 /* y is a black node */
                 if ( x == x->parent->left)
                 {

@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Option parameters="NBA.txt MLSData.txt" />
 				<Compiler>
+					<Add option="-std=c++11" />
 					<Add option="-g" />
 					<Add directory="include" />
 				</Compiler>
@@ -32,6 +33,7 @@
 			</Target>
 		</Build>
 		<Compiler>
+			<Add option="-std=c++11" />
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
