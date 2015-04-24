@@ -37,10 +37,16 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
     SoccerTeam *tempRoot = root;
     if(!(searchVector(tName)))
     {
+        hashTable = new SoccerPlayer*[10];
+        for(int i = 0; i < 10; i++)
+        {
+            hashTable[i] = NULL;
+        }
         teamVector.push_back(tName);
         newTeam = new SoccerTeam(tName);
         newTeam->leftChild = nil;
         newTeam->rightChild = nil;
+        newTeam->playerHashTable = hashTable;
         if(root == nil)
         {
             newTeam->parent = nil;
@@ -82,7 +88,8 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
         rbAddFixup(newTeam);
     }
     newTeam = searchTree(tName);
-    newTeam->vecPlayers.push_back(newPlayer);
+    //newTeam->vecPlayers.push_back(newPlayer);
+    insertPlayer(newPlayer, hashTable);
 }
 
 SoccerTeam* MLS::searchTree(std::string tName)
@@ -258,6 +265,50 @@ void MLS::rightRotate(SoccerTeam * y)
     }
     x->rightChild = y;
     y->parent = x;
+}
 
+int MLS::hashSum(std::string playerName)
+{
+    int i = 0;
+    for(int j = 0; j < playerName.size(); j++)
+    {
+        i = i + playerName[j];
+    }
+    return i%10;
+}
 
+void MLS::insertPlayer(SoccerPlayer *player, SoccerPlayer **hashTable)
+{
+    SoccerPlayer *newPlayer = player;
+    int i = hashSum(player->nameStr);
+    if(hashTable[i] == NULL)
+    {
+        hashTable[i] = newPlayer;
+    }
+    else
+    {
+        SoccerPlayer *temp = hashTable[i];
+        while(temp->next != NULL)
+        {
+            temp = temp->next;
+        }
+        temp->next = newPlayer;
+    }
+}
+
+void printRoster(std::string tName)
+{
+
+    if(tempRoot->leftChild != nil) //won't enter until left child is NULL
+    {
+        printTeams(tempRoot->leftChild);
+    }
+    if(tempRoot->name == tName)
+    {
+        cout << "s" << endl;
+    }
+    if(tempRoot->rightChild != nil)
+    {
+        printTeams(tempRoot->rightChild);
+    }
 }

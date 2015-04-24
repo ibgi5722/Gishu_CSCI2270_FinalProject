@@ -15,6 +15,7 @@ struct SoccerPlayer
     int savePercentageInt;
     int yellowCardsInt;
     int redCardsInt;
+    SoccerPlayer *next;
 
     SoccerPlayer(std::string pName, int pAge, int pNumber, std::string pPosition, int minutes, int goals, int assists, int savePercent, int yellowCards, int redCards)
     {
@@ -28,6 +29,7 @@ struct SoccerPlayer
         savePercentageInt = savePercent;
         yellowCardsInt = yellowCards;
         redCardsInt = redCards;
+        next = NULL;
     }
 };
 
@@ -42,6 +44,7 @@ struct SoccerTeam
     SoccerTeam *parent;
     SoccerTeam *leftChild;
     SoccerTeam *rightChild;
+    SoccerPlayer **playerHashTable;
     bool isRed;
 
     SoccerTeam(){};
@@ -68,12 +71,20 @@ class MLS
         void rbAddFixup(SoccerTeam * x);
         void leftRotate(SoccerTeam * x);
         void rightRotate(SoccerTeam * y);
+        int hashSum(std::string playerName);
+        void insertPlayer(SoccerPlayer *player, SoccerPlayer **hashTable);
+        void findPlayer(std::string playerName);
+        void printPlayers();
+        void printRoster(std::string tName);
+        //void sortPlayers(std::vector<Movie*> collisions);
     protected:
     private:
         void printTeams(SoccerTeam *temp);
+        void printRoster(SoccerTeam *temp);
         SoccerTeam *root;
         SoccerTeam *nil;
         std::vector<std::string> teamVector;
+        SoccerPlayer **hashTable;
 };
 
 #endif // MLS_H
