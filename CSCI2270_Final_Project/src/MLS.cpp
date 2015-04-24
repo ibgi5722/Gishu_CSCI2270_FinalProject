@@ -296,19 +296,27 @@ void MLS::insertPlayer(SoccerPlayer *player, SoccerPlayer **hashTable)
     }
 }
 
-void printRoster(std::string tName)
+SoccerTeam* MLS::selectTeam(std::string tName)
 {
+    SoccerTeam *node = root;
+    while(node != nil)
+    {
+        if(tName == node->nameStr)
+        {
+            return node;
+        }
+        else
+        {
+            if(tName.compare(node->nameStr) < 0)
+            {
+                node = node->leftChild; //loops to the left
+            }
+            else
+            {
+                node = node->rightChild; //loops to the right
+            }
+        }
+    }
+    return node;
 
-    if(tempRoot->leftChild != nil) //won't enter until left child is NULL
-    {
-        printTeams(tempRoot->leftChild);
-    }
-    if(tempRoot->name == tName)
-    {
-        cout << "s" << endl;
-    }
-    if(tempRoot->rightChild != nil)
-    {
-        printTeams(tempRoot->rightChild);
-    }
 }

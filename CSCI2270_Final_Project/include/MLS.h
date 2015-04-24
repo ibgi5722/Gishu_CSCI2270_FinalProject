@@ -75,7 +75,7 @@ class MLS
         void insertPlayer(SoccerPlayer *player, SoccerPlayer **hashTable);
         void findPlayer(std::string playerName);
         void printPlayers();
-        void printRoster(std::string tName);
+        SoccerTeam* selectTeam(std::string tName);
         //void sortPlayers(std::vector<Movie*> collisions);
     protected:
     private:
