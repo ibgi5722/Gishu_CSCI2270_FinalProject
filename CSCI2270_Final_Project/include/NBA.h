@@ -70,7 +70,9 @@ class NBA
         bool searchVector(std::string tName);
         BasketballTeams* searchTree(std::string tName);
         void printTeams();
+        BasketballTeams* selectTeam(std::string tName);
     private:
+        //BasketballTeams* findTeam(std::string tName);
         void printTeams(BasketballTeams *rootTemp);
         void rbAddFixup(BasketballTeams *x);
         void rightRotate(BasketballTeams *x);

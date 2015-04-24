@@ -279,7 +279,7 @@ void NBA::printTeams(BasketballTeams *rootTemp)
         printTeams(rootTemp->left);
     }
     std::cout<<"Team: "<<rootTemp->strName<<std::endl;
-    /*for(int i = 0; i<10; i++)
+    for(int i = 5; i<10; i++)
     {
         if(rootTemp->hashPlayer[i] != NULL)
         {
@@ -293,11 +293,37 @@ void NBA::printTeams(BasketballTeams *rootTemp)
                 //std::cout<<temp->title<<":"<<temp->year<<std::endl;
             }
         }
-    }*/
+    }
     if(rootTemp->right != nil)
     {
         printTeams(rootTemp->right);
     }
+}
+
+BasketballTeams* NBA::selectTeam(std::string tName)
+{
+    BasketballTeams* base = root;
+    while(base != nil)
+    {
+        if(base->strName == tName)
+        {
+            return base;
+            //found = true;
+        }
+        else
+        {
+            if(tName.compare(base->strName) < 0)
+            {
+                base = base->left;
+            }
+            else
+            {
+                base = base->right;
+            }
+        }
+    }
+    cout<<"not found"<<endl;
+    return NULL;
 }
 
 int NBA::Hash(std::string pName)
