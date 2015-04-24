@@ -199,6 +199,11 @@ int main(int argc, char *argv[])
         }
     }
     MLSinFile.close();
+    //User Data
+        BasketballTeams *teamPointer;
+        string team;
+        string player;
+        SoccerTeam *sTeamPointer;
     string userInput;
     int intUserInput = 0;
     string menuSelectionstr;
@@ -230,32 +235,37 @@ int main(int argc, char *argv[])
 						    nba->printTeams();
 							break;
 						case 2:
-							while(menuSelection2 != 5)
-							{
-								cout << "======Main Menu======" << endl;
-								cout << "1. Print Roster" << endl;
-								cout << "2. Print Player Information" <<endl;
-								cout << "3. Rank Players" << endl;
-								cout << "4. Print Team Stats" << endl;
-								cout << "5. Choose New Team" << endl;
-								getline(cin, menuSelectionstr);
-								menuSelection2 = stoi(menuSelectionstr);
-								switch(menuSelection)
-								{
-									case 1:
-										break;
-									case 2:
-										break;
-									case 3:
-										break;
-                                    case 4:
-                                        break;
-									case 5:
-									    //cout<<"hello"<<endl;
-										break;
-								}
-							}
-							menuSelection2 = 0;
+						    getline(cin, team);
+						    teamPointer = nba->selectTeam(team);
+						    if(teamPointer != NULL)
+                            {
+                                while(menuSelection2 != 5)
+                                {
+                                    cout << "======Main Menu======" << endl;
+                                    cout << "1. Print Roster" << endl;
+                                    cout << "2. Print Player Information" <<endl;
+                                    cout << "3. Rank Players" << endl;
+                                    cout << "4. Print Team Stats" << endl;
+                                    cout << "5. Choose New Team" << endl;
+                                    getline(cin, menuSelectionstr);
+                                    menuSelection2 = stoi(menuSelectionstr);
+                                    switch(menuSelection)
+                                    {
+                                        case 1:
+                                            break;
+                                        case 2:
+                                            break;
+                                        case 3:
+                                            break;
+                                        case 4:
+                                            break;
+                                        case 5:
+                                            //cout<<"hello"<<endl;
+                                            break;
+                                    }
+                                }
+                                menuSelection2 = 0;
+                            }
 							break;
 						case 3:
 							break;
@@ -278,31 +288,36 @@ int main(int argc, char *argv[])
 						    mls->printTeams();
 							break;
 						case 2:
-							while(menuSelection2 != 5)
-							{
-								cout << "======Main Menu======" << endl;
-								cout << "1. Print Roster" << endl;
-								cout << "2. Print Player Information" <<endl;
-								cout << "3. Rank Players" << endl;
-								cout << "4. Print Team Stats" << endl;
-								cout << "5. Choose New Team" << endl;
-								getline(cin, menuSelectionstr);
-								menuSelection2 = stoi(menuSelectionstr);
-								switch(menuSelection)
-								{
-									case 1:
-										break;
-									case 2:
-										break;
-									case 3:
-										break;
-									case 4:
-										break;
-                                    case 5:
-                                        break;
-								}
-							}
-							menuSelection2 = 0;
+						    getline(cin, team);
+						    sTeamPointer = mls->selectTeam(team);
+						    if(sTeamPointer != NULL)
+                            {
+                                while(menuSelection2 != 5)
+                                {
+                                    cout << "======Main Menu======" << endl;
+                                    cout << "1. Print Roster" << endl;
+                                    cout << "2. Print Player Information" <<endl;
+                                    cout << "3. Rank Players" << endl;
+                                    cout << "4. Print Team Stats" << endl;
+                                    cout << "5. Choose New Team" << endl;
+                                    getline(cin, menuSelectionstr);
+                                    menuSelection2 = stoi(menuSelectionstr);
+                                    switch(menuSelection)
+                                    {
+                                        case 1:
+                                            break;
+                                        case 2:
+                                            break;
+                                        case 3:
+                                            break;
+                                        case 4:
+                                            break;
+                                        case 5:
+                                            break;
+                                    }
+                                }
+                                menuSelection2 = 0;
+                            }
 							break;
 						case 3:
 							break;
