@@ -29,10 +29,16 @@ void NBA::addTeam(std::string tName, std::string pName, int number, std::string 
     BasketballTeams *team;
     if(!(searchVector(tName)))
     {
+        hashTable = new BasketballPlayer*[10];
+        for(int i = 0;i<10; i++)
+        {
+            hashTable[i] = NULL;
+        }
         teamNameVector.push_back(tName);
         team = new BasketballTeams(tName);
         team->left = nil;
         team->right = nil;
+        team->hashPlayer = hashTable;
         if(root == nil)
         {
             team->parent = nil;
@@ -72,10 +78,30 @@ void NBA::addTeam(std::string tName, std::string pName, int number, std::string 
         }
         rbAddFixup(team);
     }
+    insertPlayer(player, hashTable);
     //cout<<"x"<<endl;
     team = searchTree(tName);
-    team->vecPlayers.push_back(player);
+    //team->vecPlayers.push_back(player);
     //cout<<"x"<<endl;
+}
+
+void NBA::insertPlayer(BasketballPlayer* p, BasketballPlayer** hashTable)
+{
+    int index = Hash(p->strName);
+    if(hashTable[index] == NULL)
+    {
+        hashTable[index] = p;
+    }
+    else
+    {
+        BasketballPlayer *temp = hashTable[index];
+        while(temp->next != NULL)
+        {
+            temp = temp->next;
+        }
+        temp->next = p;
+
+    }
 }
 
 void NBA::rbAddFixup(BasketballTeams *x)
@@ -253,8 +279,33 @@ void NBA::printTeams(BasketballTeams *rootTemp)
         printTeams(rootTemp->left);
     }
     std::cout<<"Team: "<<rootTemp->strName<<std::endl;
+    /*for(int i = 0; i<10; i++)
+    {
+        if(rootTemp->hashPlayer[i] != NULL)
+        {
+            //cout<<" "<<rootTemp->hashPlayer[i]->strName<<endl;
+            BasketballPlayer *temp = rootTemp->hashPlayer[i];
+            while(temp != NULL)
+            {
+                //collisions.push_back(temp);
+                cout<<" "<<temp->strName<<endl;
+                temp = temp->next;
+                //std::cout<<temp->title<<":"<<temp->year<<std::endl;
+            }
+        }
+    }*/
     if(rootTemp->right != nil)
     {
         printTeams(rootTemp->right);
     }
+}
+
+int NBA::Hash(std::string pName)
+{
+    int sum = 0;
+    for(int i = 0; i<pName.size(); i++)
+    {
+        sum = sum + pName[i];
+    }
+    return sum%10;
 }
