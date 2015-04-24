@@ -1,6 +1,5 @@
 # depslib dependency file v1.0
-1429832690 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/main.cpp
-	"NHL.h"
+1429909018 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/main.cpp
 	"NBA.h"
 	"MLS.h"
 	<iostream>
@@ -9,7 +8,7 @@
 
 1429564826 /home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/include/NHL.h
 
-1429831025 /home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/include/NBA.h
+1429907673 /home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/include/NBA.h
 	<iostream>
 	<vector>
 
@@ -17,11 +16,11 @@
 	<iostream>
 	<vector>
 
-1429900950 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/src/MLS.cpp
+1429906268 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/src/MLS.cpp
 	"MLS.h"
 	<iostream>
 
-1429832943 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/src/NBA.cpp
+1429908677 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/src/NBA.cpp
 	"NBA.h"
 
 1429564826 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Project/src/NHL.cpp

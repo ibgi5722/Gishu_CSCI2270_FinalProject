@@ -15,6 +15,7 @@ struct BasketballPlayer
     int intAssists;
     int intTurnovers;
     int intFouls;
+    BasketballPlayer* next;
 
     BasketballPlayer(std::string pName, int number, std::string position, int played, int points, int rebounds, int steals, int assists, int turnovers, int fouls)
     {
@@ -41,6 +42,7 @@ struct BasketballTeams
     int intTurnovers;
     int intFouls;
     std::vector<BasketballPlayer*> vecPlayers;
+    BasketballPlayer** hashPlayer;
     BasketballTeams *parent;
     BasketballTeams *left;
     BasketballTeams *right;
@@ -73,9 +75,12 @@ class NBA
         void rbAddFixup(BasketballTeams *x);
         void rightRotate(BasketballTeams *x);
         void leftRotate(BasketballTeams *x);
+        void insertPlayer(BasketballPlayer *p, BasketballPlayer** hashTable);
+        int Hash(std::string pName);
         BasketballTeams *root;
         std::vector<std::string> teamNameVector;
         BasketballTeams *nil;
+        BasketballPlayer **hashTable;
 
 
 };
