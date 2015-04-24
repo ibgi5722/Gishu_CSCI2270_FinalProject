@@ -129,7 +129,7 @@ void MLS::printTeams(SoccerTeam *tempRoot)
 
 void MLS::rbAddFixup(SoccerTeam * x) // called after insert to fix tree
 {
-    std::cout << "x" << std::endl;
+    //std::cout << "x" << std::endl;
     x->leftChild = nil;
     x->rightChild = nil;
     //Now restore the red-black property

@@ -1,4 +1,3 @@
-#include "NHL.h"
 #include "NBA.h"
 #include "MLS.h"
 #include <iostream>
@@ -206,12 +205,12 @@ int main(int argc, char *argv[])
     string menuSelection2Str;
     int menuSelection;
     int menuSelection2;
-    while(intUserInput != 4)
+    while(intUserInput != 3)
 	{
-		cout << "1. NHL" << endl;
-		cout << "2. NBA" << endl;
-		cout << "3. MLS" << endl;
-		cout << "4. Quit" << endl;
+		cout << "Please Select a League" << endl;
+		cout << "1. NBA" << endl;
+		cout << "2. MLS" << endl;
+		cout << "3. Quit" << endl;
 		getline(cin, userInput);//reads in the command that the user wants to do
 		intUserInput = stoi(userInput);
 		switch(intUserInput)
@@ -228,6 +227,7 @@ int main(int argc, char *argv[])
 					switch(menuSelection)
 					{
 						case 1:
+						    nba->printTeams();
 							break;
 						case 2:
 							while(menuSelection2 != 4)
@@ -272,50 +272,6 @@ int main(int argc, char *argv[])
 					switch(menuSelection)
 					{
 						case 1:
-						    nba->printTeams();
-							break;
-						case 2:
-							while(menuSelection2 != 4)
-							{
-								cout << "======Main Menu======" << endl;
-								cout << "1. Print Roster" << endl;
-								cout << "2. Rank Players" << endl;
-								cout << "3. Print Team Stats" << endl;
-								cout << "4. Choose New Team" << endl;
-								getline(cin, menuSelectionstr);
-								menuSelection2 = stoi(menuSelectionstr);
-								switch(menuSelection)
-								{
-									case 1:
-										break;
-									case 2:
-										break;
-									case 3:
-										break;
-									case 4:
-										break;
-								}
-							}
-							menuSelection2 = 0;
-							break;
-						case 3:
-							break;
-					}
-				}
-				menuSelection = 0;
-				break;
-			case 3:
-			    while(menuSelection != 3)
-			    {
-					cout << "======Main Menu======" << endl;
-					cout << "1. List Teams" << endl;
-					cout << "2. Select Team" << endl;
-					cout << "3. Select New League" << endl;
-					getline(cin, menuSelectionstr);
-					menuSelection = stoi(menuSelectionstr);
-					switch(menuSelection)
-					{
-						case 1:
 						    mls->printTeams();
 							break;
 						case 2:
@@ -348,7 +304,7 @@ int main(int argc, char *argv[])
 				}
 				menuSelection = 0;
 				break;
-			case 4:
+			case 3:
 			    cout << "Goodbye!" << endl;
 				break;
 		}
