@@ -17,15 +17,15 @@ int main(int argc, char *argv[])
         NBA *nba = new NBA();
         string strTeamName;
         string strPlayerName;
-        int intPlayerNumber;
+        float intPlayerNumber;
         string strPosition;
-        int intGamesPlayed;
-        int intPoints;
-        int intRebounds;
-        int intSteals;
-        int intAssists;
-        int intTurnovers;
-        int intFouls;
+        float intGamesPlayed;
+        float intPoints;
+        float intRebounds;
+        float intSteals;
+        float intAssists;
+        float intTurnovers;
+        float intFouls;
     //
     getline(inFile, strLine);
     if(inFile.fail())
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
                 }
                 else if(i == 2)
                 {
-                    intPlayerNumber = stoi(parts);
+                    intPlayerNumber = stof(parts);
                     i++;
                 }
                 else if(i == 3)
@@ -63,40 +63,39 @@ int main(int argc, char *argv[])
                 }
                 else if(i == 4)
                 {
-                    intGamesPlayed = stoi(parts);
+                    intGamesPlayed = stof(parts);
                     i++;
                 }
                 else if(i == 5)
                 {
-                    intPoints = stoi(parts);
+                    intPoints = stof(parts);
                     i++;
                 }
                 else if(i == 6)
                 {
-                    intRebounds = stoi(parts);
+                    intRebounds = stof(parts);
                     i++;
                 }
                 else if(i == 7)
                 {
-                    intSteals = stoi(parts);
+                    intSteals = stof(parts);
                     i++;
                 }
                 else if(i == 8)
                 {
-                    intAssists = stoi(parts);
+                    intAssists = stof(parts);
                     i++;
                 }
                 else if(i == 9)
                 {
-                    intTurnovers = stoi(parts);
+                    intTurnovers = stof(parts);
                     i++;
                 }
                 else if(i == 10)
                 {
-                    intFouls = stoi(parts);
+                    intFouls = stof(parts);
                     i++;
                 }
-                //cout<<parts<<endl;
             }
             nba->addTeam(strTeamName, strPlayerName, intPlayerNumber, strPosition, intGamesPlayed, intPoints, intRebounds, intSteals, intAssists, intTurnovers, intFouls);
             //cout<<strLine<<endl;
@@ -204,6 +203,8 @@ int main(int argc, char *argv[])
         string team;
         string player;
         SoccerTeam *sTeamPointer;
+        string sortBy;
+        int sortByThis;
     string userInput;
     int intUserInput = 0;
     string menuSelectionstr;
@@ -235,6 +236,7 @@ int main(int argc, char *argv[])
 						    nba->printTeams();
 							break;
 						case 2:
+						    cout<<"Enter Team Name: ";
 						    getline(cin, team);
 						    teamPointer = nba->selectTeam(team);
 						    if(teamPointer != NULL)
@@ -249,15 +251,32 @@ int main(int argc, char *argv[])
                                     cout << "5. Choose New Team" << endl;
                                     getline(cin, menuSelectionstr);
                                     menuSelection2 = stoi(menuSelectionstr);
-                                    switch(menuSelection)
+                                    switch(menuSelection2)
                                     {
                                         case 1:
+                                            nba->printRoster(teamPointer);
                                             break;
                                         case 2:
+                                            cout<<"Enter Player Name: ";
+                                            getline(cin, player);
+                                            nba->printPlayerInfo(teamPointer, player);
                                             break;
                                         case 3:
+                                            cout << "======Sort Players BY======" << endl;
+                                            cout << "1. Player Number" << endl;
+                                            cout << "2. Games Played" <<endl;
+                                            cout << "3. Points" << endl;
+                                            cout << "4. Rebouds" << endl;
+                                            cout << "5. Steals" << endl;
+                                            cout << "6. Assists" << endl;
+                                            cout << "7. Turnovers" <<endl;
+                                            cout << "8. Fouls" << endl;
+                                            getline(cin, sortBy);
+                                            sortByThis = stoi(sortBy);
+                                            nba->rankBy(teamPointer, sortByThis);
                                             break;
                                         case 4:
+                                            nba->printTeamStats(teamPointer);
                                             break;
                                         case 5:
                                             //cout<<"hello"<<endl;
@@ -288,8 +307,8 @@ int main(int argc, char *argv[])
 						    mls->printTeams();
 							break;
 						case 2:
-						    getline(cin, team);
-						    sTeamPointer = mls->selectTeam(team);
+						    //getline(cin, team);
+						    //sTeamPointer = mls->selectTeam(team);
 						    if(sTeamPointer != NULL)
                             {
                                 while(menuSelection2 != 5)

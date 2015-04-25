@@ -6,41 +6,42 @@
 struct BasketballPlayer
 {
     std::string strName;
-    int intPlayerNumber;
+    float floatPlayerNumber;
     std::string strPosition;
-    int intGamesPlayed;
-    int intPoints;
-    int intRebounds;
-    int intSteals;
-    int intAssists;
-    int intTurnovers;
-    int intFouls;
+    float floatGamesPlayed;
+    float floatPoints;
+    float floatRebounds;
+    float floatSteals;
+    float floatAssists;
+    float floatTurnovers;
+    float floatFouls;
     BasketballPlayer* next;
 
-    BasketballPlayer(std::string pName, int number, std::string position, int played, int points, int rebounds, int steals, int assists, int turnovers, int fouls)
+    BasketballPlayer(std::string pName, float number, std::string position, float played, float points, float rebounds, float steals, float assists, float turnovers, float fouls)
     {
         strName = pName;
-        intPlayerNumber = number;
+        floatPlayerNumber = number;
         strPosition = position;
-        intGamesPlayed = played;
-        intPoints = points;
-        intRebounds = rebounds;
-        intSteals = steals;
-        intAssists = assists;
-        intTurnovers = turnovers;
-        intFouls = fouls;
+        floatGamesPlayed = played;
+        floatPoints = points;
+        floatRebounds = rebounds;
+        floatSteals = steals;
+        floatAssists = assists;
+        floatTurnovers = turnovers;
+        floatFouls = fouls;
+        next = NULL;
     }
 };
 
 struct BasketballTeams
 {
     std::string strName;
-    int intPoints;
-    int intRebounds;
-    int intSteals;
-    int intAssists;
-    int intTurnovers;
-    int intFouls;
+    float floatPoints;
+    float floatRebounds;
+    float floatSteals;
+    float floatAssists;
+    float floatTurnovers;
+    float floatFouls;
     std::vector<BasketballPlayer*> vecPlayers;
     BasketballPlayer** hashPlayer;
     BasketballTeams *parent;
@@ -66,13 +67,20 @@ class NBA
     public:
         NBA();
         ~NBA();
-        void addTeam(std::string tName, std::string pName, int number, std::string position, int played, int points, int rebounds, int steals, int assists, int turnovers, int fouls);
+        void addTeam(std::string tName, std::string pName, float number, std::string position, float played, float pofloats, float rebounds, float steals, float assists, float turnovers, float fouls);
         bool searchVector(std::string tName);
         BasketballTeams* searchTree(std::string tName);
         void printTeams();
         BasketballTeams* selectTeam(std::string tName);
+        void printRoster(BasketballTeams* team);
+        void printPlayerInfo(BasketballTeams* team, std::string pName);
+        void rankBy(BasketballTeams* team, int x);
+        void printTeamStats(BasketballTeams* team);
+        //BasketballTeams* sTeam(std::string tName);
     private:
         //BasketballTeams* findTeam(std::string tName);
+        void rankPlayers(std::vector<float> stat);
+        void sortPlayers(std::vector<BasketballPlayer*> collisons);
         void printTeams(BasketballTeams *rootTemp);
         void rbAddFixup(BasketballTeams *x);
         void rightRotate(BasketballTeams *x);
@@ -84,6 +92,15 @@ class NBA
         BasketballTeams *nil;
         BasketballPlayer **hashTable;
 
+        //Ranking Methods
+            void rankByPlayerNumber(std::vector<BasketballPlayer*> collisions);
+            void rankByGamesPlayed(std::vector<BasketballPlayer*> collisions);
+            void rankByPoints(std::vector<BasketballPlayer*> collisions);
+            void rankByRebounds(std::vector<BasketballPlayer*> collisions);
+            void rankBySteals(std::vector<BasketballPlayer*> collisions);
+            void rankByAssists(std::vector<BasketballPlayer*> collisions);
+            void rankByTurnovers(std::vector<BasketballPlayer*> collisions);
+            void rankByFouls(std::vector<BasketballPlayer*> collisions);
 
 };
 
