@@ -326,7 +326,7 @@ BasketballTeams* NBA::selectTeam(std::string tName)
             }
         }
     }
-    cout<<"not found"<<endl;
+    cout<<"Not found"<<endl;
     return NULL;
 }
 
