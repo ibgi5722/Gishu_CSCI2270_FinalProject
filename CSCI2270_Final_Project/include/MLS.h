@@ -76,11 +76,14 @@ class MLS
         void findPlayer(std::string playerName);
         void printPlayers();
         SoccerTeam* selectTeam(std::string tName);
-        //void sortPlayers(std::vector<Movie*> collisions);
+        void printRoster(SoccerTeam *temp);
+        void sortRoster(std::vector<SoccerPlayer*> collisions);
+        void printPlayerInfo(std::string player, SoccerTeam *team);
+        void sortPlayers(int menuOption, SoccerTeam *team);
+        void printTeamStats(SoccerTeam *team);
     protected:
     private:
         void printTeams(SoccerTeam *temp);
-        void printRoster(SoccerTeam *temp);
         SoccerTeam *root;
         SoccerTeam *nil;
         std::vector<std::string> teamVector;

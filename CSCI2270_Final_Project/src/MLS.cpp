@@ -1,5 +1,7 @@
 #include "MLS.h"
 #include <iostream>
+#include <vector>
+#include <iomanip>
 MLS::MLS()
 {
     nil = new SoccerTeam();
@@ -47,6 +49,7 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
         newTeam->leftChild = nil;
         newTeam->rightChild = nil;
         newTeam->playerHashTable = hashTable;
+
         if(root == nil)
         {
             newTeam->parent = nil;
@@ -87,9 +90,9 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
         }
         rbAddFixup(newTeam);
     }
+    insertPlayer(newPlayer, hashTable);
     newTeam = searchTree(tName);
     //newTeam->vecPlayers.push_back(newPlayer);
-    insertPlayer(newPlayer, hashTable);
 }
 
 SoccerTeam* MLS::searchTree(std::string tName)
@@ -279,11 +282,10 @@ int MLS::hashSum(std::string playerName)
 
 void MLS::insertPlayer(SoccerPlayer *player, SoccerPlayer **hashTable)
 {
-    SoccerPlayer *newPlayer = player;
     int i = hashSum(player->nameStr);
     if(hashTable[i] == NULL)
     {
-        hashTable[i] = newPlayer;
+        hashTable[i] = player;
     }
     else
     {
@@ -292,7 +294,7 @@ void MLS::insertPlayer(SoccerPlayer *player, SoccerPlayer **hashTable)
         {
             temp = temp->next;
         }
-        temp->next = newPlayer;
+        temp->next = player;
     }
 }
 
@@ -317,6 +319,363 @@ SoccerTeam* MLS::selectTeam(std::string tName)
             }
         }
     }
-    return node;
+    std::cout<<"Team Not Found"<<std::endl;
+    return NULL;
+}
+
+void MLS::printRoster(SoccerTeam *temp)
+{
+    //std::cout << temp->nameStr << std::endl;
+    std::vector<SoccerPlayer*> collisions;
+    bool isEmpty = true;
+    for(int i = 0; i < 10; i++)
+    {
+        if(temp->playerHashTable[i] != NULL)
+        {
+            SoccerPlayer *index = temp->playerHashTable[i];
+            while(index != NULL)
+            {
+                collisions.push_back(index);
+                //std::cout << index->nameStr << std::endl;
+                index = index->next;
+            }
+
+            isEmpty = false;
+        }
+    }
+    if(isEmpty == true)
+    {
+        std::cout << "empty" << std::endl;
+    }
+    sortRoster(collisions);
+}
+void MLS::sortRoster(std::vector<SoccerPlayer*> collisions)
+{
+    bool newBool = true;
+    int vectorsize = collisions.size();
+    SoccerPlayer *temp;
+    while(newBool || (vectorsize>1))
+    {
+        newBool = false;
+        vectorsize = (vectorsize+1)/2;
+        for(int i = 0; i < (collisions.size() - vectorsize); i++)
+        {
+            if(collisions[i+vectorsize]->nameStr.compare(collisions[i]->nameStr) < 0)
+            {
+                temp = collisions[i+vectorsize];
+                collisions[i+vectorsize] = collisions[i];
+                collisions[i] = temp;
+                newBool = true;
+            }
+        }
+    }
+    int z;
+    for(int j = 0; j < collisions.size(); j++)
+    {
+        std::cout << collisions[j]->nameStr << std::endl;
+    }
+}
+
+void MLS::printPlayerInfo(std::string player, SoccerTeam *team)
+{
+    bool boolfoundPlayer = false;
+    SoccerPlayer *foundPlayer;
+    for(int i = 0; i < 10; i++)
+    {
+        if(team->playerHashTable[i] != NULL)
+        {
+            SoccerPlayer *index = team->playerHashTable[i];
+            while(index != NULL)
+            {
+                if(index->nameStr == player)
+                {
+                    foundPlayer = index;
+                    boolfoundPlayer = true;
+                }
+                //std::cout << index->nameStr << std::endl;
+                index = index->next;
+            }
+        }
+    }
+    if(boolfoundPlayer != true)
+    {
+        std::cout << "Player Not Found" << std::endl;
+    }
+    else
+    {
+
+        if(foundPlayer->positionStr == "GK")
+        {
+            std::cout << std::endl;
+            std::cout << std::endl;
+            std::cout << "Name: " << foundPlayer->nameStr << std::endl;
+            std::cout << "Team: " << team->nameStr << std::endl;
+            std::cout << "Age: " << foundPlayer->ageInt << std::endl;
+            std::cout << "Number: " << foundPlayer->jerseyNumberInt << std::endl;
+            std::cout << "Position: " << foundPlayer->positionStr << std::endl;
+            std::cout << "Minutes: " << foundPlayer->minutesInt << std::endl;
+            std::cout << "Save Percentage: " << foundPlayer->savePercentageInt << "%" << std::endl;
+            std::cout << "Yellow Cards: " << foundPlayer->yellowCardsInt << "  Red Cards: " << foundPlayer->redCardsInt << std::endl;
+            std::cout << std::endl;
+            std::cout << std::endl;
+        }
+        else
+        {
+            std::cout << std::endl;
+            std::cout << std::endl;
+            std::cout << "Name: " << foundPlayer->nameStr << std::endl;
+            std::cout << "Team: " << team->nameStr << std::endl;
+            std::cout << "Age: " << foundPlayer->ageInt << std::endl;
+            std::cout << "Number: " << foundPlayer->jerseyNumberInt << std::endl;
+            std::cout << "Position: " << foundPlayer->positionStr << std::endl;
+            std::cout << "Minutes: " << foundPlayer->minutesInt << std::endl;
+            std::cout << "Goals: " << foundPlayer->goalsInt << std::endl;
+            std::cout << "Assists: " << foundPlayer->assistsInt << std::endl;
+            std::cout << "Yellow Cards: " << foundPlayer->yellowCardsInt << "  Red Cards: " << foundPlayer->redCardsInt << std::endl;
+            std::cout << std::endl;
+            std::cout << std::endl;
+        }
+    }
+}
+
+void MLS::sortPlayers(int menuOption, SoccerTeam *team)
+{
+    //std:: cout << "x" << std:: endl;
+    std::vector<SoccerPlayer*> playersVector;
+    for(int i = 0; i < 10; i++)
+    {
+        if(team->playerHashTable[i] != NULL)
+        {
+            SoccerPlayer *temp = team->playerHashTable[i];
+            while(temp != NULL)
+            {
+                playersVector.push_back(temp);
+                //std::cout << index->nameStr << std::endl;
+                temp = temp->next;
+            }
+
+        }
+    }
+    SoccerPlayer *temporary;
+    if(menuOption == 1)
+    {
+        int vectorsize = playersVector.size();
+        bool newBool = true;
+        while(newBool || (vectorsize>1))
+        {
+            newBool = false;
+            vectorsize = (vectorsize+1)/2;
+            for(int i = 0; i < (playersVector.size() - vectorsize); i++)
+            {
+                if(playersVector[i+vectorsize]->ageInt < playersVector[i]->ageInt)
+                {
+                    temporary = playersVector[i+vectorsize];
+                    playersVector[i+vectorsize] = playersVector[i];
+                    playersVector[i] = temporary;
+                    newBool = true;
+                }
+            }
+        }
+        //std:: cout << "t" << std:: endl;
+        for(int i = 0; i < playersVector.size(); i++)
+        {
+            std::cout << playersVector[i]->nameStr << " - " <<  playersVector[i]->ageInt << std::endl;
+        }
+    }
+    else if(menuOption == 2)
+    {
+        int vectorsize = playersVector.size();
+        bool newBool = true;
+        while(newBool || (vectorsize>1))
+        {
+            newBool = false;
+            vectorsize = (vectorsize+1)/2;
+            for(int i = 0; i < (playersVector.size() - vectorsize); i++)
+            {
+                if(playersVector[i+vectorsize]->goalsInt < playersVector[i]->goalsInt)
+                {
+                    temporary = playersVector[i+vectorsize];
+                    playersVector[i+vectorsize] = playersVector[i];
+                    playersVector[i] = temporary;
+                    newBool = true;
+                }
+            }
+        }
+        //std:: cout << "t" << std:: endl;
+        for(int i = 0; i < playersVector.size(); i++)
+        {
+            std::cout << playersVector[i]->nameStr << playersVector[i]->goalsInt << std::endl;
+        }
+    }
+    else if(menuOption == 3)
+    {
+        int vectorsize = playersVector.size();
+        bool newBool = true;
+        while(newBool || (vectorsize>1))
+        {
+            newBool = false;
+            vectorsize = (vectorsize+1)/2;
+            for(int i = 0; i < (playersVector.size() - vectorsize); i++)
+            {
+                if(playersVector[i+vectorsize]->assistsInt < playersVector[i]->assistsInt)
+                {
+                    temporary = playersVector[i+vectorsize];
+                    playersVector[i+vectorsize] = playersVector[i];
+                    playersVector[i] = temporary;
+                    newBool = true;
+                }
+            }
+        }
+        //std:: cout << "t" << std:: endl;
+        for(int i = 0; i < playersVector.size(); i++)
+        {
+            std::cout << playersVector[i]->nameStr << playersVector[i]->assistsInt << std::endl;
+        }
+    }
+    else if(menuOption == 4)
+    {
+        int vectorsize = playersVector.size();
+        bool newBool = true;
+        while(newBool || (vectorsize>1))
+        {
+            newBool = false;
+            vectorsize = (vectorsize+1)/2;
+            for(int i = 0; i < (playersVector.size() - vectorsize); i++)
+            {
+                if(playersVector[i+vectorsize]->minutesInt < playersVector[i]->minutesInt)
+                {
+                    temporary = playersVector[i+vectorsize];
+                    playersVector[i+vectorsize] = playersVector[i];
+                    playersVector[i] = temporary;
+                    newBool = true;
+                }
+            }
+        }
+        //std:: cout << "t" << std:: endl;
+        for(int i = 0; i < playersVector.size(); i++)
+        {
+            std::cout << playersVector[i]->nameStr << playersVector[i]->minutesInt << std::endl;
+        }
+    }
+    else if(menuOption == 5)
+    {
+        int vectorsize = playersVector.size();
+        bool newBool = true;
+        while(newBool || (vectorsize>1))
+        {
+            newBool = false;
+            vectorsize = (vectorsize+1)/2;
+            for(int i = 0; i < (playersVector.size() - vectorsize); i++)
+            {
+                if(playersVector[i+vectorsize]->savePercentageInt < playersVector[i]->savePercentageInt)
+                {
+                    temporary = playersVector[i+vectorsize];
+                    playersVector[i+vectorsize] = playersVector[i];
+                    playersVector[i] = temporary;
+                    newBool = true;
+                }
+            }
+        }
+        //std:: cout << "t" << std:: endl;
+        for(int i = 0; i < playersVector.size(); i++)
+        {
+            std::cout << playersVector[i]->nameStr << playersVector[i]->savePercentageInt << std::endl;
+        }
+    }
+    else if(menuOption == 6)
+    {
+        int vectorsize = playersVector.size();
+        bool newBool = true;
+        while(newBool || (vectorsize>1))
+        {
+            newBool = false;
+            vectorsize = (vectorsize+1)/2;
+            for(int i = 0; i < (playersVector.size() - vectorsize); i++)
+            {
+                if(playersVector[i+vectorsize]->yellowCardsInt < playersVector[i]->yellowCardsInt)
+                {
+                    temporary = playersVector[i+vectorsize];
+                    playersVector[i+vectorsize] = playersVector[i];
+                    playersVector[i] = temporary;
+                    newBool = true;
+                }
+            }
+        }
+        //std:: cout << "t" << std:: endl;
+        for(int i = 0; i < playersVector.size(); i++)
+        {
+            std::cout << playersVector[i]->nameStr << playersVector[i]->yellowCardsInt << std::endl;
+        }
+    }
+    else if(menuOption == 7)
+    {
+        int vectorsize = playersVector.size();
+        bool newBool = true;
+        while(newBool || (vectorsize>1))
+        {
+            newBool = false;
+            vectorsize = (vectorsize+1)/2;
+            for(int i = 0; i < (playersVector.size() - vectorsize); i++)
+            {
+                if(playersVector[i+vectorsize]->redCardsInt < playersVector[i]->redCardsInt)
+                {
+                    temporary = playersVector[i+vectorsize];
+                    playersVector[i+vectorsize] = playersVector[i];
+                    playersVector[i] = temporary;
+                    newBool = true;
+                }
+            }
+        }
+        //std:: cout << "t" << std:: endl;
+        for(int i = 0; i < playersVector.size(); i++)
+        {
+            std::cout << playersVector[i]->nameStr << playersVector[i]->redCardsInt << std::endl;
+        }
+    }
+
+}
+
+void MLS::printTeamStats(SoccerTeam *team)
+{
+    int j = 0;
+    int goals = 0;
+    int assists = 0;
+    float ageSum = 0;
+    float averageAge = 0;
+    int yellowCards = 0;
+    int redCards = 0;
+    float minutesSum = 0;
+    float averageMinutes = 0;
+
+    for(int i = 0; i < 10; i++)
+    {
+        if(team->playerHashTable[i] != NULL)
+        {
+            SoccerPlayer *temp = team->playerHashTable[i];
+            while(temp != NULL)
+            {
+                goals += temp->goalsInt;
+                assists += temp->assistsInt;
+                ageSum += temp->ageInt;
+                yellowCards += temp->yellowCardsInt;
+                redCards += temp->redCardsInt;
+                minutesSum += temp->minutesInt;
+                j++;
+                temp = temp->next;
+            }
+        }
+    }
+    averageAge = ageSum/j;
+    averageMinutes = minutesSum/j;
+    std::cout << std::endl;
+    std::cout << std::endl;
+    std::cout << "Number of Goals: " << goals << std::endl;
+    std::cout << "Number of Assists: " << assists << std::endl;
+    std::cout << "Average Player Age: " << std::setprecision(3) << averageAge << std::endl;
+    std::cout << "Number of Yellow Cards: " << yellowCards << std::endl;
+    std::cout << "Number of Red Cards: " << redCards << std::endl;
+    std::cout << "Average Minutes Played Per Player: " << std::setprecision(4) <<averageMinutes <<   std::endl;
+    std::cout << std::endl;
+    std::cout << std::endl;
 
 }

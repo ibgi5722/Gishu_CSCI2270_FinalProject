@@ -262,7 +262,7 @@ MLS,New York City Football Club,Jeb Brovsky,26,5,D,545,0,0,0,1,0
 MLS,New York City Football Club,Sebastian Velasquez,24,26,M,239,0,0,0,0,0
 MLS,New York City Football Club,Adam Nemec,29,32,F,396,0,0,0,0,0
 MLS,New York City Football Club,Javier Calle,24,30,M,265,0,0,0,1,0
-MLS,New York City Football Club,Josh Saunders,34,12,GK,630,0,0,74.1,0,0
+MLS,New York City Football Club,Josh Saunders,34,12,GK,630,0,0,74,0,0
 MLS,New York City Football Club,Eirik Johansen,22,25,GK,0,0,0,0,0,0
 MLS,New York City Football Club,Ryan Meara,24,18,GK,0,0,0,0,0,0
 MLS,New York City Football Club,Akira Fitzgerald,27,1,GK,0,0,0,0,0,0
@@ -451,7 +451,7 @@ MLS,Seattle Sounders,Osvaldo Alonso,29,6,M,253,0,0,0,0,0
 MLS,Seattle Sounders,Chad Barrett,29,19,F,109,0,0,0,0,0
 MLS,Seattle Sounders,Chad Marshall,30,14,D,450,0,0,0,2,0
 MLS,Seattle Sounders,Micheal Azira,27,42,M,273,0,0,0,2,0
-MLS,Seattle Sounders,Stefan Frei,29,24,GK,540,0,0,76.2,0,0
+MLS,Seattle Sounders,Stefan Frei,29,24,GK,540,0,0,76,0,0
 MLS,Seattle Sounders,Charlie Lyon,23,22,GK,0,0,0,0,0,0
 MLS,Seattle Sounders,Troy Perkins,33,1,GK,0,0,0,0,0,0
 MLS,Sporting Kansas City,Krisztian Nemeth,26,9,F,344,2,0,0,0,0

@@ -209,6 +209,8 @@ int main(int argc, char *argv[])
     string menuSelectionstr;
     string menuSelection2Str;
     int menuSelection;
+    string menuOptionStr;
+    int menuOptionInt;
     int menuSelection2;
     while(intUserInput != 3)
 	{
@@ -235,8 +237,9 @@ int main(int argc, char *argv[])
 						    nba->printTeams();
 							break;
 						case 2:
+						    cout << "enter: " << endl;
 						    getline(cin, team);
-						    teamPointer = nba->selectTeam(team);
+						    //teamPointer = nba->selectTeam(team);
 						    if(teamPointer != NULL)
                             {
                                 while(menuSelection2 != 5)
@@ -249,7 +252,7 @@ int main(int argc, char *argv[])
                                     cout << "5. Choose New Team" << endl;
                                     getline(cin, menuSelectionstr);
                                     menuSelection2 = stoi(menuSelectionstr);
-                                    switch(menuSelection)
+                                    switch(menuSelection2)
                                     {
                                         case 1:
                                             break;
@@ -288,6 +291,7 @@ int main(int argc, char *argv[])
 						    mls->printTeams();
 							break;
 						case 2:
+						    cout << "Enter a Team's Name: ";
 						    getline(cin, team);
 						    sTeamPointer = mls->selectTeam(team);
 						    if(sTeamPointer != NULL)
@@ -302,15 +306,32 @@ int main(int argc, char *argv[])
                                     cout << "5. Choose New Team" << endl;
                                     getline(cin, menuSelectionstr);
                                     menuSelection2 = stoi(menuSelectionstr);
-                                    switch(menuSelection)
+                                    switch(menuSelection2)
                                     {
                                         case 1:
+                                            //cout << sTeamPointer->nameStr << endl;
+                                            mls->printRoster(sTeamPointer);
                                             break;
                                         case 2:
+                                            cout << "Enter a Player's Name: ";
+                                            getline(cin, player);
+                                            mls->printPlayerInfo(player, sTeamPointer);
                                             break;
                                         case 3:
+                                            cout << "====Sort Players By====" << endl;
+                                            cout << "1) Age" << endl;
+                                            cout << "2) Goals" << endl;
+                                            cout << "3) Assists" << endl;
+                                            cout << "4) Minutes" << endl;
+                                            cout << "5) Save Percentage" << endl;
+                                            cout << "6) Yellow Cards" << endl;
+                                            cout << "7) Red Cards" << endl;
+                                            getline(cin, menuOptionStr);
+                                            menuOptionInt = stoi(menuOptionStr);
+                                            mls->sortPlayers(menuOptionInt, sTeamPointer);
                                             break;
                                         case 4:
+                                            mls->printTeamStats(sTeamPointer);
                                             break;
                                         case 5:
                                             break;
