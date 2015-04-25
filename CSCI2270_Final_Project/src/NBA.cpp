@@ -1,4 +1,5 @@
 #include "NBA.h"
+#include <math.h>
 
 using std::cout;
 using std::endl;
@@ -15,7 +16,7 @@ NBA::~NBA()
     //dtor
 }
 
-void NBA::addTeam(std::string tName, std::string pName, int number, std::string position, int played, int points, int rebounds, int steals, int assists, int turnovers, int fouls)
+void NBA::addTeam(std::string tName, std::string pName, float number, std::string position, float played, float points, float rebounds, float steals, float assists, float turnovers, float fouls)
 {
     /*for(int i = 0; i<teamNameVector.size(); i++)
     {
@@ -29,8 +30,8 @@ void NBA::addTeam(std::string tName, std::string pName, int number, std::string 
     BasketballTeams *team;
     if(!(searchVector(tName)))
     {
-        hashTable = new BasketballPlayer*[10];
-        for(int i = 0;i<10; i++)
+        hashTable = new BasketballPlayer*[12];
+        for(int i = 0;i < 12; i++)
         {
             hashTable[i] = NULL;
         }
@@ -80,14 +81,16 @@ void NBA::addTeam(std::string tName, std::string pName, int number, std::string 
     }
     insertPlayer(player, hashTable);
     //cout<<"x"<<endl;
-    team = searchTree(tName);
+    //team = searchTree(tName);
     //team->vecPlayers.push_back(player);
     //cout<<"x"<<endl;
 }
 
 void NBA::insertPlayer(BasketballPlayer* p, BasketballPlayer** hashTable)
 {
+    //cout<<p->strName<<endl;
     int index = Hash(p->strName);
+    //cout<<p->strName<<" - "<<index<<endl;
     if(hashTable[index] == NULL)
     {
         hashTable[index] = p;
@@ -95,12 +98,13 @@ void NBA::insertPlayer(BasketballPlayer* p, BasketballPlayer** hashTable)
     else
     {
         BasketballPlayer *temp = hashTable[index];
+        //cout<<temp->strName<<" - "<<index<<endl;
         while(temp->next != NULL)
         {
+            //cout<<temp->strName<<" - "<<index<<endl;
             temp = temp->next;
         }
         temp->next = p;
-
     }
 }
 
@@ -279,7 +283,7 @@ void NBA::printTeams(BasketballTeams *rootTemp)
         printTeams(rootTemp->left);
     }
     std::cout<<"Team: "<<rootTemp->strName<<std::endl;
-    for(int i = 5; i<10; i++)
+    /*for(int i = 0; i<12; i++)
     {
         if(rootTemp->hashPlayer[i] != NULL)
         {
@@ -293,7 +297,7 @@ void NBA::printTeams(BasketballTeams *rootTemp)
                 //std::cout<<temp->title<<":"<<temp->year<<std::endl;
             }
         }
-    }
+    }*/
     if(rootTemp->right != nil)
     {
         printTeams(rootTemp->right);
@@ -324,6 +328,422 @@ BasketballTeams* NBA::selectTeam(std::string tName)
     }
     cout<<"not found"<<endl;
     return NULL;
+}
+
+void NBA::printRoster(BasketballTeams* team)
+{
+    bool emp = true;
+    std::vector<BasketballPlayer*> collisions;
+    for(int i = 0; i<10; i++)
+    {
+        if(team->hashPlayer[i] != NULL)
+        {
+            //cout<<" "<<team->hashPlayer[i]->strName<<endl;
+            BasketballPlayer *temp = team->hashPlayer[i];
+            //cout<<temp->next->strName<<endl;
+            while(temp != NULL)
+            {
+                collisions.push_back(temp);
+                //cout<<"y"<<endl;
+                //cout<<" "<<temp->strName<<endl;
+                temp = temp->next;
+                //std::cout<<temp->title<<":"<<temp->year<<std::endl;
+            }
+            emp = false;
+        }
+    }
+    if(emp)
+    {
+        cout<<"empty"<<endl;
+    }
+    /*for(int j = 0; j<collisions.size(); j++)
+    {
+        cout<<collisions[j]->strName<<endl;
+    }*/
+    sortPlayers(collisions);
+}
+
+void NBA::sortPlayers(std::vector<BasketballPlayer*> collisions)
+{
+    bool boolFlag = true;       //flag to see if any switches happened
+    int intD = collisions.size();
+    BasketballPlayer* wordTemp;     //creates temp class to store variables temporarily
+    while( boolFlag || (intD > 1))      //if a switch has not occurred it must be sorted;
+    {
+        boolFlag = false;           //initialize flag to false to check for future switches
+        intD = (intD+1) / 2;
+        for (int i = 0; i < (collisions.size() - intD); i++)
+        {
+            if (collisions[i + intD]->strName.compare(collisions[i]->strName) < 0) //compares the first item with another item halfway through the array
+            {
+                wordTemp = collisions[i + intD];      //switch positions i+d and i
+                collisions[i + intD] = collisions[i];
+                collisions[i] = wordTemp;
+                boolFlag = true;                  //tells switch has occurred
+            }
+        }
+    }
+    int m;
+    for(int x = 0; x<collisions.size(); x++)
+    {
+        //m = Hash(collisions[x]->strName);
+        std::cout<<collisions[x]->strName<<std::endl;
+    }
+}
+
+void NBA::printPlayerInfo(BasketballTeams* team, std::string pName)
+{
+    int x = Hash(pName);
+    bool found = false;
+    BasketballPlayer *temp = team->hashPlayer[x];
+    while(temp != NULL)
+    {
+        if(temp->strName == pName)
+        {
+            std::cout<<std::endl;
+            std::cout<<std::endl;
+            std::cout<<"    "<<temp->strName<<" - "<<temp->floatPlayerNumber<<std::endl;
+            std::cout<<"Position:"<<" "<<temp->strPosition<<endl;
+            std::cout<<"Games Played:"<<" "<<temp->floatGamesPlayed<<endl;
+            std::cout<<"Points:"<<" "<<temp->floatPoints<<endl;
+            std::cout<<"Rebounds:"<<" "<<temp->floatRebounds<<endl;
+            std::cout<<"Steals:"<<" "<<temp->floatSteals<<endl;
+            std::cout<<"Assists:"<<" "<<temp->floatAssists<<endl;
+            std::cout<<"Turnovers:"<<" "<<temp->floatTurnovers<<endl;
+            std::cout<<"Fouls:"<<" "<<temp->floatFouls<<endl;
+            std::cout<<std::endl;
+            std::cout<<std::endl;
+            found = true;
+            break;
+        }
+        temp = temp->next;
+    }
+    if(found == false)
+    {
+        std::cout<<"not found"<<std::endl;
+    }
+}
+
+void NBA::rankBy(BasketballTeams* team, int x)
+{
+    bool emp = true;
+    std::vector<BasketballPlayer*> collisions;
+    for(int i = 0; i<10; i++)
+    {
+        if(team->hashPlayer[i] != NULL)
+        {
+            //cout<<" "<<team->hashPlayer[i]->strName<<endl;
+            BasketballPlayer *temp = team->hashPlayer[i];
+            //cout<<temp->next->strName<<endl;
+            while(temp != NULL)
+            {
+                collisions.push_back(temp);
+                //cout<<"y"<<endl;
+                //cout<<" "<<temp->strName<<endl;
+                temp = temp->next;
+                //std::cout<<temp->title<<":"<<temp->year<<std::endl;
+            }
+            emp = false;
+        }
+    }
+    switch(x)
+    {
+        case 1:
+            rankByPlayerNumber(collisions);
+            break;
+        case 2:
+            rankByGamesPlayed(collisions);
+            break;
+        case 3:
+            rankByPoints(collisions);
+            break;
+        case 4:
+            rankByRebounds(collisions);
+            break;
+        case 5:
+            rankBySteals(collisions);
+            break;
+        case 6:
+            rankByAssists(collisions);
+            break;
+        case 7:
+            rankByTurnovers(collisions);
+            break;
+        case 8:
+            rankByFouls(collisions);
+            break;
+    }
+}
+
+void NBA::rankByPlayerNumber(std::vector<BasketballPlayer*> collisions)
+{
+    bool boolFlag = true;       //flag to see if any switches happened
+    int intD = collisions.size();
+    BasketballPlayer* wordTemp;     //creates temp class to store variables temporarily
+    while( boolFlag || (intD > 1))      //if a switch has not occurred it must be sorted;
+    {
+        boolFlag = false;           //initialize flag to false to check for future switches
+        intD = (intD+1) / 2;
+        for (int i = 0; i < (collisions.size() - intD); i++)
+        {
+            if (collisions[i + intD]->floatPlayerNumber < collisions[i]->floatPlayerNumber) //compares the first item with another item halfway through the array
+            {
+                wordTemp = collisions[i + intD];      //switch positions i+d and i
+                collisions[i + intD] = collisions[i];
+                collisions[i] = wordTemp;
+                boolFlag = true;                  //tells switch has occurred
+            }
+        }
+    }
+    int m;
+    for(int x = 0; x<collisions.size(); x++)
+    {
+        //m = Hash(collisions[x]->strName);
+        std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatPlayerNumber<<std::endl;
+    }
+}
+
+void NBA::rankByGamesPlayed(std::vector<BasketballPlayer*> collisions)
+{
+    bool boolFlag = true;       //flag to see if any switches happened
+    int intD = collisions.size();
+    BasketballPlayer* wordTemp;     //creates temp class to store variables temporarily
+    while( boolFlag || (intD > 1))      //if a switch has not occurred it must be sorted;
+    {
+        boolFlag = false;           //initialize flag to false to check for future switches
+        intD = (intD+1) / 2;
+        for (int i = 0; i < (collisions.size() - intD); i++)
+        {
+            if (collisions[i + intD]->floatGamesPlayed > collisions[i]->floatGamesPlayed) //compares the first item with another item halfway through the array
+            {
+                wordTemp = collisions[i + intD];      //switch positions i+d and i
+                collisions[i + intD] = collisions[i];
+                collisions[i] = wordTemp;
+                boolFlag = true;                  //tells switch has occurred
+            }
+        }
+    }
+    int m;
+    for(int x = 0; x<collisions.size(); x++)
+    {
+        //m = Hash(collisions[x]->strName);
+        std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatGamesPlayed<<std::endl;
+    }
+}
+
+void NBA::rankByPoints(std::vector<BasketballPlayer*> collisions)
+{
+    bool boolFlag = true;       //flag to see if any switches happened
+    int intD = collisions.size();
+    BasketballPlayer* wordTemp;     //creates temp class to store variables temporarily
+    while( boolFlag || (intD > 1))      //if a switch has not occurred it must be sorted;
+    {
+        boolFlag = false;           //initialize flag to false to check for future switches
+        intD = (intD+1) / 2;
+        for (int i = 0; i < (collisions.size() - intD); i++)
+        {
+            if (collisions[i + intD]->floatPoints > collisions[i]->floatPoints) //compares the first item with another item halfway through the array
+            {
+                wordTemp = collisions[i + intD];      //switch positions i+d and i
+                collisions[i + intD] = collisions[i];
+                collisions[i] = wordTemp;
+                boolFlag = true;                  //tells switch has occurred
+            }
+        }
+    }
+    int m;
+    for(int x = 0; x<collisions.size(); x++)
+    {
+        //m = Hash(collisions[x]->strName);
+        std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatPoints<<std::endl;
+    }
+}
+
+void NBA::rankByRebounds(std::vector<BasketballPlayer*> collisions)
+{
+    bool boolFlag = true;       //flag to see if any switches happened
+    int intD = collisions.size();
+    BasketballPlayer* wordTemp;     //creates temp class to store variables temporarily
+    while( boolFlag || (intD > 1))      //if a switch has not occurred it must be sorted;
+    {
+        boolFlag = false;           //initialize flag to false to check for future switches
+        intD = (intD+1) / 2;
+        for (int i = 0; i < (collisions.size() - intD); i++)
+        {
+            if (collisions[i + intD]->floatRebounds > collisions[i]->floatRebounds) //compares the first item with another item halfway through the array
+            {
+                wordTemp = collisions[i + intD];      //switch positions i+d and i
+                collisions[i + intD] = collisions[i];
+                collisions[i] = wordTemp;
+                boolFlag = true;                  //tells switch has occurred
+            }
+        }
+    }
+    int m;
+    for(int x = 0; x<collisions.size(); x++)
+    {
+        //m = Hash(collisions[x]->strName);
+        std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatRebounds<<std::endl;
+    }
+}
+
+void NBA::rankBySteals(std::vector<BasketballPlayer*> collisions)
+{
+    bool boolFlag = true;       //flag to see if any switches happened
+    int intD = collisions.size();
+    BasketballPlayer* wordTemp;     //creates temp class to store variables temporarily
+    while( boolFlag || (intD > 1))      //if a switch has not occurred it must be sorted;
+    {
+        boolFlag = false;           //initialize flag to false to check for future switches
+        intD = (intD+1) / 2;
+        for (int i = 0; i < (collisions.size() - intD); i++)
+        {
+            if (collisions[i + intD]->floatSteals > collisions[i]->floatSteals) //compares the first item with another item halfway through the array
+            {
+                wordTemp = collisions[i + intD];      //switch positions i+d and i
+                collisions[i + intD] = collisions[i];
+                collisions[i] = wordTemp;
+                boolFlag = true;                  //tells switch has occurred
+            }
+        }
+    }
+    int m;
+    for(int x = 0; x<collisions.size(); x++)
+    {
+        //m = Hash(collisions[x]->strName);
+        std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatSteals<<std::endl;
+    }
+}
+
+void NBA::rankByAssists(std::vector<BasketballPlayer*> collisions)
+{
+    bool boolFlag = true;       //flag to see if any switches happened
+    int intD = collisions.size();
+    BasketballPlayer* wordTemp;     //creates temp class to store variables temporarily
+    while( boolFlag || (intD > 1))      //if a switch has not occurred it must be sorted;
+    {
+        boolFlag = false;           //initialize flag to false to check for future switches
+        intD = (intD+1) / 2;
+        for (int i = 0; i < (collisions.size() - intD); i++)
+        {
+            if (collisions[i + intD]->floatAssists > collisions[i]->floatAssists) //compares the first item with another item halfway through the array
+            {
+                wordTemp = collisions[i + intD];      //switch positions i+d and i
+                collisions[i + intD] = collisions[i];
+                collisions[i] = wordTemp;
+                boolFlag = true;                  //tells switch has occurred
+            }
+        }
+    }
+    int m;
+    for(int x = 0; x<collisions.size(); x++)
+    {
+        //m = Hash(collisions[x]->strName);
+        std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatAssists<<std::endl;
+    }
+}
+
+void NBA::rankByTurnovers(std::vector<BasketballPlayer*> collisions)
+{
+    bool boolFlag = true;       //flag to see if any switches happened
+    int intD = collisions.size();
+    BasketballPlayer* wordTemp;     //creates temp class to store variables temporarily
+    while( boolFlag || (intD > 1))      //if a switch has not occurred it must be sorted;
+    {
+        boolFlag = false;           //initialize flag to false to check for future switches
+        intD = (intD+1) / 2;
+        for (int i = 0; i < (collisions.size() - intD); i++)
+        {
+            if (collisions[i + intD]->floatTurnovers < collisions[i]->floatTurnovers) //compares the first item with another item halfway through the array
+            {
+                wordTemp = collisions[i + intD];      //switch positions i+d and i
+                collisions[i + intD] = collisions[i];
+                collisions[i] = wordTemp;
+                boolFlag = true;                  //tells switch has occurred
+            }
+        }
+    }
+    int m;
+    for(int x = 0; x<collisions.size(); x++)
+    {
+        //m = Hash(collisions[x]->strName);
+        std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatTurnovers<<std::endl;
+    }
+}
+
+void NBA::rankByFouls(std::vector<BasketballPlayer*> collisions)
+{
+    bool boolFlag = true;       //flag to see if any switches happened
+    int intD = collisions.size();
+    BasketballPlayer* wordTemp;     //creates temp class to store variables temporarily
+    while( boolFlag || (intD > 1))      //if a switch has not occurred it must be sorted;
+    {
+        boolFlag = false;           //initialize flag to false to check for future switches
+        intD = (intD+1) / 2;
+        for (int i = 0; i < (collisions.size() - intD); i++)
+        {
+            if (collisions[i + intD]->floatFouls < collisions[i]->floatFouls) //compares the first item with another item halfway through the array
+            {
+                wordTemp = collisions[i + intD];      //switch positions i+d and i
+                collisions[i + intD] = collisions[i];
+                collisions[i] = wordTemp;
+                boolFlag = true;                  //tells switch has occurred
+            }
+        }
+    }
+    int m;
+    for(int x = 0; x<collisions.size(); x++)
+    {
+        //m = Hash(collisions[x]->strName);
+        std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatFouls<<std::endl;
+    }
+}
+
+void NBA::printTeamStats(BasketballTeams* team)
+{
+    float points = 0;
+    float rebounds = 0;
+    float steals = 0;
+    float assists = 0;
+    float turnovers = 0;
+    float fouls = 0;
+    int numOfPlayers = 0;
+    for(int i = 0; i<10; i++)
+    {
+        if(team->hashPlayer[i] != NULL)
+        {
+            //cout<<" "<<team->hashPlayer[i]->strName<<endl;
+            BasketballPlayer *temp = team->hashPlayer[i];
+            //cout<<temp->next->strName<<endl;
+            while(temp != NULL)
+            {
+                numOfPlayers++;
+                points += temp->floatPoints;
+                rebounds += temp->floatRebounds;
+                steals += temp->floatSteals;
+                assists += temp->floatAssists;
+                turnovers += temp->floatTurnovers;
+                fouls += temp->floatFouls;
+                //collisions.push_back(temp);
+                //cout<<"y"<<endl;
+                //cout<<" "<<temp->floatSteals<<endl;
+                temp = temp->next;
+                //std::cout<<temp->title<<":"<<temp->year<<std::endl;
+            }
+        }
+    }
+    team->floatPoints = points/numOfPlayers;
+    team->floatRebounds = rebounds/numOfPlayers;
+    team->floatSteals = steals/numOfPlayers;
+    team->floatAssists = assists/numOfPlayers;
+    team->floatTurnovers = turnovers/numOfPlayers;
+    team->floatFouls = fouls/numOfPlayers;
+    cout<<"Points: "<<floor((team->floatPoints)*10 + 0.5)/10<<endl;
+    cout<<"Rebounds: "<<floor((team->floatRebounds)*10 + 0.5)/10<<endl;
+    cout<<"Steals: "<<floor((team->floatSteals)*10 + 0.5)/10<<endl;
+    cout<<"Assists: "<<floor((team->floatAssists)*10 + 0.5)/10<<endl;
+    cout<<"Turnovers: "<<floor((team->floatTurnovers)*10 + 0.5)/10<<endl;
+    cout<<"Fouls: "<<floor((team->floatFouls)*10 + 0.5)/10<<endl;
 }
 
 int NBA::Hash(std::string pName)
