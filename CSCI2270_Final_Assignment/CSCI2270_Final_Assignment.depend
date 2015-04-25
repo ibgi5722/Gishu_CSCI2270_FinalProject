@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1429929647 source:/home/user/Dropbox/CSCI2270_Final_Assignment/main.cpp
+	"NBA.h"
+	"MLS.h"
+	<iostream>
+	<fstream>
+	<sstream>
+
+1429929708 /home/user/Dropbox/CSCI2270_Final_Assignment/include/NBA.h
+	<iostream>
+	<vector>
+
+1429929769 /home/user/Dropbox/CSCI2270_Final_Assignment/include/MLS.h
+	<iostream>
+	<vector>
+
+1429929769 source:/home/user/Dropbox/CSCI2270_Final_Assignment/src/MLS.cpp
+	"MLS.h"
+	<iostream>
+	<vector>
+	<iomanip>
+
+1429929708 source:/home/user/Dropbox/CSCI2270_Final_Assignment/src/NBA.cpp
+	"NBA.h"
+	<math.h>
+
+1429929647 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/main.cpp
+	"NBA.h"
+	"MLS.h"
+	<iostream>
+	<fstream>
+	<sstream>
+
+1429929769 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/src/MLS.cpp
+	"MLS.h"
+	<iostream>
+	<vector>
+	<iomanip>
+
+1429929708 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/src/NBA.cpp
+	"NBA.h"
+	<math.h>
+
