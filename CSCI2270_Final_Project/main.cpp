@@ -17,15 +17,15 @@ int main(int argc, char *argv[])
         NBA *nba = new NBA();
         string strTeamName;
         string strPlayerName;
-        float intPlayerNumber;
+        float floatPlayerNumber;
         string strPosition;
-        float intGamesPlayed;
-        float intPoints;
-        float intRebounds;
-        float intSteals;
-        float intAssists;
-        float intTurnovers;
-        float intFouls;
+        float floatGamesPlayed;
+        float floatPoints;
+        float floatRebounds;
+        float floatSteals;
+        float floatAssists;
+        float floatTurnovers;
+        float floatFouls;
     //
     getline(inFile, strLine);
     if(inFile.fail())
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
                 }
                 else if(i == 2)
                 {
-                    intPlayerNumber = stof(parts);
+                    floatPlayerNumber = stof(parts);
                     i++;
                 }
                 else if(i == 3)
@@ -63,41 +63,42 @@ int main(int argc, char *argv[])
                 }
                 else if(i == 4)
                 {
-                    intGamesPlayed = stof(parts);
+                    floatGamesPlayed = stof(parts);
                     i++;
                 }
                 else if(i == 5)
                 {
-                    intPoints = stof(parts);
+                    floatPoints = stof(parts);
                     i++;
                 }
                 else if(i == 6)
                 {
-                    intRebounds = stof(parts);
+                    floatRebounds = stof(parts);
                     i++;
                 }
                 else if(i == 7)
                 {
-                    intSteals = stof(parts);
+                    floatSteals = stof(parts);
                     i++;
                 }
                 else if(i == 8)
                 {
-                    intAssists = stof(parts);
+                    floatAssists = stof(parts);
                     i++;
                 }
                 else if(i == 9)
                 {
-                    intTurnovers = stof(parts);
+                    floatTurnovers = stof(parts);
                     i++;
                 }
                 else if(i == 10)
                 {
-                    intFouls = stof(parts);
+                    floatFouls = stof(parts);
                     i++;
                 }
             }
-            nba->addTeam(strTeamName, strPlayerName, intPlayerNumber, strPosition, intGamesPlayed, intPoints, intRebounds, intSteals, intAssists, intTurnovers, intFouls);
+            nba->addTeam(strTeamName, strPlayerName, floatPlayerNumber, strPosition, floatGamesPlayed, floatPoints, floatRebounds, floatSteals, floatAssists, floatTurnovers, floatFouls);
+            //nba->addTeam(strTeamName, strPlayerName, )
             //cout<<strLine<<endl;
         }
     }
@@ -153,7 +154,7 @@ int main(int argc, char *argv[])
                 }
                 else if(j == 4)
                 {
-                    intPlayerNumber = stoi(parts);
+                    floatPlayerNumber = stoi(parts);
                     j++;
                 }
                 else if(j == 5)
@@ -173,7 +174,7 @@ int main(int argc, char *argv[])
                 }
                 else if(j == 8)
                 {
-                    intAssists = stoi(parts);
+                    floatAssists = stoi(parts);
                     j++;
                 }
                 else if(j == 9)
@@ -193,7 +194,7 @@ int main(int argc, char *argv[])
                 }
                 //cout<<parts<<endl;
             }
-            mls->insertTeam(strTeamName, strPlayerName, intPlayerAge, intPlayerNumber, strPosition, intMinutes, intGoals, intAssists, intSavePercentage, intYellowCards, intRedCards);
+            mls->insertTeam(strTeamName, strPlayerName, intPlayerAge, floatPlayerNumber, strPosition, intMinutes, intGoals, floatAssists, intSavePercentage, intYellowCards, intRedCards);
             //cout<<strDataLine<<endl;
         }
     }
@@ -240,7 +241,7 @@ int main(int argc, char *argv[])
 						case 2:
 						    cout<<"Enter Team Name: ";
 						    getline(cin, team);
-						    //teamPointer = nba->selectTeam(team);
+						    teamPointer = nba->selectTeam(team);
 						    if(teamPointer != NULL)
                             {
                                 while(menuSelection2 != 5)
