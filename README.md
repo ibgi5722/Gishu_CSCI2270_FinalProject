@@ -23,4 +23,4 @@ Kurt Boenning (github: kboenning)
 Contributors:
 
 Open issues/bugs:
-None that we are aware of.
+There is one issue with CodeBlocks IDE being unable to find the header files. If the error "fatal error: (headername).h: No such file or directory" occurs, try typing "include/(headername).h" at the top of the file instead of just "(headername).h". If the error still occurs, try typing "../include/(headername).h". One of those two should allow CodeBlocks to find the header file.
