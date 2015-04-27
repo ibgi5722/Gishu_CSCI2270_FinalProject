@@ -1,7 +1,8 @@
-#include "MLS.h"
+
 #include <iostream>
 #include <vector>
 #include <iomanip>
+#include "../include/MLS.h"
 MLS::MLS()
 {
     nil = new SoccerTeam();
@@ -477,10 +478,14 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
             }
         }
         //std:: cout << "t" << std:: endl;
+        std::cout << std::endl;
+        std::cout << std::endl;
         for(int i = 0; i < playersVector.size(); i++)
         {
             std::cout << playersVector[i]->nameStr << " - " <<  playersVector[i]->ageInt << std::endl;
         }
+        std::cout << std::endl;
+        std::cout << std::endl;
     }
     else if(menuOption == 2)
     {
@@ -502,10 +507,14 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
             }
         }
         //std:: cout << "t" << std:: endl;
+        std::cout << std::endl;
+        std::cout << std::endl;
         for(int i = 0; i < playersVector.size(); i++)
         {
-            std::cout << playersVector[i]->nameStr << playersVector[i]->goalsInt << std::endl;
+            std::cout << playersVector[i]->nameStr << " - " << playersVector[i]->goalsInt << std::endl;
         }
+        std::cout << std::endl;
+        std::cout << std::endl;
     }
     else if(menuOption == 3)
     {
@@ -527,10 +536,14 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
             }
         }
         //std:: cout << "t" << std:: endl;
+        std::cout << std::endl;
+        std::cout << std::endl;
         for(int i = 0; i < playersVector.size(); i++)
         {
-            std::cout << playersVector[i]->nameStr << playersVector[i]->assistsInt << std::endl;
+            std::cout << playersVector[i]->nameStr << " - " << playersVector[i]->assistsInt << std::endl;
         }
+        std::cout << std::endl;
+        std::cout << std::endl;
     }
     else if(menuOption == 4)
     {
@@ -552,10 +565,14 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
             }
         }
         //std:: cout << "t" << std:: endl;
+        std::cout << std::endl;
+        std::cout << std::endl;
         for(int i = 0; i < playersVector.size(); i++)
         {
-            std::cout << playersVector[i]->nameStr << playersVector[i]->minutesInt << std::endl;
+            std::cout << playersVector[i]->nameStr << " - " <<  playersVector[i]->minutesInt << std::endl;
         }
+        std::cout << std::endl;
+        std::cout << std::endl;
     }
     else if(menuOption == 5)
     {
@@ -577,10 +594,14 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
             }
         }
         //std:: cout << "t" << std:: endl;
+        std::cout << std::endl;
+        std::cout << std::endl;
         for(int i = 0; i < playersVector.size(); i++)
         {
-            std::cout << playersVector[i]->nameStr << playersVector[i]->savePercentageInt << std::endl;
+            std::cout << playersVector[i]->nameStr <<" - " <<  playersVector[i]->savePercentageInt << std::endl;
         }
+        std::cout << std::endl;
+        std::cout << std::endl;
     }
     else if(menuOption == 6)
     {
@@ -602,10 +623,14 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
             }
         }
         //std:: cout << "t" << std:: endl;
+        std::cout << std::endl;
+        std::cout << std::endl;
         for(int i = 0; i < playersVector.size(); i++)
         {
-            std::cout << playersVector[i]->nameStr << playersVector[i]->yellowCardsInt << std::endl;
+            std::cout << playersVector[i]->nameStr << " - " << playersVector[i]->yellowCardsInt << std::endl;
         }
+        std::cout << std::endl;
+        std::cout << std::endl;
     }
     else if(menuOption == 7)
     {
@@ -627,10 +652,14 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
             }
         }
         //std:: cout << "t" << std:: endl;
+        std::cout << std::endl;
+        std::cout << std::endl;
         for(int i = 0; i < playersVector.size(); i++)
         {
-            std::cout << playersVector[i]->nameStr << playersVector[i]->redCardsInt << std::endl;
+            std::cout << playersVector[i]->nameStr << " - " << playersVector[i]->redCardsInt << std::endl;
         }
+        std::cout << std::endl;
+        std::cout << std::endl;
     }
 
 }
@@ -674,7 +703,7 @@ void MLS::printTeamStats(SoccerTeam *team)
     std::cout << "Average Player Age: " << std::setprecision(3) << averageAge << std::endl;
     std::cout << "Number of Yellow Cards: " << yellowCards << std::endl;
     std::cout << "Number of Red Cards: " << redCards << std::endl;
-    std::cout << "Average Minutes Played Per Player: " << std::setprecision(4) <<averageMinutes <<   std::endl;
+    std::cout << "Average Minutes Per Player: " << std::setprecision(4) <<averageMinutes <<   std::endl;
     std::cout << std::endl;
     std::cout << std::endl;
 

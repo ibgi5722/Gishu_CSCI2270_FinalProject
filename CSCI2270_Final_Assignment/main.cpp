@@ -1,5 +1,5 @@
-#include "NBA.h"
-#include "MLS.h"
+#include "include/NBA.h"
+#include "include/MLS.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -310,8 +310,12 @@ int main(int argc, char *argv[])
 						    mls->printTeams();
 							break;
 						case 2:
-						    cout << "Enter a Team's Name: ";
+						    cout << endl;
+						    cout << endl;
+						    cout << "Enter a Team Name: ";
 						    getline(cin, team);
+						    cout << endl;
+						    cout << endl;
 						    sTeamPointer = mls->selectTeam(team);
 						    if(sTeamPointer != NULL)
                             {
@@ -332,12 +336,16 @@ int main(int argc, char *argv[])
                                             mls->printRoster(sTeamPointer);
                                             break;
                                         case 2:
+                                            cout << endl;
+                                            cout << endl;
                                             cout << "Enter a Player's Name: ";
                                             getline(cin, player);
+                                            cout << endl;
+                                            cout << endl;
                                             mls->printPlayerInfo(player, sTeamPointer);
                                             break;
                                         case 3:
-                                            cout << "====Sort Players By====" << endl;
+                                            cout << "=====Sort Players By=====" << endl;
                                             cout << "1) Age" << endl;
                                             cout << "2) Goals" << endl;
                                             cout << "3) Assists" << endl;
