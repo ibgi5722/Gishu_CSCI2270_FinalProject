@@ -1,4 +1,4 @@
-#include "NBA.h"
+#include "../include/NBA.h"
 #include <math.h>
 
 using std::cout;
@@ -18,12 +18,6 @@ NBA::~NBA()
 
 void NBA::addTeam(std::string tName, std::string pName, float number, std::string position, float played, float points, float rebounds, float steals, float assists, float turnovers, float fouls)
 {
-    /*for(int i = 0; i<teamNameVector.size(); i++)
-    {
-        std::cout<<teamNameVector[i];
-    }
-    std::cout<<std::endl;*/
-    //cout<<"x"<<endl;
     BasketballPlayer *player = new BasketballPlayer(pName, number, position, played, points, rebounds, steals, assists, turnovers, fouls);
     bool added = false;
     BasketballTeams *rootTemp = root;
@@ -80,17 +74,11 @@ void NBA::addTeam(std::string tName, std::string pName, float number, std::strin
         rbAddFixup(team);
     }
     insertPlayer(player, hashTable);
-    //cout<<"x"<<endl;
-    //team = searchTree(tName);
-    //team->vecPlayers.push_back(player);
-    //cout<<"x"<<endl;
 }
 
 void NBA::insertPlayer(BasketballPlayer* p, BasketballPlayer** hashTable)
 {
-    //cout<<p->strName<<endl;
     int index = Hash(p->strName);
-    //cout<<p->strName<<" - "<<index<<endl;
     if(hashTable[index] == NULL)
     {
         hashTable[index] = p;
@@ -98,10 +86,8 @@ void NBA::insertPlayer(BasketballPlayer* p, BasketballPlayer** hashTable)
     else
     {
         BasketballPlayer *temp = hashTable[index];
-        //cout<<temp->strName<<" - "<<index<<endl;
         while(temp->next != NULL)
         {
-            //cout<<temp->strName<<" - "<<index<<endl;
             temp = temp->next;
         }
         temp->next = p;
@@ -110,7 +96,6 @@ void NBA::insertPlayer(BasketballPlayer* p, BasketballPlayer** hashTable)
 
 void NBA::rbAddFixup(BasketballTeams *x)
 {
-    //cout<<"x"<<endl;
     x->left = nil;
     x->right = nil;
     x->isRed = true;
@@ -118,29 +103,21 @@ void NBA::rbAddFixup(BasketballTeams *x)
     {
         if (x->parent == x->parent->parent->left)
         {
-            //cout<<"x"<<endl;
-            /* If x's parent is a left, y is x's right 'uncle' */
             BasketballTeams *y = x->parent->parent->right;
             if (y->isRed == true)
             {
-                /* case 1 - change the colors */
                 x->parent->isRed = false;
                 y->isRed = false;
                 x->parent->parent->isRed = true;
-                /* Move x up the tree */
                 x = x->parent->parent;
             }
             else
             {
-                /* y is a black node */
                 if (x == x->parent->right)
                 {
-                    /* and x is to the right */
-                    /* case 2 - move x up and rotate */
                     x = x->parent;
                     leftRotate(x);
                 }
-                /* case 3 */
                 x->parent->isRed = false;
                 x->parent->parent->isRed = true;
                 rightRotate(x->parent->parent);
@@ -148,38 +125,27 @@ void NBA::rbAddFixup(BasketballTeams *x)
         }
         else
         {
-            //cout<<"y"<<endl;
-            /* If x's parent is a left, y is x's right 'uncle' */
             BasketballTeams *y = x->parent->parent->left;
             if ( y->isRed == true)
             {
-                //cout<<"x"<<endl;
-                /* case 1 - change the colors */
                 x->parent->isRed = false;
                 y->isRed = false;
                 x->parent->parent->isRed = true;
-                /* Move x up the tree */
                 x = x->parent->parent;
             }
             else
             {
-                //cout<<"y"<<endl;
-                /* y is a black node */
                 if ( x == x->parent->left)
                 {
-                    /* and x is to the right */
-                    /* case 2 - move x up and rotate */
                     x = x->parent;
                     rightRotate(x);
                 }
-                /* case 3 */
                 x->parent->isRed = false;
                 x->parent->parent->isRed = true;
                 leftRotate(x->parent->parent);
             }
         }
     }
-    /* Color the root black */
     root->isRed = false;
 }
 
@@ -282,22 +248,7 @@ void NBA::printTeams(BasketballTeams *rootTemp)
     {
         printTeams(rootTemp->left);
     }
-    std::cout<<"Team: "<<rootTemp->strName<<std::endl;
-    /*for(int i = 0; i<12; i++)
-    {
-        if(rootTemp->hashPlayer[i] != NULL)
-        {
-            //cout<<" "<<rootTemp->hashPlayer[i]->strName<<endl;
-            BasketballPlayer *temp = rootTemp->hashPlayer[i];
-            while(temp != NULL)
-            {
-                //collisions.push_back(temp);
-                cout<<" "<<temp->strName<<endl;
-                temp = temp->next;
-                //std::cout<<temp->title<<":"<<temp->year<<std::endl;
-            }
-        }
-    }*/
+    std::cout<<rootTemp->strName<<std::endl;
     if(rootTemp->right != nil)
     {
         printTeams(rootTemp->right);
@@ -312,7 +263,6 @@ BasketballTeams* NBA::selectTeam(std::string tName)
         if(base->strName == tName)
         {
             return base;
-            //found = true;
         }
         else
         {
@@ -338,16 +288,11 @@ void NBA::printRoster(BasketballTeams* team)
     {
         if(team->hashPlayer[i] != NULL)
         {
-            //cout<<" "<<team->hashPlayer[i]->strName<<endl;
             BasketballPlayer *temp = team->hashPlayer[i];
-            //cout<<temp->next->strName<<endl;
             while(temp != NULL)
             {
                 collisions.push_back(temp);
-                //cout<<"y"<<endl;
-                //cout<<" "<<temp->strName<<endl;
                 temp = temp->next;
-                //std::cout<<temp->title<<":"<<temp->year<<std::endl;
             }
             emp = false;
         }
@@ -356,10 +301,6 @@ void NBA::printRoster(BasketballTeams* team)
     {
         cout<<"empty"<<endl;
     }
-    /*for(int j = 0; j<collisions.size(); j++)
-    {
-        cout<<collisions[j]->strName<<endl;
-    }*/
     sortPlayers(collisions);
 }
 
@@ -383,10 +324,8 @@ void NBA::sortPlayers(std::vector<BasketballPlayer*> collisions)
             }
         }
     }
-    int m;
     for(int x = 0; x<collisions.size(); x++)
     {
-        //m = Hash(collisions[x]->strName);
         std::cout<<collisions[x]->strName<<std::endl;
     }
 }
@@ -402,7 +341,7 @@ void NBA::printPlayerInfo(BasketballTeams* team, std::string pName)
         {
             std::cout<<std::endl;
             std::cout<<std::endl;
-            std::cout<<"    "<<temp->strName<<" - "<<temp->floatPlayerNumber<<std::endl;
+            std::cout<<"    "<<temp->strName<<" - #"<<temp->floatPlayerNumber<<std::endl;
             std::cout<<"Position:"<<" "<<temp->strPosition<<endl;
             std::cout<<"Games Played:"<<" "<<temp->floatGamesPlayed<<endl;
             std::cout<<"Points:"<<" "<<temp->floatPoints<<endl;
@@ -432,16 +371,11 @@ void NBA::rankBy(BasketballTeams* team, int x)
     {
         if(team->hashPlayer[i] != NULL)
         {
-            //cout<<" "<<team->hashPlayer[i]->strName<<endl;
             BasketballPlayer *temp = team->hashPlayer[i];
-            //cout<<temp->next->strName<<endl;
             while(temp != NULL)
             {
                 collisions.push_back(temp);
-                //cout<<"y"<<endl;
-                //cout<<" "<<temp->strName<<endl;
                 temp = temp->next;
-                //std::cout<<temp->title<<":"<<temp->year<<std::endl;
             }
             emp = false;
         }
@@ -495,10 +429,8 @@ void NBA::rankByPlayerNumber(std::vector<BasketballPlayer*> collisions)
             }
         }
     }
-    int m;
     for(int x = 0; x<collisions.size(); x++)
     {
-        //m = Hash(collisions[x]->strName);
         std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatPlayerNumber<<std::endl;
     }
 }
@@ -523,10 +455,8 @@ void NBA::rankByGamesPlayed(std::vector<BasketballPlayer*> collisions)
             }
         }
     }
-    int m;
     for(int x = 0; x<collisions.size(); x++)
     {
-        //m = Hash(collisions[x]->strName);
         std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatGamesPlayed<<std::endl;
     }
 }
@@ -551,10 +481,8 @@ void NBA::rankByPoints(std::vector<BasketballPlayer*> collisions)
             }
         }
     }
-    int m;
     for(int x = 0; x<collisions.size(); x++)
     {
-        //m = Hash(collisions[x]->strName);
         std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatPoints<<std::endl;
     }
 }
@@ -579,10 +507,8 @@ void NBA::rankByRebounds(std::vector<BasketballPlayer*> collisions)
             }
         }
     }
-    int m;
     for(int x = 0; x<collisions.size(); x++)
     {
-        //m = Hash(collisions[x]->strName);
         std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatRebounds<<std::endl;
     }
 }
@@ -607,10 +533,8 @@ void NBA::rankBySteals(std::vector<BasketballPlayer*> collisions)
             }
         }
     }
-    int m;
     for(int x = 0; x<collisions.size(); x++)
     {
-        //m = Hash(collisions[x]->strName);
         std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatSteals<<std::endl;
     }
 }
@@ -635,10 +559,8 @@ void NBA::rankByAssists(std::vector<BasketballPlayer*> collisions)
             }
         }
     }
-    int m;
     for(int x = 0; x<collisions.size(); x++)
     {
-        //m = Hash(collisions[x]->strName);
         std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatAssists<<std::endl;
     }
 }
@@ -663,10 +585,8 @@ void NBA::rankByTurnovers(std::vector<BasketballPlayer*> collisions)
             }
         }
     }
-    int m;
     for(int x = 0; x<collisions.size(); x++)
     {
-        //m = Hash(collisions[x]->strName);
         std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatTurnovers<<std::endl;
     }
 }
@@ -691,10 +611,8 @@ void NBA::rankByFouls(std::vector<BasketballPlayer*> collisions)
             }
         }
     }
-    int m;
     for(int x = 0; x<collisions.size(); x++)
     {
-        //m = Hash(collisions[x]->strName);
         std::cout<<collisions[x]->strName<<" - "<<collisions[x]->floatFouls<<std::endl;
     }
 }
@@ -712,9 +630,7 @@ void NBA::printTeamStats(BasketballTeams* team)
     {
         if(team->hashPlayer[i] != NULL)
         {
-            //cout<<" "<<team->hashPlayer[i]->strName<<endl;
             BasketballPlayer *temp = team->hashPlayer[i];
-            //cout<<temp->next->strName<<endl;
             while(temp != NULL)
             {
                 numOfPlayers++;
@@ -724,11 +640,7 @@ void NBA::printTeamStats(BasketballTeams* team)
                 assists += temp->floatAssists;
                 turnovers += temp->floatTurnovers;
                 fouls += temp->floatFouls;
-                //collisions.push_back(temp);
-                //cout<<"y"<<endl;
-                //cout<<" "<<temp->floatSteals<<endl;
                 temp = temp->next;
-                //std::cout<<temp->title<<":"<<temp->year<<std::endl;
             }
         }
     }

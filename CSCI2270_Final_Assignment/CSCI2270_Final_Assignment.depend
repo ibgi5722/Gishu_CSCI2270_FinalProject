@@ -24,21 +24,21 @@
 	"NBA.h"
 	<math.h>
 
-1429929647 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/main.cpp
-	"NBA.h"
-	"MLS.h"
+1430167309 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/main.cpp
+	"include/NBA.h"
+	"include/MLS.h"
 	<iostream>
 	<fstream>
 	<sstream>
 
-1429929769 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/src/MLS.cpp
-	"MLS.h"
+1430164681 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/src/MLS.cpp
 	<iostream>
 	<vector>
 	<iomanip>
+	"../include/MLS.h"
 
-1429929708 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/src/NBA.cpp
-	"NBA.h"
+1430167088 source:/home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/src/NBA.cpp
+	"../include/NBA.h"
 	<math.h>
 
 1430107516 source:/home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/main.cpp
@@ -59,6 +59,14 @@
 	<math.h>
 
 1430107516 /home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/include/MLS.h
+	<iostream>
+	<vector>
+
+1429929708 /home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/include/NBA.h
+	<iostream>
+	<vector>
+
+1429929769 /home/user/Dropbox/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/include/MLS.h
 	<iostream>
 	<vector>
 

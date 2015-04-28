@@ -98,8 +98,6 @@ int main(int argc, char *argv[])
                 }
             }
             nba->addTeam(strTeamName, strPlayerName, floatPlayerNumber, strPosition, floatGamesPlayed, floatPoints, floatRebounds, floatSteals, floatAssists, floatTurnovers, floatFouls);
-            //nba->addTeam(strTeamName, strPlayerName, )
-            //cout<<strLine<<endl;
         }
     }
     inFile.close();
@@ -192,10 +190,8 @@ int main(int argc, char *argv[])
                     intRedCards = stoi(parts);
                     j++;
                 }
-                //cout<<parts<<endl;
             }
             mls->insertTeam(strTeamName, strPlayerName, intPlayerAge, floatPlayerNumber, strPosition, intMinutes, intGoals, floatAssists, intSavePercentage, intYellowCards, intRedCards);
-            //cout<<strDataLine<<endl;
         }
     }
     MLSinFile.close();
@@ -220,8 +216,10 @@ int main(int argc, char *argv[])
 		cout << "1. NBA" << endl;
 		cout << "2. MLS" << endl;
 		cout << "3. Quit" << endl;
+		cout << "Enter a Number: ";
 		getline(cin, userInput);//reads in the command that the user wants to do
 		intUserInput = stoi(userInput);
+		cout << endl;
 		switch(intUserInput)
 		{
 			case 1:
@@ -239,8 +237,10 @@ int main(int argc, char *argv[])
 						    nba->printTeams();
 							break;
 						case 2:
+						    cout << endl;
 						    cout<<"Enter Team Name: ";
 						    getline(cin, team);
+						    cout << endl;
 						    teamPointer = nba->selectTeam(team);
 						    if(teamPointer != NULL)
                             {
@@ -260,8 +260,10 @@ int main(int argc, char *argv[])
                                             nba->printRoster(teamPointer);
                                             break;
                                         case 2:
+                                            cout << endl;
                                             cout<<"Enter Player Name: ";
                                             getline(cin, player);
+                                            cout << endl;
                                             nba->printPlayerInfo(teamPointer, player);
                                             break;
                                         case 3:
@@ -282,8 +284,9 @@ int main(int argc, char *argv[])
                                             nba->printTeamStats(teamPointer);
                                             break;
                                         case 5:
-                                            //cout<<"hello"<<endl;
                                             break;
+                                        default:
+                                            cout << "Not a Menu Option" <<endl;
                                     }
                                 }
                                 menuSelection2 = 0;
@@ -291,6 +294,8 @@ int main(int argc, char *argv[])
 							break;
 						case 3:
 							break;
+                        default:
+                            cout << "Not a Menu Option" <<endl;
 					}
 				}
 				menuSelection = 0;
@@ -311,10 +316,8 @@ int main(int argc, char *argv[])
 							break;
 						case 2:
 						    cout << endl;
-						    cout << endl;
 						    cout << "Enter a Team Name: ";
 						    getline(cin, team);
-						    cout << endl;
 						    cout << endl;
 						    sTeamPointer = mls->selectTeam(team);
 						    if(sTeamPointer != NULL)
@@ -332,27 +335,24 @@ int main(int argc, char *argv[])
                                     switch(menuSelection2)
                                     {
                                         case 1:
-                                            //cout << sTeamPointer->nameStr << endl;
                                             mls->printRoster(sTeamPointer);
                                             break;
                                         case 2:
                                             cout << endl;
-                                            cout << endl;
                                             cout << "Enter a Player's Name: ";
                                             getline(cin, player);
-                                            cout << endl;
                                             cout << endl;
                                             mls->printPlayerInfo(player, sTeamPointer);
                                             break;
                                         case 3:
                                             cout << "=====Sort Players By=====" << endl;
-                                            cout << "1) Age" << endl;
-                                            cout << "2) Goals" << endl;
-                                            cout << "3) Assists" << endl;
-                                            cout << "4) Minutes" << endl;
-                                            cout << "5) Save Percentage" << endl;
-                                            cout << "6) Yellow Cards" << endl;
-                                            cout << "7) Red Cards" << endl;
+                                            cout << "1. Age" << endl;
+                                            cout << "2. Goals" << endl;
+                                            cout << "3. Assists" << endl;
+                                            cout << "4. Minutes" << endl;
+                                            cout << "5. Save Percentage" << endl;
+                                            cout << "6. Yellow Cards" << endl;
+                                            cout << "7. Red Cards" << endl;
                                             getline(cin, menuOptionStr);
                                             menuOptionInt = stoi(menuOptionStr);
                                             mls->sortPlayers(menuOptionInt, sTeamPointer);
@@ -362,6 +362,8 @@ int main(int argc, char *argv[])
                                             break;
                                         case 5:
                                             break;
+                                        default:
+                                            cout << "Not a Menu Option" <<endl;
                                     }
                                 }
                                 menuSelection2 = 0;
@@ -369,6 +371,8 @@ int main(int argc, char *argv[])
 							break;
 						case 3:
 							break;
+                        default:
+                            cout << "Not a Menu Option" <<endl;
 					}
 				}
 				menuSelection = 0;
@@ -376,6 +380,8 @@ int main(int argc, char *argv[])
 			case 3:
 			    cout << "Goodbye!" << endl;
 				break;
+            default:
+                cout << "Not a Menu Option" <<endl;
 		}
 	}
 
