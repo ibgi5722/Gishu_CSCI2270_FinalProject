@@ -41,14 +41,14 @@
 	"../include/NBA.h"
 	<math.h>
 
-1430107516 source:/home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/main.cpp
-	"NBA.h"
-	"MLS.h"
+1430110027 source:/home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/main.cpp
+	"include/NBA.h"
+	"include/MLS.h"
 	<iostream>
 	<fstream>
 	<sstream>
 
-1430109042 source:/home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/src/MLS.cpp
+1430202513 source:/home/user/Dropbox/GitHub/Gishu_CSCI2270_FinalProject/CSCI2270_Final_Assignment/src/MLS.cpp
 	<iostream>
 	<vector>
 	<iomanip>
