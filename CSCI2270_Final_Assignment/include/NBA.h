@@ -69,6 +69,7 @@ class NBA
         ~NBA();
         void addTeam(std::string tName, std::string pName, float number, std::string position, float played, float pofloats, float rebounds, float steals, float assists, float turnovers, float fouls);
         bool searchVector(std::string tName);
+        void insertPlayer(BasketballPlayer *p, BasketballPlayer** hashTable);
         BasketballTeams* searchTree(std::string tName);
         void printTeams();
         BasketballTeams* selectTeam(std::string tName);
@@ -76,16 +77,13 @@ class NBA
         void printPlayerInfo(BasketballTeams* team, std::string pName);
         void rankBy(BasketballTeams* team, int x);
         void printTeamStats(BasketballTeams* team);
-        //BasketballTeams* sTeam(std::string tName);
-    private:
-        //BasketballTeams* findTeam(std::string tName);
-        void rankPlayers(std::vector<float> stat);
         void sortPlayers(std::vector<BasketballPlayer*> collisons);
+    private:
+        void rankPlayers(std::vector<float> stat);
         void printTeams(BasketballTeams *rootTemp);
         void rbAddFixup(BasketballTeams *x);
         void rightRotate(BasketballTeams *x);
         void leftRotate(BasketballTeams *x);
-        void insertPlayer(BasketballPlayer *p, BasketballPlayer** hashTable);
         int Hash(std::string pName);
         BasketballTeams *root;
         std::vector<std::string> teamNameVector;
