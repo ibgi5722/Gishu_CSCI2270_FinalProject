@@ -15,17 +15,18 @@ MLS::~MLS()
     //dtor
 }
 
+
 bool MLS::searchVector(std::string tName)
 {
-    bool foundTeam = false;
-    for(int i = 0; i < teamVector.size(); i++)
+    bool foundTeam = false; //initializes a boolean that stores if a team is in the vector to false
+    for(int i = 0; i < teamVector.size(); i++) //loops through the vector that stores all of the teams in the MLS
     {
-        if(tName == teamVector[i])
+        if(tName == teamVector[i]) //if the team name that the user is searching for is in the vector
         {
-            foundTeam = true;
+            foundTeam = true; //a boolean is set to true
         }
     }
-    return foundTeam;
+    return foundTeam; //returns the boolean
 }
 
 void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber, std::string pPosition, int minutes, int goals, int assists, int savePercent, int yellowCards, int redCards)
@@ -34,20 +35,20 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
     SoccerTeam *newTeam;
     SoccerPlayer *newPlayer = new SoccerPlayer(pName, pAge, pNumber, pPosition, minutes, goals, assists, savePercent, yellowCards, redCards);
     SoccerTeam *tempRoot = root;
-    if(!(searchVector(tName)))
+    if(!(searchVector(tName))) //calls the search vector method, and only enters the if statement if the method returns false
     {
         hashTable = new SoccerPlayer*[10];
         for(int i = 0; i < 10; i++)
         {
-            hashTable[i] = NULL;
+            hashTable[i] = NULL; //initializes the first row of the hash table to be NULL
         }
-        teamVector.push_back(tName);
-        newTeam = new SoccerTeam(tName);
-        newTeam->leftChild = nil;
-        newTeam->rightChild = nil;
-        newTeam->playerHashTable = hashTable;
+        teamVector.push_back(tName); //adds a team to the team vector
+        newTeam = new SoccerTeam(tName); //creates a new team of type SoccerTeam (struct defined in the header file)
+        newTeam->leftChild = nil; //initializes the left child to nil
+        newTeam->rightChild = nil; //initializes the teams right child to nil
+        newTeam->playerHashTable = hashTable; //points the team to a hash table that will store the players
 
-        if(root == nil)
+        if(root == nil) //if the tree has not been built then the first team is set as the root
         {
             newTeam->parent = nil;
             root = newTeam;
@@ -56,36 +57,36 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
         {
             while(addedToTree == false)
             {
-                if(newTeam->nameStr.compare(tempRoot->nameStr) < 0)
+                if(newTeam->nameStr.compare(tempRoot->nameStr) < 0) //compares team names to see which comes first alphabetically
                 {
-                    if(tempRoot->leftChild == nil)
+                    if(tempRoot->leftChild == nil) //if the node has no left child
                     {
-                        tempRoot->leftChild = newTeam;
-                        newTeam->parent = tempRoot;
-                        addedToTree = true;
+                        tempRoot->leftChild = newTeam; //sets the node's left child to the team being added to the tree
+                        newTeam->parent = tempRoot; //sets the new teams parent to the node
+                        addedToTree = true; //informs the program that the new team has been added to the tree
                     }
                     else
                     {
-                        tempRoot = tempRoot->leftChild;
+                        tempRoot = tempRoot->leftChild; //moves the temporary node to its left child
                     }
 
                 }
                 else
                 {
-                    if(tempRoot->rightChild == nil)
+                    if(tempRoot->rightChild == nil) //if the right child of the node is nil
                     {
-                        tempRoot->rightChild = newTeam;
-                        newTeam->parent = tempRoot;
-                        addedToTree = true;
+                        tempRoot->rightChild = newTeam; //sets the teams right child to the new team
+                        newTeam->parent = tempRoot; //sets the new teams parent to the node
+                        addedToTree = true; //sets the boolean to true
                     }
                     else
                     {
-                        tempRoot = tempRoot->rightChild;
+                        tempRoot = tempRoot->rightChild; //move the temporary node to its right child
                     }
                 }
             }
         }
-        rbAddFixup(newTeam);
+        rbAddFixup(newTeam); //calls the rbAddFixup method which balances the red black tree
     }
     insertPlayer(newPlayer, hashTable);
     newTeam = searchTree(tName);
@@ -93,42 +94,43 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
 
 SoccerTeam* MLS::searchTree(std::string tName)
 {
-    SoccerTeam *tempRoot = root;
+    SoccerTeam *tempRoot = root; //sets a temporary node to the root
     while(tempRoot != nil)
     {
-        if(tName == tempRoot->nameStr)
+        if(tName == tempRoot->nameStr) //if the temp root is the team being searched for
         {
-            return tempRoot;
+            return tempRoot; //return the node
         }
         else
         {
-            if(tName.compare(tempRoot->nameStr) < 0)
+            if(tName.compare(tempRoot->nameStr) < 0) //if the team being searched for is before the current node alphabetically
             {
-                tempRoot = tempRoot->leftChild;
+                tempRoot = tempRoot->leftChild; //moves the node to the left
             }
             else
             {
-                tempRoot = tempRoot->rightChild;
+                tempRoot = tempRoot->rightChild; //else the node moves to the right
             }
         }
     }
-    return tempRoot;
+    return tempRoot; //returns the team once it is found in the tree
 }
 
 void MLS::printTeams()
 {
-    printTeams(root);
+    printTeams(root); //calls the private print team method on the root
 }
+
 void MLS::printTeams(SoccerTeam *tempRoot)
 {
     if(tempRoot->leftChild != nil)
     {
-        printTeams(tempRoot->leftChild);
+        printTeams(tempRoot->leftChild); //recursively calls the print teams function on the left child
     }
-    std::cout <<  tempRoot->nameStr << std::endl;
+    std::cout <<  tempRoot->nameStr << std::endl; //prints the team name
     if(tempRoot->rightChild != nil)
     {
-        printTeams(tempRoot->rightChild);
+        printTeams(tempRoot->rightChild); //recursively calls the print teams function on the right child
     }
 }
 
@@ -242,28 +244,28 @@ void MLS::rightRotate(SoccerTeam * y)
 int MLS::hashSum(std::string playerName)
 {
     int i = 0;
-    for(int j = 0; j < playerName.size(); j++)
+    for(int j = 0; j < playerName.size(); j++) //loops through the string that is passed into the function
     {
-        i = i + playerName[j];
+        i = i + playerName[j]; //calculates the hash sum
     }
-    return i%10;
+    return i%10; //returns the remainder when dividing the sum by 10
 }
 
 void MLS::insertPlayer(SoccerPlayer *player, SoccerPlayer **hashTable)
 {
-    int i = hashSum(player->nameStr);
-    if(hashTable[i] == NULL)
+    int i = hashSum(player->nameStr); //finds the hash sum of the players name
+    if(hashTable[i] == NULL) //if the table is empty at the index of the players name
     {
-        hashTable[i] = player;
+        hashTable[i] = player; //adds the player to the hash table
     }
     else
     {
         SoccerPlayer *temp = hashTable[i];
         while(temp->next != NULL)
         {
-            temp = temp->next;
+            temp = temp->next; //loops through the linked list
         }
-        temp->next = player;
+        temp->next = player; //adds the player to the end of the linked list
     }
 }
 
@@ -303,7 +305,7 @@ void MLS::printRoster(SoccerTeam *temp)
             SoccerPlayer *index = temp->playerHashTable[i];
             while(index != NULL)
             {
-                collisions.push_back(index);
+                collisions.push_back(index); //the if statement and while loop and index = index-> next loop through the hash table and add the players to a vector
                 index = index->next;
             }
 
@@ -314,7 +316,7 @@ void MLS::printRoster(SoccerTeam *temp)
     {
         std::cout << "empty" << std::endl;
     }
-    sortRoster(collisions);
+    sortRoster(collisions); //once the vector is created it will be sorted in the sort roster method
 }
 void MLS::sortRoster(std::vector<SoccerPlayer*> collisions)
 {
@@ -327,7 +329,7 @@ void MLS::sortRoster(std::vector<SoccerPlayer*> collisions)
         vectorsize = (vectorsize+1)/2;
         for(int i = 0; i < (collisions.size() - vectorsize); i++)
         {
-            if(collisions[i+vectorsize]->nameStr.compare(collisions[i]->nameStr) < 0)
+            if(collisions[i+vectorsize]->nameStr.compare(collisions[i]->nameStr) < 0) //compares the player names so they can be sorted alphabetically
             {
                 temp = collisions[i+vectorsize];
                 collisions[i+vectorsize] = collisions[i];
@@ -337,9 +339,9 @@ void MLS::sortRoster(std::vector<SoccerPlayer*> collisions)
         }
     }
     int z;
-    for(int j = 0; j < collisions.size(); j++)
+    for(int j = 0; j < collisions.size(); j++) //loops through the sorted vector of the roster
     {
-        std::cout << collisions[j]->nameStr << std::endl;
+        std::cout << collisions[j]->nameStr << std::endl; //prints the team names
     }
 }
 
@@ -370,7 +372,7 @@ void MLS::printPlayerInfo(std::string player, SoccerTeam *team)
     else
     {
 
-        if(foundPlayer->positionStr == "GK")
+        if(foundPlayer->positionStr == "GK") //if the player is a goalie, save percentage will be printed, and not goals and assists
         {
             std::cout << std::endl;
             std::cout << std::endl;
@@ -385,7 +387,7 @@ void MLS::printPlayerInfo(std::string player, SoccerTeam *team)
             std::cout << std::endl;
             std::cout << std::endl;
         }
-        else
+        else //if the player is not a goalie, goals and assists will be printed but not save percentage
         {
             std::cout << std::endl;
             std::cout << std::endl;
@@ -414,7 +416,7 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
             SoccerPlayer *temp = team->playerHashTable[i];
             while(temp != NULL)
             {
-                playersVector.push_back(temp);
+                playersVector.push_back(temp); //adds all the players in the hash table to a vector
                 temp = temp->next;
             }
 
