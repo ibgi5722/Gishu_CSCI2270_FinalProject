@@ -32,10 +32,6 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
 {
     bool addedToTree = false;
     SoccerTeam *newTeam;
-    /*for(int i = 0; i < teamVector.size(); i++)
-    {
-        std::cout << teamVector[i] << std::endl;
-    }*/
     SoccerPlayer *newPlayer = new SoccerPlayer(pName, pAge, pNumber, pPosition, minutes, goals, assists, savePercent, yellowCards, redCards);
     SoccerTeam *tempRoot = root;
     if(!(searchVector(tName)))
@@ -58,11 +54,11 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
         }
         else
         {
-            while(addedToTree == false) //if the tempRoot hasn't been added to the tree
+            while(addedToTree == false)
             {
-                if(newTeam->nameStr.compare(tempRoot->nameStr) < 0) //compares the nameStrs
+                if(newTeam->nameStr.compare(tempRoot->nameStr) < 0)
                 {
-                    if(tempRoot->leftChild == nil) //if there is no left child
+                    if(tempRoot->leftChild == nil)
                     {
                         tempRoot->leftChild = newTeam;
                         newTeam->parent = tempRoot;
@@ -70,13 +66,13 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
                     }
                     else
                     {
-                        tempRoot = tempRoot->leftChild; //moves the tempRoot until left child is nil
+                        tempRoot = tempRoot->leftChild;
                     }
 
                 }
                 else
                 {
-                    if(tempRoot->rightChild == nil) //same for the right as the left
+                    if(tempRoot->rightChild == nil)
                     {
                         tempRoot->rightChild = newTeam;
                         newTeam->parent = tempRoot;
@@ -93,7 +89,6 @@ void MLS::insertTeam(std::string tName, std::string pName, int pAge, int pNumber
     }
     insertPlayer(newPlayer, hashTable);
     newTeam = searchTree(tName);
-    //newTeam->vecPlayers.push_back(newPlayer);
 }
 
 SoccerTeam* MLS::searchTree(std::string tName)
@@ -109,11 +104,11 @@ SoccerTeam* MLS::searchTree(std::string tName)
         {
             if(tName.compare(tempRoot->nameStr) < 0)
             {
-                tempRoot = tempRoot->leftChild; //loops to the left
+                tempRoot = tempRoot->leftChild;
             }
             else
             {
-                tempRoot = tempRoot->rightChild; //loops to the right
+                tempRoot = tempRoot->rightChild;
             }
         }
     }
@@ -126,53 +121,42 @@ void MLS::printTeams()
 }
 void MLS::printTeams(SoccerTeam *tempRoot)
 {
-    //std::cout << "x" << std::endl;
-    if(tempRoot->leftChild != nil) //won't enter until left child is NULL
+    if(tempRoot->leftChild != nil)
     {
         printTeams(tempRoot->leftChild);
     }
-    std::cout <<  tempRoot->nameStr << std::endl; //starts when left child is null , which would be the first movie alphabetically
+    std::cout <<  tempRoot->nameStr << std::endl;
     if(tempRoot->rightChild != nil)
     {
         printTeams(tempRoot->rightChild);
     }
 }
 
-void MLS::rbAddFixup(SoccerTeam * x) // called after insert to fix tree
+void MLS::rbAddFixup(SoccerTeam * x)
 {
-    //std::cout << "x" << std::endl;
     x->leftChild = nil;
     x->rightChild = nil;
-    //Now restore the red-black property
     x->isRed = true;
     while ( (x != root) && (x->parent->isRed == true) )
     {
         if ( x->parent == x->parent->parent->leftChild )
         {
-           //If x's parent is a left, y is x's right 'uncle'
            SoccerTeam *y = x->parent->parent->rightChild;
            if ( y->isRed == true )
            {
-              //case 1 - change the colors
               x->parent->isRed = false;
               y->isRed = false;
               x->parent->parent->isRed = true;
-              //Move x up the tree
               x = x->parent->parent;
             }
             else
             {
-                //std::cout << "y" << std::endl;
-                //y is a black node
                 if ( x == x->parent->rightChild )
                 {
-                    //and x is to the right
-                    //case 2 - move x up and rotate
                     x = x->parent;
                     leftRotate(x);
 
                 }
-              //case 3
               x->parent->isRed = false;
               x->parent->parent->isRed = true;
               rightRotate(x->parent->parent );
@@ -180,36 +164,27 @@ void MLS::rbAddFixup(SoccerTeam * x) // called after insert to fix tree
         }
       else
       {
-          //repeat the "if" part with right and left exchanged
           SoccerTeam *y = x->parent->parent->leftChild;
           if ( y->isRed == true )
           {
-             //case 1 - change the colors
              x->parent->isRed = false;
              y->isRed = false;
              x->parent->parent->isRed = true;
-             //Move x up the tree
              x = x->parent->parent;
            }
            else
            {
-               //y is a black node
                if ( x == x->parent->leftChild )
                {
-                   //and x is to the right
-                   //case 2 - move x up and rotate
                    x = x->parent;
                    rightRotate(x);
                }
-             //case 3
              x->parent->isRed = false;
              x->parent->parent->isRed = true;
              leftRotate(x->parent->parent );
            }
       }
     }
-
-    //Color the root black
     root->isRed = false;
 }
 
@@ -217,31 +192,24 @@ void MLS::leftRotate(SoccerTeam * x)
 {
     SoccerTeam *y;
     y = x->rightChild;
-    /* y's left subtree becomes x's right subtree */
     x->rightChild = y->leftChild;
     if (y->leftChild != nil )
     {
         y->leftChild->parent = x;
-        /* y's new parent was x's parent */
     }
     y->parent = x->parent;
-    /* Set the parent to point to y instead of x */
-    /* First see whether we're at the root */
     if ( x->parent == nil )
     {
         root = y;
     }
     else if ( x == x->parent->leftChild )
     {
-        /* x was on the left of its parent */
         x->parent->leftChild = y;
     }
     else
     {
-        /* x must have been on the right */
         x->parent->rightChild = y;
     }
-    /* Finally, put x on y's left */
     y->leftChild = x;
     x->parent = y;
 }
@@ -312,11 +280,11 @@ SoccerTeam* MLS::selectTeam(std::string tName)
         {
             if(tName.compare(node->nameStr) < 0)
             {
-                node = node->leftChild; //loops to the left
+                node = node->leftChild;
             }
             else
             {
-                node = node->rightChild; //loops to the right
+                node = node->rightChild;
             }
         }
     }
@@ -326,7 +294,6 @@ SoccerTeam* MLS::selectTeam(std::string tName)
 
 void MLS::printRoster(SoccerTeam *temp)
 {
-    //std::cout << temp->nameStr << std::endl;
     std::vector<SoccerPlayer*> collisions;
     bool isEmpty = true;
     for(int i = 0; i < 10; i++)
@@ -337,7 +304,6 @@ void MLS::printRoster(SoccerTeam *temp)
             while(index != NULL)
             {
                 collisions.push_back(index);
-                //std::cout << index->nameStr << std::endl;
                 index = index->next;
             }
 
@@ -393,7 +359,6 @@ void MLS::printPlayerInfo(std::string player, SoccerTeam *team)
                     foundPlayer = index;
                     boolfoundPlayer = true;
                 }
-                //std::cout << index->nameStr << std::endl;
                 index = index->next;
             }
         }
@@ -441,7 +406,6 @@ void MLS::printPlayerInfo(std::string player, SoccerTeam *team)
 
 void MLS::sortPlayers(int menuOption, SoccerTeam *team)
 {
-    //std:: cout << "x" << std:: endl;
     std::vector<SoccerPlayer*> playersVector;
     for(int i = 0; i < 10; i++)
     {
@@ -451,7 +415,6 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
             while(temp != NULL)
             {
                 playersVector.push_back(temp);
-                //std::cout << index->nameStr << std::endl;
                 temp = temp->next;
             }
 
@@ -477,7 +440,6 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
                 }
             }
         }
-        //std:: cout << "t" << std:: endl;
         std::cout << std::endl;
         std::cout << std::endl;
         for(int i = 0; i < playersVector.size(); i++)
@@ -506,7 +468,6 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
                 }
             }
         }
-        //std:: cout << "t" << std:: endl;
         std::cout << std::endl;
         std::cout << std::endl;
         for(int i = 0; i < playersVector.size(); i++)
@@ -535,7 +496,6 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
                 }
             }
         }
-        //std:: cout << "t" << std:: endl;
         std::cout << std::endl;
         std::cout << std::endl;
         for(int i = 0; i < playersVector.size(); i++)
@@ -564,7 +524,6 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
                 }
             }
         }
-        //std:: cout << "t" << std:: endl;
         std::cout << std::endl;
         std::cout << std::endl;
         for(int i = 0; i < playersVector.size(); i++)
@@ -593,7 +552,6 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
                 }
             }
         }
-        //std:: cout << "t" << std:: endl;
         std::cout << std::endl;
         std::cout << std::endl;
         for(int i = 0; i < playersVector.size(); i++)
@@ -622,7 +580,6 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
                 }
             }
         }
-        //std:: cout << "t" << std:: endl;
         std::cout << std::endl;
         std::cout << std::endl;
         for(int i = 0; i < playersVector.size(); i++)
@@ -651,7 +608,6 @@ void MLS::sortPlayers(int menuOption, SoccerTeam *team)
                 }
             }
         }
-        //std:: cout << "t" << std:: endl;
         std::cout << std::endl;
         std::cout << std::endl;
         for(int i = 0; i < playersVector.size(); i++)
